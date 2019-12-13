@@ -230,3 +230,50 @@ x.dot(y) # dot product  1*4 + 2*5 + 3*6
 
 **Dot Product:**  
 <img src='http://latex.codecogs.com/gif.latex?%24%20%5Cbegin%7Bbmatrix%7Dx_1%20%5C%20x_2%20%5C%20x_3%5Cend%7Bbmatrix%7D%20%5Ccdot%20%5Cbegin%7Bbmatrix%7Dy_1%20%5C%5C%20y_2%20%5C%5C%20y_3%5Cend%7Bbmatrix%7D%20%3D%20x_1%20y_1%20&plus;%20x_2%20y_2%20&plus;%20x_3%20y_3%24' alt='dot'/>
+
+<br/>
+
+Let's create a new array using a previous array `y` and its squared values:
+```python
+z = np.array([y, y**2])
+z
+```
+```
+array([[ 4,  5,  6],
+       [16, 25, 36]])
+```
+
+The `shape` of this array is two by three:
+```python
+z.shape
+```
+```(2, 3)```
+
+We can also take the transpose of an array using the `T` method, which swaps the rows and columns. The shape of the transposed array is three by two:
+```python
+z.T
+```
+```
+array([[ 4, 16],
+       [ 5, 25],
+       [ 6, 36]])
+```
+
+The number of rows has swapped with the number of columns:
+```python
+z.T.shape
+```
+```(3, 2)```
+
+Using `.dtype`, we can see what type of data the array has:
+```python
+z.dtype
+```
+```dtype('int64')```
+
+And with `.astype`, cast an array to a different type:
+```python
+z = z.astype('f')
+z.dtype
+```
+```dtype('float32')```
