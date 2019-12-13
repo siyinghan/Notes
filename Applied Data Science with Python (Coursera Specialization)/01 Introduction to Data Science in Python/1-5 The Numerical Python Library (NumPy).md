@@ -198,7 +198,7 @@ array([[1, 1, 1, 2, 2, 2],
 
 ## Operations
 
-Now, let's look into some of the operations you can do with `numpy` arrays. Use +, -, \*, / and \*\* to perform element wise addition, subtraction, multiplication, division and power.
+Now, let's look into some of the operations you can do with `numpy` arrays. Use `+`, `-`, `\*`, `/` and `\*\*` to perform element wise addition, subtraction, multiplication, division and power.
 
 ```
 
