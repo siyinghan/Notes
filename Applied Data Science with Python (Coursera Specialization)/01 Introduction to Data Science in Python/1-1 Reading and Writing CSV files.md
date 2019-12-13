@@ -15,7 +15,7 @@ mpg[:3] # The first three dictionaries in our lists.
 
 <br/>
 
-`csv.Dictreader` has read in each row of our csv file as a dictionary. `len` shows that our list is comprised of 234 dictionaries:
+`csv.Dictreader` has read in each row of our `csv` file as a dictionary. `len` shows that our list is comprised of 234 dictionaries:
 ```python
 len(mpg)
 ```
