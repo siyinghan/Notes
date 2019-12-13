@@ -14,4 +14,6 @@ The `map` build-in function is one example of a functional programming feature o
 
 Example
 ------
+Imagine we have two list of numbers, maybe prices from two different stores on exactly the same items. And we wanted to find the minimum that we would have to pay if we bought the cheaper item between the two stores.
+To do this, we could iterate through each list, comparing items and choosing the cheapest. With map, we can do this comparison in a single statement.
 
