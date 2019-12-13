@@ -12,3 +12,18 @@ So in this case, you would execute `my_function` and pass in three different par
 my_function(1, 2, 3)
 ```
 ```3```
+
+<br/>
+
+Python has built in support for creating these collections using a more abbreviated syntax called `list comprehensions`. Here is an example:
+```python
+# iterate from 0 to 999 and return the even numbers
+my_list = []
+for number in range(0, 1000):
+    if number % 2 == 0:
+        my_list.append(number)
+```
+We can rewrite this as a `list comprehension` by pulling the iteration on one line:
+```python
+my_list = [number for number in range(0,1000) if number % 2 == 0]
+```
