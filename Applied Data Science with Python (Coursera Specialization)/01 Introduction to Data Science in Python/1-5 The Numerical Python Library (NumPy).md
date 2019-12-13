@@ -3,6 +3,7 @@
 - [Creating Arrays](#creating-arrays)
 - [Combining Arrays](#combining-arrays)
 - [Operations](#operations)
+- [Math Functions](#math-functions)
 
 <br/>
 
@@ -277,3 +278,8 @@ z = z.astype('f')
 z.dtype
 ```
 ```dtype('float32')```
+
+<br/>
+
+
+## Math Functions
