@@ -4,7 +4,7 @@
 - [Combining Arrays](#combining-arrays)
 - [Operations](#operations)
 - [Math Functions](#math-functions)
-- [Indexing / Slicing](#indexing-slicing)
+- [Indexing / Slicing](#indexing---slicing)
 
 <br/>
 
