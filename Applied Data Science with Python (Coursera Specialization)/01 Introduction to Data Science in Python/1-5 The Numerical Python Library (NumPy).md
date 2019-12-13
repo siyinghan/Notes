@@ -198,7 +198,7 @@ array([[1, 1, 1, 2, 2, 2],
 
 ## Operations
 
-Now, let's look into some of the operations you can do with `numpy` arrays. Use `+`, `-`, `*`, `/` and `**` to perform element wise addition, subtraction, multiplication, division and power.
+Now, let's look into some of the operations you can do with `numpy` arrays. Use `+`, `-`, `*`, `/` and `**` to perform element wise addition, subtraction, multiplication, division and power:
 ```python
 print(x + y) # elementwise addition     [1 2 3] + [4 5 6] = [5  7  9]
 ```
@@ -219,3 +219,14 @@ print(x / y) # elementwise divison         [1 2 3] / [4 5 6] = [0.25  0.4  0.5]
 print(x**2) # elementwise power  [1 2 3] ^2 =  [1 4 9]
 ```
 ```[1 4 9]```
+
+<br/>
+
+For those familiar with `linear algebra`, the `dot` product can be done using the dot function:
+<br>
+**Dot Product:**  
+
+$ \begin{bmatrix}x_1 \ x_2 \ x_3\end{bmatrix}
+\cdot
+\begin{bmatrix}y_1 \\ y_2 \\ y_3\end{bmatrix}
+= x_1 y_1 + x_2 y_2 + x_3 y_3$
