@@ -8,7 +8,7 @@ So, functional programming methods are often used in Python, and it's not uncomm
 
 The `map` build-in function is one example of a functional programming feature of Python, that I think ties together a number of aspects of the language. The map function signature looks like this:
 
-![alt text](https://github.com/siyinghan/Notes/blob/master/Image/0001.png)
+![alt text](siyinghan/Notes/blob/master/Image/0001.png)
 
 username/posts/pics/2018/posttitle/picname.png
 
