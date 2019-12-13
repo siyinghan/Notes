@@ -4,7 +4,7 @@
 - [Combining Arrays](#combining-arrays)
 - [Operations](#operations)
 - [Math Functions](#math-functions)
-- [Indexing / Slicing](#indexing---slicing)
+- [Indexing and Slicing](#indexing-and-slicing)
 
 <br/>
 
@@ -325,7 +325,7 @@ a.argmin()
 <br/>
 
 
-## Indexing / Slicing
+## Indexing and Slicing
 
 Let's create an array with the squares of 0 through 12:
 ```python
