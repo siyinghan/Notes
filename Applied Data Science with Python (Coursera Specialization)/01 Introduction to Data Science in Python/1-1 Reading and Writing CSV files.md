@@ -2,6 +2,7 @@
 
 Material: [mpg.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/mpg.csv)
 
+<br/>
 
 `%precision 2` controls how floats display (only works in an IPython interpreter).
 
