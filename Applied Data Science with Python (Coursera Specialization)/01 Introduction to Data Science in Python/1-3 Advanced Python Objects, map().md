@@ -8,12 +8,12 @@ So, functional programming methods are often used in Python, and it's not uncomm
 
 The `map` build-in function is one example of a functional programming feature of Python, that I think ties together a number of aspects of the language. The map function signature looks like this:
 
-<img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png" alt="001" align='left' width=’80‘/>
+<img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png" alt="001" align='left' width=’60‘/>
 
-<br/>
 
 Example
 ------
 Imagine we have two list of numbers, maybe prices from two different stores on exactly the same items. And we wanted to find the minimum that we would have to pay if we bought the cheaper item between the two stores.
+
 To do this, we could iterate through each list, comparing items and choosing the cheapest. With map, we can do this comparison in a single statement.
 
