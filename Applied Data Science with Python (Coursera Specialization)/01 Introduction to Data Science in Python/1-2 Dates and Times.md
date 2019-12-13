@@ -33,7 +33,12 @@ dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second
 ```
 ```(2019, 12, 13, 15, 44, 34)```
 
-`datetime` objects allow for simple math using `timedelta`. For instance, here, we can create a `timedelta` of 100 days, then do subtraction and comparisons with the `datetime` object. <br/>
+<br/>
+
+`datetime` objects allow for simple math using `timedelta`. For instance, here, we can create a `timedelta` of 100 days, then do subtraction and comparisons with the `datetime` object.
+
+<br/>
+
 `timedelta` is a duration expressing the difference between two dates:
 ```python
 # create a timedelta of 100 days
