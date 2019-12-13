@@ -31,4 +31,17 @@ Handy `datetime` attributes:
 # get year, month, day, etc.from a datetime
 dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second
 ```
-```(2019, 4, 12, 7, 57, 4)```
+```(2019, 12, 13, 15, 44, 34)```
+
+`datetime` objects allow for simple math using `timedelta`. For instance, here, we can create a `timedelta` of 100 days, then do subtraction and comparisons with the `datetime` object. <br/>
+`timedelta` is a duration expressing the difference between two dates:
+```python
+# create a timedelta of 100 days
+delta = dt.timedelta(days = 100)
+delta
+```
+```datetime.timedelta(100)```
+`date.today` returns the current local date:
+```python
+today = dt.date.today()
+```
