@@ -18,4 +18,4 @@ pd.Series?
 
 Here you could see the documentation indicates that you can pass in some data, an index and a name. The data can be anything, that's array-like, like a list.
 
-<img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/002.png" alt="001" width="60%"/>
+<img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/003.png" alt="001" width="60%"/>
