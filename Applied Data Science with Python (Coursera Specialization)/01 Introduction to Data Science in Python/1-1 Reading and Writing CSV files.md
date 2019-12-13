@@ -22,3 +22,15 @@ len(mpg)
 ```python
 mpg[0].keys()
 ```
+
+This is how to find the average `cty` fuel economy across all cars. All values in the dictionaries are strings, so we need to convert to float:
+```python
+sum(float(d['cty']) for d in mpg) / len(mpg)
+```
+
+We are grouping the cars by number of cylinder, and finding the average `cty` `mpg` for each group:
+```python
+# set() 函数创建一个无序不重复元素集，可进行关系测试，删除重复数据，还可以计算交集、差集、并集等
+cylinders = set(d['cyl'] for d in mpg)
+cylinders
+```
