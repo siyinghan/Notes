@@ -20,15 +20,21 @@ mpg[:3] # The first three dictionaries in our lists.
 len(mpg)
 ```
 
+<br/>
+
 `keys` gives us the column names of our `csv`:
 ```python
 mpg[0].keys()
 ```
 
+<br/>
+
 This is how to find the average `cty` fuel economy across all cars. All values in the dictionaries are strings, so we need to convert to float:
 ```python
 sum(float(d['cty']) for d in mpg) / len(mpg)
 ```
+
+<br/>
 
 We are grouping the cars by number of cylinder, and finding the average `cty` `mpg` for each group:
 ```python
@@ -50,6 +56,8 @@ CtyMpgByCyl.sort(key=lambda x: x[0])
 CtyMpgByCyl
 ```
 ```[('4', 21.01), ('5', 20.50), ('6', 16.22), ('8', 12.57)]```
+
+<br/>
 
 Use set to return the unique values for the class types in our dataset:
 ```python
