@@ -4,6 +4,7 @@
 - [Combining Arrays](#combining-arrays)
 - [Operations](#operations)
 - [Math Functions](#math-functions)
+- [Indexing / Slicing](#indexing-slicing)
 
 <br/>
 
@@ -284,7 +285,7 @@ z.dtype
 
 ## Math Functions
 
-`numpy` also has many useful math functions that we can use. Let's look at a few commonly used ones. Here's our new array `a`. And we can look the sum of the values in the array, the maximum and minimum, Or the mean and standard deviation:
+`numpy` has many built in math functions that can be performed on arrays.:
 ```python
 a = np.array([-4, -2, 1, 3, 5])
 ```
@@ -311,7 +312,7 @@ a.std()
 
 <br/>
 
-To find the index of a maximum or minimum value, we can use `argmax` and `argmin`:
+`argmax` and `argmin` return the index of the maximum and minimum values in the array:
 ```python
 a.argmax()
 ```
@@ -320,3 +321,8 @@ a.argmax()
 a.argmin()
 ```
 ```0```
+
+<br/>
+
+
+## Indexing / Slicing
