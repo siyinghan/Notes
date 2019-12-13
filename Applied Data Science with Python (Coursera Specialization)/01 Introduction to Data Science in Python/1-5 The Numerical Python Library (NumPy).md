@@ -5,6 +5,7 @@
 - [Operations](#operations)
 - [Math Functions](#math-functions)
 - [Indexing and Slicing](#indexing-and-slicing)
+- [Copying Data](#copying-data)
 
 <br/>
 
@@ -425,3 +426,8 @@ array([[ 0,  1,  2,  3,  4,  5],
        [24, 25, 26, 27, 28, 29],
        [30, 30, 30, 30, 30, 30]])
 ```
+
+<br/>
+
+
+## Copying Data
