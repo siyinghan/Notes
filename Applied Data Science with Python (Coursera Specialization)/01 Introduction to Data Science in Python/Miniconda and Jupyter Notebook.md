@@ -11,9 +11,9 @@ Selecting the code, then hitting `Shirt+Enter`.
 
 |        Keys | Function               |
 |------------:|------------------------|
-|       Enter | 进入当前块的编辑模式   |
-| Shift+Enter | 运行当前块并选中下一块 |
-|  Ctrl+Enter | 运行当前块             |
+|       Enter | 进入当前块的编辑模式       |
+| Shift+Enter | 运行当前块并选中下一块     |
+|  Ctrl+Enter | 运行当前块               |
 |             |                        |
 |             |                        |
 |             |                        |
