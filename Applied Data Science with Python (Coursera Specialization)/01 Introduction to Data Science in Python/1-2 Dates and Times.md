@@ -46,7 +46,20 @@ delta = dt.timedelta(days = 100)
 delta
 ```
 ```datetime.timedelta(100)```
+
+<br/>
+
 `date.today` returns the current local date:
 ```python
 today = dt.date.today()
 ```
+```python
+# the date 100 days ago
+today - delta
+```
+```datetime.date(2019, 9, 4)```
+```python
+# compare dates
+today > today-delta
+```
+```True```
