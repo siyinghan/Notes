@@ -10,11 +10,16 @@ The `map` build-in function is one example of a functional programming feature o
 
 <img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png" alt="001" width='80%'/>
 
-<br/>
-
 Example
 ------
 Imagine we have two list of numbers, maybe prices from two different stores on exactly the same items. And we wanted to find the minimum that we would have to pay if we bought the cheaper item between the two stores.
 
 To do this, we could iterate through each list, comparing items and choosing the cheapest. With map, we can do this comparison in a single statement.
 
+```python
+store1 = [10.00, 11.00, 12.34, 2.34]
+store2 = [9.00, 11.10, 12.34, 2.01]
+cheapest = map(min, store1, store2)
+cheapest
+```
+```<map at 0x7f6014049630>```
