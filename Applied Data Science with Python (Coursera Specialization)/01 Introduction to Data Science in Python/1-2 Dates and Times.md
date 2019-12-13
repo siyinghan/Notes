@@ -22,3 +22,12 @@ dtnow = dt.datetime.fromtimestamp(tm.time())
 dtnow
 ```
 ```datetime.datetime(2019, 12, 13, 15, 44, 34, 320508)```
+
+<br/>
+
+When we print this value out, we see that the `year`, `month`, `day`, and so forth are also print out. The `datetime` object has handy attributes to get the representative `hour`, `day`, `second`, etc.
+```python
+# Handy datetime attributes:
+dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second # get year, month, day, etc.from a datetime
+```
+```(2019, 4, 12, 7, 57, 4)```
