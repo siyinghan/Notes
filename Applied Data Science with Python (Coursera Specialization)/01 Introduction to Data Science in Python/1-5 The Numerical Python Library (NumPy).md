@@ -283,3 +283,5 @@ z.dtype
 
 
 ## Math Functions
+
+Numpy also has many useful math functions that we can use. Let's look at a few commonly used ones. Here's our new array a. And we can look the sum of the values in the array, the maximum and minimum, Or the mean and standard deviation.
