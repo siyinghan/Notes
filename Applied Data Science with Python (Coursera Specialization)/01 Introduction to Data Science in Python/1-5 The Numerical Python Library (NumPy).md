@@ -378,3 +378,15 @@ array([[ 0,  1,  2,  3,  4,  5],
        [24, 25, 26, 27, 28, 29],
        [30, 31, 32, 33, 34, 35]])
 ```
+
+Use bracket notation to slice: `array[row, column]`:
+```python
+r[2, 2]
+```
+```14```
+
+And use `:` to select a range of rows or columns:
+```python
+r[3, 3:6]```
+```
+```array([21, 22, 23])```
