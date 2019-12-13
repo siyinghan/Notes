@@ -34,3 +34,6 @@ We are grouping the cars by number of cylinder, and finding the average `cty` `m
 cylinders = set(d['cyl'] for d in mpg)
 cylinders
 ```
+```python
+{'4', '5', '6', '8'}
+```
