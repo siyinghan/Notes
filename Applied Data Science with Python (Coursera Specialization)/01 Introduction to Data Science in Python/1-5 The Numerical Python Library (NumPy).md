@@ -353,3 +353,28 @@ Use negatives to count from the back:
 s[-4:]
 ```
 ```array([ 81, 100, 121, 144])```
+
+A second `:` can be used to indicate step-size. `array[start:stop:stepsize]`
+
+Here we are starting 5th element from the end, and counting backwards by 2 until the beginning of the array is reached:
+```python
+s[-5::-2]
+```
+```array([64, 36, 16,  4,  0])```
+
+<br/>
+
+Let's look at a multidimensional array:
+```python
+r = np.arange(36)
+r.resize((6, 6))
+r
+```
+```
+array([[ 0,  1,  2,  3,  4,  5],
+       [ 6,  7,  8,  9, 10, 11],
+       [12, 13, 14, 15, 16, 17],
+       [18, 19, 20, 21, 22, 23],
+       [24, 25, 26, 27, 28, 29],
+       [30, 31, 32, 33, 34, 35]])
+```
