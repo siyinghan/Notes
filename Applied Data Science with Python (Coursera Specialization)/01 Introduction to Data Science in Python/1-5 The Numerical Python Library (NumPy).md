@@ -7,3 +7,11 @@
 ```python
 import numpy as np
 ```
+
+Now let's make our first array. We can start by creating a list and converting it to an array. So here's our first `numpy array`.
+```python
+mylist = [1, 2, 3]
+x = np.array(mylist)
+x
+```
+```array([1, 2, 3])```
