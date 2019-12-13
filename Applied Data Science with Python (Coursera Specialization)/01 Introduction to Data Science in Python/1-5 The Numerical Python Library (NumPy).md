@@ -34,7 +34,11 @@ Now let's make `multidimensional arrays` by passing in a list of lists. We passe
 m = np.array([[7, 8, 9], [10, 11, 12]])
 m
 ```
+```array([[ 7,  8,  9],
+       [10, 11, 12]])```
+
+We can check the dimensions by using the `shape` attribute:
+```python
+m.shape
 ```
-array([[ 7,  8,  9],
-       [10, 11, 12]])
-```
+```(2, 3)```
