@@ -154,7 +154,7 @@ np.repeat([1, 2, 3], 3)
 ```
 ```array([1, 1, 1, 2, 2, 2, 3, 3, 3])```
 
-
+<br/>
 
 
 ## Combining Arrays
@@ -164,8 +164,8 @@ We can also combine arrays to create new ones:
 p = np.ones([2, 3], int)
 p
 ```
-```a
-rray([[1, 1, 1],
+```
+array([[1, 1, 1],
        [1, 1, 1]])
 ```
 
@@ -191,7 +191,7 @@ array([[1, 1, 1, 2, 2, 2],
        [1, 1, 1, 2, 2, 2]])
 ```
 
-
+<br/>
 
 
 ## Operations
