@@ -1,6 +1,9 @@
 # 1-5 The Numerical Python Library (NumPy)
 
-[toc]
+- [1-5 The Numerical Python Library (NumPy)](#1-5-the-numerical-python-library--numpy-)
+  * [Creating Arrays](#creating-arrays)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Creating Arrays
 
