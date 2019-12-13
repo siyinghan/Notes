@@ -224,8 +224,6 @@ print(x**2) # elementwise power  [1 2 3] ^2 =  [1 4 9]
 
 For those familiar with `linear algebra`, the `dot` product can be done using the dot function:
 <br>
+
 **Dot Product:**  
-
-![](http://latex.codecogs.com/gif.latex?%24%20%5Cbegin%7Bbmatrix%7Dx_1%20%5C%20x_2%20%5C%20x_3%5Cend%7Bbmatrix%7D%20%5Ccdot%20%5Cbegin%7Bbmatrix%7Dy_1%20%5C%5C%20y_2%20%5C%5C%20y_3%5Cend%7Bbmatrix%7D%20%3D%20x_1%20y_1%20&plus;%20x_2%20y_2%20&plus;%20x_3%20y_3%24)
-
 <img src='http://latex.codecogs.com/gif.latex?%24%20%5Cbegin%7Bbmatrix%7Dx_1%20%5C%20x_2%20%5C%20x_3%5Cend%7Bbmatrix%7D%20%5Ccdot%20%5Cbegin%7Bbmatrix%7Dy_1%20%5C%5C%20y_2%20%5C%5C%20y_3%5Cend%7Bbmatrix%7D%20%3D%20x_1%20y_1%20&plus;%20x_2%20y_2%20&plus;%20x_3%20y_3%24' alt='dot'/>
