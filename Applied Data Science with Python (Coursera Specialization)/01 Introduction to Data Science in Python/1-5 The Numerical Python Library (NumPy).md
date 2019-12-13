@@ -387,6 +387,41 @@ r[2, 2]
 
 And use `:` to select a range of rows or columns:
 ```python
-r[3, 3:6]```
+r[3, 3:6]
 ```
 ```array([21, 22, 23])```
+
+Here we are selecting all the rows up to (and not including) row 2, and all the columns up to (and not including) the last column:
+```python
+r[:2, :-1]
+```
+```
+array([[ 0,  1,  2,  3,  4],
+       [ 6,  7,  8,  9, 10]])
+```
+
+This is a slice of the last row, and only every other element:
+```python
+r[-1, ::2]
+```
+```array([30, 32, 34])```
+
+We can also perform conditional indexing. Here we are selecting values from the array that are greater than 30. (Also see `np.where`):
+```python
+r[r > 30]
+```
+```array([31, 32, 33, 34, 35])```
+
+Here we are assigning all values in the array that are greater than 30 to the value of 30:
+```python
+r[r > 30] = 30
+r
+```
+```
+array([[ 0,  1,  2,  3,  4,  5],
+       [ 6,  7,  8,  9, 10, 11],
+       [12, 13, 14, 15, 16, 17],
+       [18, 19, 20, 21, 22, 23],
+       [24, 25, 26, 27, 28, 29],
+       [30, 30, 30, 30, 30, 30]])
+```
