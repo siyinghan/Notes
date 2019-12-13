@@ -284,4 +284,27 @@ z.dtype
 
 ## Math Functions
 
-Numpy also has many useful math functions that we can use. Let's look at a few commonly used ones. Here's our new array a. And we can look the sum of the values in the array, the maximum and minimum, Or the mean and standard deviation.
+`numpy` also has many useful math functions that we can use. Let's look at a few commonly used ones. Here's our new array `a`. And we can look the sum of the values in the array, the maximum and minimum, Or the mean and standard deviation:
+```python
+a = np.array([-4, -2, 1, 3, 5])
+```
+```pythob
+a.sum()
+```
+```3```
+```python
+a.max()
+```
+```5```
+```python
+a.min()
+```
+```-4```
+```python
+a.mean()
+```
+```0.59999999999999998```
+```python
+a.std()
+```
+```3.2619012860600183```
