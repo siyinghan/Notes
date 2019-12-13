@@ -8,6 +8,8 @@
 import numpy as np
 ```
 
+<br/>
+
 Now let's make our first array. We can start by creating a list and converting it to an array. So here's our first `numpy array`:
 ```python
 mylist = [1, 2, 3]
@@ -16,4 +18,23 @@ x
 ```
 ```array([1, 2, 3])```
 
+<br/>
+
 We can do it more succinctly by passing the list directly:
+```python
+y = np.array([4, 5, 6])
+y
+```
+```array([4, 5, 6])```
+
+<br/>
+
+Now let's make `multidimensional arrays` by passing in a list of lists. We passed in two lists with three elements each, and we get a two by three array:
+```python
+m = np.array([[7, 8, 9], [10, 11, 12]])
+m
+```
+```
+array([[ 7,  8,  9],
+       [10, 11, 12]])
+```
