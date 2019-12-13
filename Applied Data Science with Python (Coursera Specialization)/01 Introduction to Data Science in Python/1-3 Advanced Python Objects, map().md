@@ -10,10 +10,8 @@ The `map` build-in function is one example of a functional programming feature o
 
 ![alt text](https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png)
 
-username/posts/pics/2018/posttitle/picname.png
-
 ![alt text](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png)
 
 ![DQmbgzru4YUCtQnwiZkMBQHEzTxCUTzbUn5tSytrWUeukos.jpg](https://steemitimages.com/DQmY53DiVGm6EqeH6EjhMK4fXoQS1S1mvrtCMkg16NibYvM/DQmbgzru4YUCtQnwiZkMBQHEzTxCUTzbUn5tSytrWUeukos.jpg)
 
-<img src="https://github.com/siyinghan/Notes/blob/master/Image/0001.png" alt="001" width="70%"/>
+<img src="https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/001.png" alt="001" width="70%"/>
