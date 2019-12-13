@@ -308,3 +308,15 @@ a.mean()
 a.std()
 ```
 ```3.2619012860600183```
+
+<br/>
+
+To find the index of a maximum or minimum value, we can use `argmax` and `argmin`:
+```python
+a.argmax()
+```
+```4```
+```python
+a.argmin()
+```
+```0```
