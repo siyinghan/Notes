@@ -22,4 +22,19 @@ store2 = [9.00, 11.10, 12.34, 2.01]
 cheapest = map(min, store1, store2)
 cheapest
 ```
+
+But when we going to print out the map, we see that we get an odd reference value instead of a list of items that we're expecting. This is called lazy evaluation. In Python, the map function returns to you a map object. It doesn't actually try and run the function min on two items until you look inside for a value. This is an interesting design pattern of the language, and it's commonly used when dealing with big data. This allows us to have very efficient memory management, even though something might be computationally complex.
+
 ```<map at 0x7f6014049630>```
+
+`map` are iterable, just like lists and tuples, so we can use a for loop to look at all of the values in the map. This passing around of functions and data structures which they should be applied to, is a hallmark of functional programming. It's very common in data analysis and cleaning.
+
+```python
+for item in cheapest:
+    print(item)
+```
+```9.0
+11.0
+12.34
+2.01```
+
