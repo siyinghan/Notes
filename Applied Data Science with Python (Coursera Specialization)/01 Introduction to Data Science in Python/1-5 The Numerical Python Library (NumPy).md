@@ -2,6 +2,7 @@
 
 - [Creating Arrays](#creating-arrays)
 - [Combining Arrays](#combining-arrays)
+- [Operations](#operations)
 
 ## Creating Arrays
 
@@ -127,7 +128,7 @@ array([[ 1.,  0.,  0.],
        [ 0.,  0.,  1.]])
 ```
 
-and `diag` constructs a diagonal array:
+And `diag` constructs a diagonal array:
 ```python
 np.diag(y)
 ```
@@ -157,3 +158,40 @@ np.repeat([1, 2, 3], 3)
 
 
 ## Combining Arrays
+
+We can also combine arrays to create new ones:
+```python
+p = np.ones([2, 3], int)
+p
+```
+```a
+rray([[1, 1, 1],
+       [1, 1, 1]])
+```
+
+<br/>
+
+Let's create a two by three array of ones and stack it vertically with itself, multiplied by 2. Use `vstack` to stack arrays in sequence vertically (row wise):
+```python
+np.vstack([p, 2*p])
+```
+```
+array([[1, 1, 1],
+       [1, 1, 1],
+       [2, 2, 2],
+       [2, 2, 2]])
+```
+
+And here's the same thing, but stacking horizontally. Use `hstack` to stack arrays in sequence horizontally (column wise):
+```python
+np.hstack([p, 2*p])
+```
+```
+array([[1, 1, 1, 2, 2, 2],
+       [1, 1, 1, 2, 2, 2]])
+```
+
+
+
+
+## Operations
