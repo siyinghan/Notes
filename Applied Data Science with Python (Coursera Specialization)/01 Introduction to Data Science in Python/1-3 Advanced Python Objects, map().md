@@ -7,3 +7,5 @@ The `map` function is one of the basis of functional programming in `Python`. Fu
 So, functional programming methods are often used in Python, and it's not uncommon to see a parameter for a function, be a function itself.
 
 The `map` build-in function is one example of a functional programming feature of Python, that I think ties together a number of aspects of the language. The map function signature looks like this:
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
