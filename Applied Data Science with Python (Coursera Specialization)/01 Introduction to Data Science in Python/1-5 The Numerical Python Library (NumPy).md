@@ -342,5 +342,14 @@ s[0], s[4], s[-1]
 
 Use `:` to indicate a range. `array[start:stop]`
 
-Leaving `start` or `stop` empty will default to the beginning/end of the array.
+Leaving `start` or `stop` empty will default to the beginning/end of the array:
+```python
+s[1:5]
+```
+```array([ 1,  4,  9, 16])```
 
+Use negatives to count from the back:
+```python
+s[-4:]
+```
+```array([ 81, 100, 121, 144])```
