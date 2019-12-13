@@ -25,7 +25,7 @@ dtnow
 
 <br/>
 
-When we print this value out, we see that the `year`, `month`, `day`, and so forth are also print out. The `datetime` object has handy attributes to get the representative `hour`, `day`, `second`, etc.
+When we print this value out, we see that the `year`, `month`, `day`, and so forth are also print out. The `datetime` object has handy attributes to get the representative `hour`, `day`, `second`, etc. <br/>
 Handy `datetime` attributes:
 ```python
 dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second # get year, month, day, etc.from a datetime
