@@ -1,5 +1,6 @@
 # 1-5 The Numerical Python Library (NumPy)
 
+[toc]
 
 ## Creating Arrays
 
