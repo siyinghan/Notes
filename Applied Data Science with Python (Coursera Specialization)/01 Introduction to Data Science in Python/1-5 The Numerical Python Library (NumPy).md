@@ -226,7 +226,4 @@ For those familiar with `linear algebra`, the `dot` product can be done using th
 <br>
 **Dot Product:**  
 
-$ \begin{bmatrix}x_1 \ x_2 \ x_3\end{bmatrix}
-\cdot
-\begin{bmatrix}y_1 \\ y_2 \\ y_3\end{bmatrix}
-= x_1 y_1 + x_2 y_2 + x_3 y_3$
+![](http://latex.codecogs.com/gif.latex?%24%20%5Cbegin%7Bbmatrix%7Dx_1%20%5C%20x_2%20%5C%20x_3%5Cend%7Bbmatrix%7D%20%5Ccdot%20%5Cbegin%7Bbmatrix%7Dy_1%20%5C%5C%20y_2%20%5C%5C%20y_3%5Cend%7Bbmatrix%7D%20%3D%20x_1%20y_1%20&plus;%20x_2%20y_2%20&plus;%20x_3%20y_3%24)
