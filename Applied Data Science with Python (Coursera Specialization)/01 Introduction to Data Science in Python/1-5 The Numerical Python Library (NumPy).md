@@ -431,3 +431,27 @@ array([[ 0,  1,  2,  3,  4,  5],
 
 
 ## Copying Data
+
+Be careful with copying and modifying arrays in NumPy!
+
+`r2` is a slice of `r`:
+```python
+r2 = r[:3,:3]
+r2
+```
+```
+array([[ 0,  1,  2],
+       [ 6,  7,  8],
+       [12, 13, 14]])
+```
+
+Set this slice's values to zero (`[:]` selects the entire array):
+```python
+r2[:] = 0
+r2
+```
+```
+array([[0, 0, 0],
+       [0, 0, 0],
+       [0, 0, 0]])
+```
