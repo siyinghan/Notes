@@ -562,6 +562,7 @@ row 3 is [7 8 9]
 Use `zip` to iterate over multiple iterables:
 ```python
 test2 = test**2
+
 for i, j in zip(test, test2):
     print(i,'+',j,'=',i+j)
 ```
