@@ -33,8 +33,10 @@ But when we going to print out the map, we see that we get an odd reference valu
 for item in cheapest:
     print(item)
 ```
-```9.0
+```
+9.0
 11.0
 12.34
-2.01```
+2.01
+```
 
