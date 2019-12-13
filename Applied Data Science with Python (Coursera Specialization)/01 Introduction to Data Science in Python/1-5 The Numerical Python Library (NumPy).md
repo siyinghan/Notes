@@ -6,6 +6,7 @@
 - [Math Functions](#math-functions)
 - [Indexing and Slicing](#indexing-and-slicing)
 - [Copying Data](#copying-data)
+- [Iterating Over Arrays](#iterating-over-arrays)
 
 <br/>
 
@@ -503,4 +504,70 @@ print(r)
  [18 19 20 21 22 23]
  [24 25 26 27 28 29]
  [30 30 30 30 30 30]]
+```
+
+<br/>
+
+
+## Iterating Over Arrays
+
+Let's create a new 4 by 3 array of random numbers 0-9：
+```python
+test = np.random.randint(0, 10, (4,3))
+test
+```
+```
+array([[1, 7, 8],
+       [2, 8, 7],
+       [4, 3, 9],
+       [7, 8, 9]])
+```
+
+Iterate by row:
+```python
+for row in test:
+    print(row)
+```
+```
+[1 7 8]
+[2 8 7]
+[4 3 9]
+[7 8 9]
+```
+
+Iterate by index:
+```python
+for i in range(len(test)):
+    print(test[i])
+```
+```
+[1 7 8]
+[2 8 7]
+[4 3 9]
+[7 8 9]
+```
+
+Iterate by row and index:
+```python
+for i, row in enumerate(test):
+    print('row', i, 'is', row)
+```
+```
+row 0 is [1 7 8]
+row 1 is [2 8 7]
+row 2 is [4 3 9]
+row 3 is [7 8 9]
+```
+
+Use `zip` to iterate over multiple iterables:
+```python
+test2 = test**2
+for i, j in zip(test, test2):
+    print(i,'+',j,'=',i+j)
+```
+```
+[1 7 8] + [ 1 49 64] = [ 2 56 72]
+[2 8 7] + [ 4 64 49] = [ 6 72 56]
+[4 3 9] + [16  9 81] = [20 12 90]
+[7 8 9] + [49 64 81] = [56 72 90]
 ```
