@@ -326,3 +326,21 @@ a.argmin()
 
 
 ## Indexing / Slicing
+
+Let's create an array with the squares of 0 through 12:
+```python
+s = np.arange(13)**2
+s
+```
+```array([  0,   1,   4,   9,  16,  25,  36,  49,  64,  81, 100, 121, 144])```
+
+Use bracket notation to get the value at a specific index. Remember that indexing starts at 0:
+```python
+s[0], s[4], s[-1]
+```
+```(0, 16, 144)```
+
+Use `:` to indicate a range. `array[start:stop]`
+
+Leaving `start` or `stop` empty will default to the beginning/end of the array.
+
