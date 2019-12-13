@@ -32,8 +32,19 @@ We are grouping the cars by number of cylinder, and finding the average `cty` `m
 ```python
 # set() 函数创建一个无序不重复元素集，可进行关系测试，删除重复数据，还可以计算交集、差集、并集等
 cylinders = set(d['cyl'] for d in mpg)
-cylinders
+
+CtyMpgByCyl = []
+
+for c in cylinders: # iterate over all the cylinder levels
+    summpg = 0
+    cyltypecount = 0
+    for d in mpg: # iterate over all dictionaries
+        if d['cyl'] == c: # if the cylinder level type matches,
+            summpg += float(d['cty']) # add the cty mpg
+            cyltypecount += 1 # increment the count
+    CtyMpgByCyl.append((c, summpg / cyltypecount)) # append the tuple ('cylinder', 'avg mpg')
+
+CtyMpgByCyl.sort(key=lambda x: x[0])
+CtyMpgByCyl
 ```
-```python
-{'4', '5', '6', '8'}
-```
+```[('4', 21.01), ('5', 20.50), ('6', 16.22), ('8', 12.57)]```
