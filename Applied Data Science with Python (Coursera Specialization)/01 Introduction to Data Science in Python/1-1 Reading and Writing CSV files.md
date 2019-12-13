@@ -48,3 +48,10 @@ CtyMpgByCyl.sort(key=lambda x: x[0])
 CtyMpgByCyl
 ```
 ```[('4', 21.01), ('5', 20.50), ('6', 16.22), ('8', 12.57)]```
+
+Use set to return the unique values for the class types in our dataset:
+```python
+vehicleclass = set(d['class'] for d in mpg) # what are the class types
+vehicleclass
+```
+```{'2seater', 'compact', 'midsize', 'minivan', 'pickup', 'subcompact', 'suv'}```
