@@ -199,6 +199,13 @@ array([[1, 1, 1, 2, 2, 2],
 ## Operations
 
 Now, let's look into some of the operations you can do with `numpy` arrays. Use `+`, `-`, `*`, `/` and `**` to perform element wise addition, subtraction, multiplication, division and power.
-
+```python
+# elementwise addition     [1 2 3] + [4 5 6] = [5  7  9]
+print(x + y)
 ```
-
+```[5 7 9]```
+```python
+# elementwise subtraction  [1 2 3] - [4 5 6] = [-3 -3 -3]
+print(x - y)
+```
+```[-3 -3 -3]```
