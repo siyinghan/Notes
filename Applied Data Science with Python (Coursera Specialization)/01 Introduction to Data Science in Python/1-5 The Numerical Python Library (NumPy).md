@@ -1,6 +1,7 @@
 # 1-5 The Numerical Python Library (NumPy)
 
 - [Creating Arrays](#creating-arrays)
+- [Combining Arrays](#combining-arrays)
 
 ## Creating Arrays
 
@@ -151,3 +152,8 @@ Repeat elements of an array using repeat:
 np.repeat([1, 2, 3], 3)
 ```
 ```array([1, 1, 1, 2, 2, 2, 3, 3, 3])```
+
+
+
+
+## Combining Arrays
