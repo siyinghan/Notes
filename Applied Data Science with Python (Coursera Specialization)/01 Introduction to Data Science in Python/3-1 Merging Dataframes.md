@@ -25,3 +25,4 @@ df['Date'] = ['December 1', 'January 1', 'mid-May']
 df
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/041.png' alt='041' width='40%' />
