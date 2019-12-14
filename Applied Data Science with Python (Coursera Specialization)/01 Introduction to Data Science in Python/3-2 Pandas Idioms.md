@@ -31,3 +31,15 @@ Here's an example of two pieces of code in pandas using our census data. The fir
     .rename(columns={'ESTIMATESBASE2010': 'Estimates Base 2010'}))
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/055.png' alt='055' width='100%' />
+
+You might wonder why the whole statement is enclosed in parentheses and that's just to make the statement more readable. In Python, if you begin with an open parentheses, you can span a statement over multiple lines and things read a little bit nicer.
+
+The second example is a more traditional way of writing code. There's nothing wrong with this code in the functional sense, you might even be able to understand it better as a new person to the language. It's just not as *pandorable* as the first example:
+
+```python
+df = df[df['SUMLEV']==50]
+df.set_index(['STNAME','CTYNAME'], inplace=True)
+df.rename(columns={'ESTIMATESBASE2010': 'Estimates Base 2010'})
+```
+
