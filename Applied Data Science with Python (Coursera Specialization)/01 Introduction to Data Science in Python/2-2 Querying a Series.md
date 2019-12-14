@@ -117,11 +117,11 @@ s = pd.Series(np.random.randint(0,1000,10000))
 s.head()
 ```
 ```
-0    723
-1    703
-2    964
-3    165
-4    650
+0    588
+1    782
+2    188
+3    790
+4    367
 dtype: int64
 ```
 
@@ -153,29 +153,77 @@ summary = np.sum(s)
 ```
 ```218 µs ± 185 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)```
 
+Wow! This is a pretty shocking difference in the speed and demonstrates why data scientists need to be aware of parallel computing features and start thinking in functional programming terms.
 
+Related feature in `pandas` and `numpy` is called *broadcasting*. With broadcasting, you can apply an operation to every value in the series, changing the series. For instance, if we wanted to increase every random variable by 2, we could do so quickly using the `+=` operator directly on the series object:
+```python
+s+=2 #adds two to each item in s using broadcasting
+s.head()
+```
+```
+0    590
+1    784
+2    190
+3    792
+4    369
+dtype: int64
+```
 
+Here I'll just use the `head` operator to just print out the top five rows in the series. The procedural way of doing this would be to iterate through all of the items in the series and increase the values directly:
+```python
+for label, value in s.iteritems():
+    s.set_value(label, value+2)
+s.head()
+```
+```
+0    592
+1    786
+2    192
+3    794
+4    371
+dtype: int64
+```
 
+A quick aside here. `pandas` does support iterating through a series much like a dictionary, allowing you to unpack values easily. But if you find yourself iterating through a series, you should question whether you're doing things in the best possible way. Here's how we would do this using the series set value method. Let's try and time the two approaches:
+```python
+%%timeit -n 10
+s = pd.Series(np.random.randint(0,1000,10000))
+for label, value in s.iteritems():
+    s.loc[label]= value+2
+```
+```1.4 s ± 8.68 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)```
+```python
+%%timeit -n 10
+s = pd.Series(np.random.randint(0,1000,10000))
+s+=2
+```
+```The slowest run took 31.96 times longer than the fastest. This could mean that an intermediate result is being cached.
+1.45 ms ± 2.88 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)```
 
+<br/>
+Amazing. Not only is it significantly faster, but it's more concise and maybe even easier to read too. The typical mathematical operations you would expect are vectorized, and the NumPy documentation outlines what it takes to create vectorized functions of your own.
 
+<br/>
 
+One last note on using the indexing operators to access series data. The .loc attribute lets you not only modify data in place, but also add new data as well. If the value you pass in as the index doesn't exist, then a new entry is added. And keep in mind, indices can have mixed types. While it's important to be aware of the typing going on underneath, Pandas will automatically change the underlying NumPy types as appropriate.
 
+Here's an example using a series of a few numbers. We could add some new value, maybe an animal, as you know, I like bears. Just by calling the `.loc` indexing operator. We see that mixed types for data values or index labels are no problem for Pandas:
+```python
+s = pd.Series([1, 2, 3])
+s.loc['Animal'] = 'Bears'
+s
+```
+```
+0             1
+1             2
+2             3
+Animal    Bears
+dtype: object
+```
 
+<br/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Up until now I've shown only examples of a series where the index values were unique. I want to end this lecture by showing an example where index values are not unique, and this makes data frames different, conceptually, that a relational database might be.
 
 
 
