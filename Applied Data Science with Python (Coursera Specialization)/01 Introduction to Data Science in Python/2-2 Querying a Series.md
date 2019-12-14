@@ -225,9 +225,9 @@ Up until now I've shown only examples of a series where the index values were un
 
 Revisiting the issue of countries and their national sports, it turns out that many countries seem to like this game cricket. We go back to our original series on sports. It's possible to create a new series object with multiple entries for cricket, and then use `append` to bring these together. There are a couple of important considerations when using `append`:
 
-⋅⋅⋅First, Pandas is going to take your series and try to infer the best data types to use. In this example, everything is a string, so there's no problems here.
+* First, Pandas is going to take your series and try to infer the best data types to use. In this example, everything is a string, so there's no problems here.
 
-⋅⋅⋅Second, the append method doesn't actually change the underlying series. It instead returns a new series which is made up of the two appended together.
+* Second, the append method doesn't actually change the underlying series. It instead returns a new series which is made up of the two appended together.
 
 
 
