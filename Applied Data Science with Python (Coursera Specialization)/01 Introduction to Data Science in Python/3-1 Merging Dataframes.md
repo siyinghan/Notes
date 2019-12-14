@@ -131,3 +131,4 @@ You could probably guess what comes next. We want a list of all of the students 
 pd.merge(staff_df, student_df, how='right', left_index=True, right_index=True)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/049.png' alt='049' width='30%' />
