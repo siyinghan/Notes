@@ -150,7 +150,7 @@ Drop has two interesting optional parameters. The first is called **inplace**, a
 copy_df.drop?
 ```
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/014.png' alt='014' width='80%' />
 
 
 
