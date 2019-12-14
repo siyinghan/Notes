@@ -85,3 +85,12 @@ ts3 = pd.DataFrame(np.random.randint(10, 100, (4,2)), index=d1, columns=list('ab
 ts3
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/068.png' alt='068' width='20%' />
+
+Looking at the index we can see that it's pretty messy and the dates are all in different formats. Using pandas `to_datetime`, pandas will try to convert these to `Datetime` and put them in a standard format:
+
+```python
+ts3.index = pd.to_datetime(ts3.index)
+ts3
+```
+
