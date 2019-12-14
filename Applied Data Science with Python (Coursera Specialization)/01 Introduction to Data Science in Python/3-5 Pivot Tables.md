@@ -22,3 +22,14 @@ df.pivot_table(values='(kW)', index='YEAR', columns='Make', aggfunc=np.mean)
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/067.png' alt='067' width='70%' />
 
+Here's the results. We see there are NaN values for vendors who didn't have an entry in a given year like Ford in 2012. And we see that most vendors don't have a change in battery capacity over the years, except for Tesla, as they've introduced several new models.
+
+Now, pivot tables aren't limited to one function that you might want to apply. You can pass aggfunc, a list of the different functions to apply, and pandas will provide you with the result using hierarchical column names. Here, I'll also pass margins equals true. And that you can see for each of the functions there's now an all category, which shows the overall mean and the minimum values for a given year and a given vendor:
+
+```python
+pd.pivot_table(df, values='(kW)', index='YEAR', columns='Make', aggfunc=np.mean)
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/067.png' alt='067' width='70%' />
+
+So that's pivot tables. This has been a pretty short description, but they're incredibly useful when dealing with numeric data. And of course, you can pass any function you want to the aggregate function, including those that you define yourself.
