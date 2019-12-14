@@ -100,3 +100,12 @@ We can do the same thing with a data frame instead of a series. We set the index
     .agg({'avg': np.average, 'sum': np.sum})).head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/062.png' alt='062' width='75%' />
+
+Where the confusion can come in is when we change the labels of the dictionary we passed to aggregate, to correspond to the labels in our group data frame. In this case, pandas recognizes that they're the same and maps the functions directly to columns instead of creating a hierarchically labeled column. From my perspective this is very odd behavior, not what I would expect given the labeling change. So just be aware of this when using the `aggregate` function:
+
+```python
+(df.set_index('STNAME').groupby(level=0)['POPESTIMATE2010','POPESTIMATE2011']
+    .agg({'POPESTIMATE2010': np.average, 'POPESTIMATE2011': np.sum})).head()
+```
+
