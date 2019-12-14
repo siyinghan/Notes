@@ -71,3 +71,24 @@ df.head()
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/031.png' alt='031' width='100%' />
 
+Also while this data set is interesting for a number of different reasons, let's reduce the data that we're going to look at to just the total population estimates and the total number of births. We can do this by creating a list of column names that we want to keep then project those and assign the resulting DataFrame to our `df` variable:
+
+```python
+columns_to_keep = ['STNAME',
+                   'CTYNAME',
+                   'BIRTHS2010',
+                   'BIRTHS2011',
+                   'BIRTHS2012',
+                   'BIRTHS2013',
+                   'BIRTHS2014',
+                   'BIRTHS2015',
+                   'POPESTIMATE2010',
+                   'POPESTIMATE2011',
+                   'POPESTIMATE2012',
+                   'POPESTIMATE2013',
+                   'POPESTIMATE2014',
+                   'POPESTIMATE2015']
+df = df[columns_to_keep]
+df.head()
+```
+
