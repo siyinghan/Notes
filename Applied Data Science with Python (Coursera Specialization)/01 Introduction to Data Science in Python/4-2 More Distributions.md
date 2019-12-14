@@ -121,3 +121,6 @@ The last aspect of distributions that I want to talk about is the **modality**. 
 
 Well, this has been a long lecture but I think it can be tough to chop up a discussion of distributions and still get the main points across. Remember that a distribution is just a shape that describes the probability of a value being pulled when we sample a population. And `NumPy` and `SciPy` each have a number of different distributions built in for us to be able to sample from. The last point I want to leave you with here is a reference. If you find this way of exploring statistics interesting. Alan Downey wrote a nice book called **Think Stats** by the publisher O'Reilly.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/085.png' alt='085' width='60%' />
+
+I think he does a really nice job of teaching how to think about statistics from a programming perspective. One where you write the functions behind the statistical methods. It's not really a reference book, but it's an interesting way to approach learning the fundamentals of statistics. Allen even has a free copy of this book available on his website in PDF format and, of course, all of the code is done in Python.
