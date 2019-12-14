@@ -109,3 +109,6 @@ Where the confusion can come in is when we change the labels of the dictionary w
     .agg({'POPESTIMATE2010': np.average, 'POPESTIMATE2011': np.sum})).head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/063.png' alt='063' width='42%' />
+
+So that's the `groupby` function. I use the group by function regularly in my work, and it's very handy for segmenting a data frame, working on small pieces of the data frame, and then creating bigger data frames later.
