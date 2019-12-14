@@ -133,3 +133,11 @@ pd.merge(staff_df, student_df, how='right', left_index=True, right_index=True)
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/049.png' alt='049' width='30%' />
 
+The merge method has a couple of other interesting parameters. First, you don't need to use indices to join on, you can use columns as well. Here's an example:
+
+```python
+staff_df = staff_df.reset_index()
+student_df = student_df.reset_index()
+pd.merge(staff_df, student_df, how='left', left_on='Name', right_on='Name')
+```
+
