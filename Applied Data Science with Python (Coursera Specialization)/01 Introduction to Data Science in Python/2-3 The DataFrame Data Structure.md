@@ -69,7 +69,7 @@ What if we just wanted to do column selection and just get a list of all of the 
 ```python
 df.T
 ```
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/009.png' alt='009' width='40%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/009.png' alt='009' width='35%' />
 
 
 
