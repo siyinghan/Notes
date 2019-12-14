@@ -19,3 +19,56 @@ df = pd.read_csv('grades.csv')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/087.png' alt='087' width='100%' />
+
+Each with a submission time and it looks like there just under 3,000 entries in this data file:
+
+```python
+len(df)
+```
+
+```2315```
+
+For the purpose of this lecture, let's segment this population in to two pieces. Those who *finish the first assignment by the end of December 2015* and those who *finish it sometimes after that*. I just made this date up and it gives us two data frames, which are roughly the same size:
+
+```python
+early = df[df['assignment1_submission'] <= '2015-12-31']
+late = df[df['assignment1_submission'] > '2015-12-31']
+```
+
+As you've seen, the pandas data frame object has a variety of statistical functions associated with it. If we call the mean function directly on the data frame, we see that each of the means for the assignments are calculated (Note that the date time values are ignored as panda's knows this isn't a number, but an object type.):
+
+```python
+early.mean()
+```
+
+```
+assignment1_grade    74.972741
+assignment2_grade    67.252190
+assignment3_grade    61.129050
+assignment4_grade    54.157620
+assignment5_grade    48.634643
+assignment6_grade    43.838980
+dtype: float64
+```
+
+If we look at the mean values for the late data frame as well, we get surprisingly similar numbers:
+
+```python
+late.mean()
+```
+
+```
+assignment1_grade    74.017429
+assignment2_grade    66.370822
+assignment3_grade    60.023244
+assignment4_grade    54.058138
+assignment5_grade    48.599402
+assignment6_grade    43.844384
+dtype: float64
+```
+
+There are slight differences, though. It looks like the end of the six assignments, the early users are doing better by about a percentage point.
+
+So, is this enough to go ahead and make some interventions to actually try and change something in the way we teach? When doing hypothesis testing, we have to choose a **significance level** as a **threshold** for how much of a chance we're willing to accept. This significance level is typically called **alpha**.
+
