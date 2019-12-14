@@ -56,3 +56,10 @@ df = df.fillna(method='ffill')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/039.png' alt='039' width='55%' />
+
+It's good to remember when dealing with missing values so you can deal with individual columns or sets of columns by projecting them just as we spoke about earlier. So you don't have to fix all missing values in one command. It's sometimes useful to use forward filling, sometimes backwards filling, and sometimes useful to just use a single number.
+
+More recently, the Pandas team introduced a method of filling missing values with a series which is the same length as your DataFrame. This makes it easy to derive values which are missing if you have the underlying to do so. For instance, if you're dealing with receipts and you have a column for final price and a column for discount but are missing information from the original price column, you can fill this automatically using `fillna`.
+
+One last note on missing values. When you use statistical functions on DataFrames, these functions typically ignore missing values. For instance if you try and calculate the mean value of a DataFrame, the underlying NumPy function will ignore missing values. This is usually what you want but you should be aware that values are being excluded.
