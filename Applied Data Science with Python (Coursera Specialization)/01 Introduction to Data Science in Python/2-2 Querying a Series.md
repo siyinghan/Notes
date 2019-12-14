@@ -110,6 +110,71 @@ print(total)
 ```
 ```324.0```
 
+Now both of these methods create the same value, but is one actually faster? The Jupyter Notebook has a magic function which can help. First, let's create a big series of random numbers. You'll see this used a lot when demonstrating techniques with Pandas. Note that I've just used the `head` method, which reduces the amount of data printed out by the series to the first five elements:
+```python
+#this creates a big series of random numbers
+s = pd.Series(np.random.randint(0,1000,10000))
+s.head()
+```
+```
+0    723
+1    703
+2    964
+3    165
+4    650
+dtype: int64
+```
+
+We can actually verify that length of the series is correct using the `len` function:
+```python
+len(s)
+```
+```10000```
+
+<br/>
+
+Magic functions begin with a percentage sign. If we type this sign and then hit the Tab key, we can see a list of the available magic functions. You could write your own magic functions too, but that's a little bit outside of the scope of this course.
+
+We're actually going to use what's called a cellular magic function. These start with two percentage signs and modify a raptor code in the current Jupyter cell. The function we're going to use is called `timeit`. And as you may have guessed from the name, this function will run our code a few times to determine, on average, how long it takes.
+
+Let's run `timeit` with our original iterative code. You can give timeit the number of loops that you would like to run. By default, we'll use 1,000 loops. I'll ask timeit here to use 100 runs because we're recording this:
+```python
+%%timeit -n 100
+summary = 0
+for item in s:
+    summary+=item
+```
+```2.25 ms ± 260 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)```
+
+Not bad. `timeit` ran this code and it doesn't seem like it takes very long at all. Now let's try with vectorization:
+```python
+%%timeit -n 100
+summary = np.sum(s)
+```
+```218 µs ± 185 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
