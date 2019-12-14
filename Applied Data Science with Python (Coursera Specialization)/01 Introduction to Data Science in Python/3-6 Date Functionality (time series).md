@@ -180,3 +180,9 @@ We can use partial string indexing to find values from a particular year:
 df['2017']
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/073.png' alt='073' width='27%' />
+
+```python
+df['2016-12']
+```
+
