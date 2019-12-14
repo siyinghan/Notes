@@ -43,3 +43,29 @@ df.set_index(['STNAME','CTYNAME'], inplace=True)
 df.rename(columns={'ESTIMATESBASE2010': 'Estimates Base 2010'})
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/056.png' alt='056' width='100%' />
+
+Now, the key with any good idiom is to understand when it isn't helping you. In this case, you can actually time both methods and see that the latter method is faster. So, this is a particular example of a classic time readability trade off. You'll see lots of examples on stock overflow and in documentation of people using method chaining in their pandas. And so, I think being able to read and understand the syntax is really worth your time.
+
+Here's another pandas idiom. Python has a wonderful function called `map`, which is sort of a basis for functional programming in the language. When you want to use map in Python, you pass it some function you want called, and some iterable, like *a list*, that you want the function to be applied to. The results are that the function is called against each item in the list, and there's a resulting list of all of the evaluations of that function. Python has a similar function called `applymap`. In `applymap`, you provide some function which should operate on each cell of a DataFrame, and the return set is itself a DataFrame. Now I think applymap is fine, but I actually rarely use it. Instead, I find myself often wanting to map across all of the rows in a DataFrame. And pandas has a function that I use heavily there, called `apply`. Let's look at an example.
+
+Let's take our census DataFrame. In this DataFrame, we have five columns for population estimates. Each column corresponding with one year of estimates. It's quite reasonable to want to create some new columns for minimum or maximum values, and the `apply` function is an easy way to do this. First, we need to write a function which takes in a particular row of data, finds a minimum and maximum values, and returns a new row of data. We'll call this function `min_max`, this is pretty straight forward. We can create some small slice of a row by projecting the population columns. Then use the `NumPy` `min` and `max` functions, and create a new series with a label values represent the new values we want to apply:
+
+```python
+import numpy as np
+def min_max(row):
+    data = row[['POPESTIMATE2010',
+                'POPESTIMATE2011',
+                'POPESTIMATE2012',
+                'POPESTIMATE2013',
+                'POPESTIMATE2014',
+                'POPESTIMATE2015']]
+    return pd.Series({'min': np.min(data), 'max': np.max(data)})
+```
+
+Then we just need to call `apply` on the DataFrame. Apply takes the function and the axis on which to operate as parameters. Now, we have to be a bit careful, we've talked about axis zero being the rows of the DataFrame in the past. But this parameter is really the parameter of the index to use. So, to apply across all rows, you pass axis equal to one:
+
+```python
+df.apply(min_max, axis=1).head()
+```
+
