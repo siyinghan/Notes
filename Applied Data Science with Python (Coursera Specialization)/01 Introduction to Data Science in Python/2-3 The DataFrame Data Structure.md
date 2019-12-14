@@ -53,7 +53,7 @@ It's important to remember that the indices and column names along either axes, 
 ```python
 df.loc['Store 1']
 ```
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/008.png' alt='008' width='65%' />
 
 
 
