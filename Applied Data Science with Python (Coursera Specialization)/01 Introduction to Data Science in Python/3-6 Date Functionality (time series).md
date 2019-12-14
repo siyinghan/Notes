@@ -195,4 +195,3 @@ or we can even slice on a range of dates. For example, here we only want the val
 ```python
 df['2016-12':]
 ```
-
