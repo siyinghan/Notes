@@ -164,3 +164,11 @@ We can use `diff` to find the difference between each date's value:
 df.diff()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/071.png' alt='071' width='28%' />
+
+Suppose we wanted to know what the mean count is for each month in our DataFrame. We can do this using `resample`:
+
+```python
+df.resample('M').mean()
+```
+
