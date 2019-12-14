@@ -47,3 +47,12 @@ df = df.set_index(['time', 'user'])
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/038.png' alt='038' width='55%' />
+
+Now that we have the data indexed and sorted appropriately, we can fill the missing datas using `ffill`:
+
+```python
+df = df.fillna(method='ffill')
+df.head()
+```
+
