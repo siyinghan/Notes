@@ -36,3 +36,10 @@ df
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/042.png' alt='042' width='49%' />
 
+The problem comes in when we have only a few items to add. In order for this to work, we have to supply pandas the list which is long enough for the DataFrame, so that each row could be populated. This means that we have to input none values ourselves:
+
+```python
+df['Feedback'] = ['Positive', None, 'Negative']
+df
+```
+
