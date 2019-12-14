@@ -85,3 +85,6 @@ Another example for fun. Have there been any countries who have only won a gold 
 df[(df['Gold.1'] > 0) & (df['Gold'] == 0)]
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/027.png' alt='027' width='100%' />
+
+Poor Liechtenstein. Thankfully the Olympics come every four years. I know who I'll be cheering for in 2020 to win their first summer gold. Extremely important, and often an issue for new users, is to remember that each Boolean mask needs to be encased in parenthesis because of the order of operations. This can cause no end of frustration if you're not used to it, so be careful.
