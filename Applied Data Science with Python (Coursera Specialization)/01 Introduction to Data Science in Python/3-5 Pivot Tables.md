@@ -20,3 +20,5 @@ When we look at the head of the data frame, we'll see that there are model years
 df.pivot_table(values='(kW)', index='YEAR', columns='Make', aggfunc=np.mean)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/067.png' alt='067' width='70%' />
+
