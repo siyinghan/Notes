@@ -14,4 +14,14 @@ df['Gold'] > 0
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/023.png' alt='023' width='50%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/017.png' alt='017' width='36%' />
+This is essentially broadcasting a comparison operator, greater than, with the results being returned as a Boolean series. The resultant series is indexed where the value of each cell is either true or false depending on whether a country has won at least one gold medal, and the index is the country name. 
+
+So this builds us the Boolean mask, which is half the battle. What we want to do next is overlay that mask on the data frame. We can do this using the `where` function. The where function takes a Boolean mask as a condition, applies it to the data frame or series, and returns a new data frame or series of the same shape.
+
+Let's apply this Boolean mask to our **Olympics** data and create a data frame of only those countries who have won a gold at a summer games:
+
+```python
+only_gold = df.where(df['Gold'] > 0)
+only_gold.head()
+```
+
