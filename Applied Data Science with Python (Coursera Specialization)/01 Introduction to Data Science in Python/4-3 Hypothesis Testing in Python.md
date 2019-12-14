@@ -14,3 +14,8 @@ Let's refocus back on statistics. A **hypothesis** is a statement that we can te
 
 There are subtleties in this description. We aren't saying that our hypothesis is true per se, but we're saying that there's evidence against the null hypothesis. So, we're more confident in our **alternative hypothesis**. Let's see an example of this. We can load a file called `grades.csv`:
 
+```python
+df = pd.read_csv('grades.csv')
+df.head()
+```
+
