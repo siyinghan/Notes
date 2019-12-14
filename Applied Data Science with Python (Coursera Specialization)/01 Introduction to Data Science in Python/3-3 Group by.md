@@ -16,3 +16,14 @@ df = df[df['SUMLEV']==50]
 df
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/059.png' alt='059' width='100%' />
+
+In the first we used the `census.csv` date. We get a list of the unique states. Then for each state we reduce the data frame and calculate the average:
+
+```python
+%%timeit -n 10
+for state in df['STNAME'].unique():
+    avg = np.average(df.where(df['STNAME']==state).dropna()['CENSUS2010POP'])
+    print('Counties in state ' + state + ' have an average population of ' + str(avg))
+```
+
