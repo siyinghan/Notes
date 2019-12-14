@@ -22,3 +22,12 @@ df.head()
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/054.png' alt='054' width='100%' />
 
+Here's an example of two pieces of code in pandas using our census data. The first is the *pandorable* way to write the code with *method chaining*. In this code, there's no `inplace` flag being used and you can see that when we first run a `where` query, then a `dropna`, then a `set_index`, and then a `rename`:
+
+```python
+(df.where(df['SUMLEV']==50)
+    .dropna()
+    .set_index(['STNAME','CTYNAME'])
+    .rename(columns={'ESTIMATESBASE2010': 'Estimates Base 2010'}))
+```
+
