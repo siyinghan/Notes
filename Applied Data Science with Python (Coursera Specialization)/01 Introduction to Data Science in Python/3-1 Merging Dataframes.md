@@ -123,3 +123,11 @@ Now there are two other common use cases when merging DataFrames. Both are examp
 pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/048.png' alt='048' width='30%' />
+
+You could probably guess what comes next. We want a list of all of the students and their roles if they were also staff. To do this we would do a right join:
+
+```python
+pd.merge(staff_df, student_df, how='right', left_index=True, right_index=True)
+```
+
