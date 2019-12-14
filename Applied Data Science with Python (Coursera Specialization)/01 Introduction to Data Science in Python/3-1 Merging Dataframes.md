@@ -18,4 +18,10 @@ df
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/040.png' alt='040' width='30%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/039.png' alt='039' width='55%' />
+If we want to add some new column called *Date* to the DataFrame, that's fine. We just use the square bracket operator directly on the DataFrame, as long as the column is as long as the rest of the records:
+
+```python
+df['Date'] = ['December 1', 'January 1', 'mid-May']
+df
+```
+
