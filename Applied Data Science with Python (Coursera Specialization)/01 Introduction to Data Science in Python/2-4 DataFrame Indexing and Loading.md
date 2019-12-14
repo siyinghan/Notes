@@ -86,4 +86,36 @@ df.head()
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/021.png' alt='021' width='100%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/020.png' alt='020' width='90%' />
+<br/>
+
+Now this data came from the all time Olympic games medal table on Wikipedia. If we head to the page we could see that instead of running gold, silver and bronze in the pages, these nice little icons with a one, a two, and a three in them. In our csv file these were represented with the strings **01 !**, **02 !**, and so on. We see that the column values are repeated which really isn't good practice. Panda's recognize this in a panda.1 and .2 to make things more unique. But this labeling isn't really as clear as it could be, so we should clean up the data file. We can of course do this just by going and editing the CSV file directly, but we can also set the column names using the Pandas name property.
+
+Panda stores a list of all of the columns in the `.columns` attribute:
+
+```python
+df.columns
+```
+
+```
+Index(['№ Summer', '01 !', '02 !', '03 !', 'Total', '№ Winter', '01 !.1',
+       '02 !.1', '03 !.1', 'Total.1', '№ Games', '01 !.2', '02 !.2', '03 !.2',
+       'Combined total'],
+      dtype='object')
+```
+
+We can change the values of the column names by iterating over this list and calling the rename method of the data frame. Now, I'm going to copy and paste this in to speed up things but we can walk through what is going on here. Here we just iterate through all of the columns looking to see if they start with a 01, 02, 03 or numeric character. If they do, we can call rename and set the column parameters to a dictionary with the keys being the column we want to replace and the value being the new value we want. Here we'll slice some of the old values in two, since we don't want to lose the unique appended values. We'll also set the ever-important `inplace` parameter to true so Pandas knows to update this data frame directly:
+
+```python
+for col in df.columns:
+    if col[:2]=='01':
+        df.rename(columns={col:'Gold' + col[4:]}, inplace=True)
+    if col[:2]=='02':
+        df.rename(columns={col:'Silver' + col[4:]}, inplace=True)
+    if col[:2]=='03':
+        df.rename(columns={col:'Bronze' + col[4:]}, inplace=True)
+    if col[:1]=='№':
+        df.rename(columns={col:'#' + col[1:]}, inplace=True) 
+
+df.head()
+```
+
