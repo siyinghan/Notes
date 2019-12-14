@@ -65,3 +65,23 @@ only_gold = df[df['Gold'] > 0]
 only_gold.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/026.png' alt='026' width='100%' />
+
+<br/>
+
+One more thing to keep in mind if you're not used to Boolean or bit masking for data reduction. The output of two Boolean masks being compared with **logical operators** is another Boolean mask. This means that you can chain together a bunch of and/or statements in order to create more complex queries, and the result is a single Boolean mask.
+
+For instance, we could create a mask for all of those countries who have received a gold in the summer Olympics and logically order that with all of those countries who have received a gold in the winter Olympics. If we apply this to the data frame and use the length function to see how many rows there are, we see that there are 101 countries which have won a gold metal at some time:
+
+```python
+len(df[(df['Gold'] > 0) | (df['Gold.1'] > 0)])
+```
+
+```101```
+
+Another example for fun. Have there been any countries who have only won a gold in the winter Olympics and never in the summer Olympics? Here's one way to answer that:
+
+```python
+df[(df['Gold.1'] > 0) & (df['Gold'] == 0)]
+```
+
