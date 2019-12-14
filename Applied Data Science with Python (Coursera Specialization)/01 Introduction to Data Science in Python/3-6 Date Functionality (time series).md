@@ -172,3 +172,11 @@ Suppose we wanted to know what the mean count is for each month in our DataFrame
 df.resample('M').mean()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/072.png' alt='072' width='31%' />
+
+We can use partial string indexing to find values from a particular year:
+
+```python
+df['2017']
+```
+
