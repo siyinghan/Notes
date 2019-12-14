@@ -69,3 +69,22 @@ Then we just need to call `apply` on the DataFrame. Apply takes the function and
 df.apply(min_max, axis=1).head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/057.png' alt='057' width='40%' />
+
+Of course there's no need to limit yourself to returning a new series object. If you're doing this as part of data cleaning your likely to find yourself wanting to add new data to the existing DataFrame. In that case you just take the row values and add in new columns indicating the max and minimum scores. This is a regular part of my workflow when bringing in data and building summary or descriptive statistics. And is often used heavily with the merging of DataFrames:
+
+```python
+import numpy as np
+def min_max(row):
+    data = row[['POPESTIMATE2010',
+                'POPESTIMATE2011',
+                'POPESTIMATE2012',
+                'POPESTIMATE2013',
+                'POPESTIMATE2014',
+                'POPESTIMATE2015']]
+    row['max'] = np.max(data)
+    row['min'] = np.min(data)
+    return row
+df.apply(min_max, axis=1)
+```
+
