@@ -233,10 +233,7 @@ x.dot(y) # dot product  1*4 + 2*5 + 3*6
 ```32```
 
 **Dot Product:**  
-<img src='https://rawgithub.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.svg' alt='dot'/>
-
-![dot](https://rawgithub.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.svg)
-<img src="https://rawgithub.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.svg">
+<img src='https://cdn.rawgit.com//siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.svg' alt='dot'/>
 
 <br/>
 
