@@ -204,3 +204,18 @@ Another cool thing we can do is change the frequency of our dates in our DataFra
 df.asfreq('W', method='ffill')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/076.png' alt='076' width='27%' />
+
+If we use this to change the frequency from bi-weekly to weekly, we'll end up with missing values every other week. So let's use the forward fill method on those missing values.
+
+<br/>
+
+One last thing I wanted to briefly touch upon is plotting time series. Importing `matplotlib.pyplot`, and using the iPython magic `%mapplotlib inline`, will allow you to visualize the time series in the notebook:
+
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+df.plot()
+```
+
