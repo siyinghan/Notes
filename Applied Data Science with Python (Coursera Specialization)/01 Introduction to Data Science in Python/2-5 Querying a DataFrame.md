@@ -25,3 +25,28 @@ only_gold = df.where(df['Gold'] > 0)
 only_gold.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/024.png' alt='024' width='100%' />
+
+We see that the resulting data frame keeps the original indexed values, and only data from countries that met the condition are retained. All of the countries which did not meet the condition have `NaN` data instead. This is okay. Most statistical functions built into the data frame object ignore values of `NaN`.
+
+For instance, if we call the df.count on the only_gold data frame, we see that there are 100 countries which have had gold medals awarded at the summer games, while if we call count on the original data frame, we see that there are 147 countries total:
+
+```python
+only_gold['Gold'].count()
+```
+
+```100```
+
+```python
+df['Gold'].count()
+```
+
+```147```
+
+Often we want to drop those rows which have no data. To do this, we can use the `dropna` function. You can optionally provide dropna the axes it should be considering:
+
+```python
+only_gold = only_gold.dropna()
+only_gold.head()
+```
+
