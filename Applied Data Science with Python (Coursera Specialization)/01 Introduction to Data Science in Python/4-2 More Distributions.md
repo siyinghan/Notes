@@ -97,8 +97,6 @@ stats.skew(chi_squared_df5)
 
 ```1.2630838950584582```
 
-<br/>
-
 I'm not going to talk much about the library we're using here for plotting, because that's the topic of the next course. But you can see a histogram with our plot with the two degrees of freedom is skewed much further to the left, while our plot with the five degrees of freedom is not as highly skewed:
 
 ```python
@@ -110,4 +108,12 @@ output = plt.hist([chi_squared_df2,chi_squared_df5], bins=50, histtype='step',
                   label=['2 degrees of freedom','5 degrees of freedom'])
 plt.legend(loc='upper right')
 ```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/083.png' alt='083' width='55%' />
+
+I could encourage you as always to play with this notebook and change the parameters and see how the degrees of freedom changes the skew of the distribution.
+
+<br/>
+
+The last aspect of distributions that I want to talk about is the **modality**. So far, all of the distributions I've shown have a single high point, a peak. But what if we have multiple peaks? This distribution has two high points, so we call it bimodal.
 
