@@ -26,3 +26,14 @@ df = df.set_index('Gold')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/028.png' alt='028' width='100%' />
+
+You'll see that when we create a new index from an existing column it appears that a new first row has been added with empty values. This isn't quite what's happening. And we know this in part because an empty value is actually rendered either as a none or an NaN if the data type of the column is numeric. What's actually happened is that the index has a name. Whatever the column name was in the Jupiter notebook has just provided this in the output.
+
+We can get rid of the index completely by calling the function `reset_index`. This promotes the index into a column and creates a default numbered index:
+
+```python
+df = df.reset_index()
+df.head()
+```
+
