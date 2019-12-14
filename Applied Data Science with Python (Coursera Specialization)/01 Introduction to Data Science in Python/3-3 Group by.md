@@ -91,3 +91,12 @@ print(type(df.groupby(level=0)['POPESTIMATE2010']))
     .agg({'avg': np.average, 'sum': np.sum})).head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/061.png' alt='061' width='30%' />
+
+We can do the same thing with a data frame instead of a series. We set the index to be the state name, we group by the index, and we project two columns. The population estimate in 2010, the population estimate in 2011. When we call aggregate with two parameters, it builds a nice hierarchical column space and all of our functions are applied:
+
+```python
+(df.set_index('STNAME').groupby(level=0)['POPESTIMATE2010','POPESTIMATE2011']
+    .agg({'avg': np.average, 'sum': np.sum})).head()
+```
+
