@@ -20,3 +20,5 @@ df = pd.read_csv('census.csv')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/054.png' alt='054' width='100%' />
+
