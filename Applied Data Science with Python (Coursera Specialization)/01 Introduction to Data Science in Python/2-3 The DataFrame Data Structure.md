@@ -152,7 +152,12 @@ copy_df.drop?
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/014.png' alt='014' width='80%' />
 
+There is a second way to drop a column, however. And that's directly through the use of the indexing operator, using the `del` keyword.
 
+```python 
+del copy_df['Name']
+copy_df
+```
 
 
 
