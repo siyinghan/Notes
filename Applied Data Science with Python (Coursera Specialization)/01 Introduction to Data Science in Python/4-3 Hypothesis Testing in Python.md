@@ -1,1 +1,6 @@
-# Notes
+# 4-3 Hypothesis Testing in Python
+
+We use statistics in a lot of different ways in data science. In this lecture, I want to refresh your knowledge of **hypothesis testing**, which is a core data analysis activity behind experimentation. We're starting to see experimentation used more and more commonly outside of academic scientific, and in day to day business environments. Part of the reason for this is the rise of big data and web commerce. It's now easy to change your digital storefront and deliver a different experience to some of your customers, and then see how those customer actions might differ from one another.
+
+For instance, if you sell books, you might want to have one condition where the cover of the book is featured on the web page and another condition where the focus is on the author and the reviews of the book. This is often called **A/B testing**. And while it's not unique to this time in history, it's now becoming so common that if you're using a website, you are undoubtedly part of an **A/B test** somewhere. This raises some interesting ethical questions and I've added a reading to the course resources and I would like to encourage you to check it out and join in the discussion.
+
