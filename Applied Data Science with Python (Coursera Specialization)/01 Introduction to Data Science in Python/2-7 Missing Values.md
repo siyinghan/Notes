@@ -35,3 +35,15 @@ df = df.sort_index()
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/037.png' alt='037' width='55%' />
+
+If we look closely at the output though we'll notice that the index isn't really unique. Two users seem to be able to use the system at the same time. Again, a very common case.
+
+Let's reset the index, and use some multi-level indexing instead, and promote the user name to a second level of the index to deal with that issue:
+
+```python
+df = df.reset_index()
+df = df.set_index(['time', 'user'])
+df.head()
+```
+
