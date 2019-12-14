@@ -48,8 +48,17 @@ df
 If each of our rows has a unique index, then we could just assign the new column identifier to the series. For instance, if we reset the index in this example so the DataFrame is labeled from 1 through 2, then we create a new series with these labels, we can apply it. And the results we get are as we expected:
 
 ```python
-df['Feedback'] = ['Positive', None, 'Negative']
-df
+adf = df.reset_index()
+adf['Date'] = pd.Series({0: 'December 1', 2: 'mid-May'})
+adf
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/044.png' alt='044' width='64%' />
+
+The nice aspect of this approach is that we could just ignore the items that we don't know about, and pandas will put missing values in for us. So this is a really nice way to do it.
+
+<br/>
+
+More commonly, we want to join two larger DataFrames together, and this is a bit more complex. Before we jump into the code, we need to address a little relational theory, and to get some language conventions down.
+
+ 
