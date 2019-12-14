@@ -17,6 +17,6 @@ Method chaining though, little bit different. The general idea behind method cha
 ```python
 import pandas as pd
 df = pd.read_csv('census.csv')
-df
+df.head()
 ```
 
