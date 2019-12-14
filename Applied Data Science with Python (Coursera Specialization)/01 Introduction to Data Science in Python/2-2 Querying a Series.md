@@ -73,14 +73,42 @@ s[0] #This won't call s.iloc[0] as one might expect, it generates an error inste
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/005.png' alt='005' width='90%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/005.png' alt='005' width='80%' />
+Instead we have to call `iloc` explicitly if we want the first item.
 
+<br/>
 
+Okay, so now we know how to get data out of the series. Let's talk about working with the data. A common task is to want to consider all of the values inside of a series and want to do some sort of operation. This could be trying to find a certain number, summarizing data or transforming the data in some way. A typical programmatic approach to this would be to iterate over all the items in the series, and invoke the operation one is interested in.
 
+For instance, we could create a data frame of floating point values. Let's think of these as prices for different products. We could write a little routine which iterates over all of the items in the series and adds them together to get a total:
+```python
+s = pd.Series([100.00, 120.00, 101.00, 3.00])
+s
+```
+```
+0    100.0
+1    120.0
+2    101.0
+3      3.0
+dtype: float64
+```
+```python
+total = 0
+for item in s:
+    total+=item
+print(total)
+```
+```324.0```
 
+This works, but it's slow. Modern computers can do many tasks simultaneously, especially, but not only, tasks involving mathematics. `pandas` and the underlying `numpy` libraries support a method of computation called vectorization. Vectorization works with most of the functions in the NumPy library, including the `sum` function.
 
+Here's how we would really write the code using the `numpy` `sum` method. First we need to import the `numpy` module, and then we just call `np.sum` and pass in an iterable item. In this case, our panda series:
+```python
+import numpy as np
 
-
+total = np.sum(s)
+print(total)
+```
+```324.0```
 
 
 
