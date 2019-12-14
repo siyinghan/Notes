@@ -197,10 +197,8 @@ for label, value in s.iteritems():
 s = pd.Series(np.random.randint(0,1000,10000))
 s+=2
 ```
-```The slowest run took 31.96 times longer than the fastest. This could mean that an intermediate result is being cached.
-1.45 ms ± 2.88 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)```
+```The slowest run took 31.96 times longer than the fastest. This could mean that an intermediate result is being cached. 1.45 ms ± 2.88 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)```
 
-<br/>
 Amazing. Not only is it significantly faster, but it's more concise and maybe even easier to read too. The typical mathematical operations you would expect are vectorized, and the NumPy documentation outlines what it takes to create vectorized functions of your own.
 
 <br/>
