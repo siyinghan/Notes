@@ -196,3 +196,11 @@ or we can even slice on a range of dates. For example, here we only want the val
 df['2016-12':]
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/075.png' alt='075' width='27%' />
+
+Another cool thing we can do is change the frequency of our dates in our DataFrame using `asfreq`:
+
+```python
+df.asfreq('W', method='ffill')
+```
+
