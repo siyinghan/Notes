@@ -70,3 +70,24 @@ df = df[df['SUMLEV']==50]
 df.groupby('STNAME').agg({'CENSUS2010POP': np.average}).head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/060.png' alt='060' width='25%' />
+
+Now, I want to flag a potential issue and using the `aggregate` method of `groupby` objects. You see, when you pass in a dictionary it can be used to either to identify the columns to apply a function on or to name an output column if there's multiple functions to be run. The difference depends on the keys that you pass in from the dictionary and how they're named. In short, while much of the documentation and examples will talk about a single groupby object, there's really two different objects. The data frame groupby and the series groupby. And these objects behave a little bit differently with aggregate.
+
+For instance, we take our census data and convert it into a series with the state names as the index and only columns as the census2010population. And then we can group this by index using the level parameter. Then we call the agg method where the dictionary that has both the numpie average and the numpie sum functions. PANDAS applies those functions to the series object and, since there's only one column of data It apples both functions to that column and prints out the output:
+
+```python
+print(type(df.groupby(level=0)['POPESTIMATE2010','POPESTIMATE2011']))
+print(type(df.groupby(level=0)['POPESTIMATE2010']))
+```
+
+```
+<class 'pandas.core.groupby.DataFrameGroupBy'>
+<class 'pandas.core.groupby.SeriesGroupBy'>
+```
+
+```python
+(df.set_index('STNAME').groupby(level=0)['CENSUS2010POP']
+    .agg({'avg': np.average, 'sum': np.sum})).head()
+```
+
