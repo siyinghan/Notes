@@ -4,3 +4,4 @@ Python programmers will often suggest that there many ways the language can be u
 
 The first of these is called *method chaining*. Now we saw that previously, you could chain pandas calls together when you're querying DataFrames. For, instance if you wanted to select rows based on index like county name. Then you wanted to only project certain columns like the total population, you can write a query, like `df.loc['Washtenaw']['Total Population']` This is a form of chaining, called *chain indexing*:
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/053.png' alt='053' width='70%' />
