@@ -72,3 +72,18 @@ There are slight differences, though. It looks like the end of the six assignmen
 
 So, is this enough to go ahead and make some interventions to actually try and change something in the way we teach? When doing hypothesis testing, we have to choose a **significance level** as a **threshold** for how much of a chance we're willing to accept. This significance level is typically called **alpha**.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/088.png' alt='088' width='60%' />
+
+It can vary greatly, depending on what you're going to do with the result and the amount of noise you expect in your data.
+
+For instance, in social sciences research, a value of 0.05 or 0.01 is often used, which indicates a tolerance for a probability of between 5% and 1% of chance. In a physics experiment where the conditions are much more controlled and thus, the burden of proof is much higher, you might expect to see alpha levels of 10 to the negative 5 or 100,000th of a percentage.
+
+You can think of the significance level from the perspective of interventions as well and this is something I run into regularly with my research. What am I going to do when I find out that two student populations are different? For instance, if I'm going to send an email nudge to encourage students to continue working on their homework, that's a pretty low-cost intervention. Emails are cheap and while I certainly don't want to annoy students, one extra email isn't going to ruin their day. But what if the intervention is a little more involved, like having our tutorial assistant followup with a student via phone? This is all of a sudden much more expensive for both the institution and for the student. So, I might want to ensure a higher burden of proof. So the threshold you set for alpha depends on what you might do with the result, as well.
+
+For this example, let's use a threshold of 0.05 for our alpha or 5%. Now, how do we actually test whether these means are different in Python? The `SciPy` library contains a number of different statistical tests and forms a basis for hypothesis testing in Python. A **T test** is one way to compare the means of two different populations. In the SciPy library, the T test in-function will compare two independent samples to see if they have different means:
+
+```python
+from scipy import stats
+stats.ttest_ind?
+```
+
