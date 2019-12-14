@@ -105,3 +105,16 @@ If we want the *union* of these, we would call merge passing in the DataFrame on
 pd.merge(staff_df, student_df, how='outer', left_index=True, right_index=True)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/046.png' alt='046' width='30%' />
+
+We see in the resulting DataFrame that everyone is listed. And since Mike does not have a role, and John does not have a school, those cells are listed as missing values.
+
+If we wanted to get the intersection, that is, just those students who are also staff, we could set the how attribute to inner. And we set the resulting DataFrame has only James and Sally in it:
+
+```python
+pd.merge(staff_df, student_df, how='inner', left_index=True, right_index=True)
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/046.png' alt='046' width='30%' />
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/046.png' alt='046' width='30%' />
