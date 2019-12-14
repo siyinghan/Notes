@@ -25,15 +25,34 @@ df.head()
 ```
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/007.png' alt='007' width='30%' />
 
+You'll see that when we print out a `DataFrame`, the Jupiter notebook's trying to pretty it up a bit, and print it out as a table, which is nice.
 
+<br/>
 
+Similar to the series, we can extract data using the `iloc` and `loc` attributes. Because the `DataFrame` is two-dimensional, passing a single value to the lock indexing operator will return series if there's only one row to return. In this example, if we wanted to select data associated with **Store 2**, we would just query the `loc` attribute with one parameter:
+```python
+df.loc['Store 2']
+```
+```
+Cost                      5
+Item Purchased    Bird Seed
+Name                  Vinod
+Name: Store 2, dtype: object
+type(df.loc['Store 2'])
+```
 
+You'll note that the name of the series is returned as the row index value, while the column name is included in the output as well. We can check the data type of the return using the python type function:
+```python
+type(df.loc['Store 2'])
+```
+```pandas.core.series.Series```
 
+<br/>
 
-
-
-
-
+It's important to remember that the indices and column names along either axes, horizontal or vertical, could be non-unique. For instance, in this example, we see two purchase records for **Store 1** as different rows. If we use a single value with the `DataFrame` `loc` attribute, multiple rows of the DataFrame will return, not as a new series, but as a new DataFrame. For instance, if we query for **Store 1** records, we see that Chris and Kevin both shop at the same pets supply store.
+```python
+df.loc['Store 1']
+```
 
 
 
