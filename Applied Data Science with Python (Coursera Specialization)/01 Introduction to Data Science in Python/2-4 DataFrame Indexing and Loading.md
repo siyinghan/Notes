@@ -56,4 +56,8 @@ We can take a look at this file using the shell command cat. Which we can invoke
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/018.png' alt='018' width='70%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/017.png' alt='017' width='36%' />
+What happens here is that when the Jupyter notebook sees a line beginning with an exclamation mark, it sends the rest of the line to the operating system shell for evaluation. So cat works on Linux and Macs, as well as in the Coursera platform, but might not work on Windows. You don't need to worry too much about this. I just wanted to show how a Jupyter notebook can integrate with the operating system to provide you with even more tools to look at your data.
+
+ We see from the cat output that there seems to be a numeric list of columns followed by a bunch of column identifiers. The column identifiers have some odd looking characters in them. This is the **unicode numero sign**, which means number of:
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/018.png' alt='018' width='70%' />
