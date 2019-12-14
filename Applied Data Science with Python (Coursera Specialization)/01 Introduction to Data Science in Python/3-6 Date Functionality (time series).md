@@ -203,4 +203,3 @@ Another cool thing we can do is change the frequency of our dates in our DataFra
 ```python
 df.asfreq('W', method='ffill')
 ```
-
