@@ -71,13 +71,52 @@ df.T
 ```
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/009.png' alt='009' width='35%' />
 
+This essentially turns your column names into indices. And we can then use the `.loc` method. This works, but it's pretty ugly:
+```python
+df.T.loc['Cost']
+```
+```
+Store 1    22.5
+Store 1     2.5
+Store 2       5
+Name: Cost, dtype: object
+```
 
+Since `iloc` and `loc` are used for row selection, the Panda's developers reserved indexing operator directly on the `DataFrame` for column selection. In a Panda's DataFrame, columns always have a name. So this selection is always label based, not as confusing as it was when using the square bracket operator on the series objects. For those familiar with relational databases, this operator is analogous to column projection:
+```python
+df['Cost']
+```
+```
+Store 1    22.5
+Store 1     2.5
+Store 2     5.0
+Name: Cost, dtype: float64
+```
 
+<br/>
 
+Finally, since the result of using the indexing operators, the DataFrame or series, you can chain operations together. For instance, we could have rewritten the query for all Store 1 costs as `df.loc['Store 1']['Cost']`:
+```python
+df.loc['Store 1']['Cost']
+```
+```
+Store 1    22.5
+Store 1     2.5
+Name: Cost, dtype: float64
+```
+This looks pretty reasonable and gets us the result we wanted.
 
+But chaining can come with some costs and is best avoided if you can use another approach. In particular, chaining tends to cause Pandas to return a copy of the DataFrame instead of a view on the DataFrame. For selecting a data, this is not a big deal, though it might be slower than necessary. If you are changing data though, this is an important distinction and can be a source of error.
 
+Here's another method. As we saw, `.loc` does row selection, and it can take two parameters, the row index and the list of column names. `.loc` also supports slicing. If we wanted to select all rows, we can use a column to indicate a full slice from beginning to end. And then add the column name as the second parameter as a string. In fact, if we wanted to include multiply columns, we could do so in a list. And Pandas will bring back only the columns we have asked for.
 
+Here's an example, where we ask for all of the name and cost values for all stores using the `.loc` operator:
+```python
+df.loc[:,['Name', 'Cost']]
+```
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/010.png' alt='010' width='35%' />
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/010.png' alt='010' width='40%' />
 
 
 
