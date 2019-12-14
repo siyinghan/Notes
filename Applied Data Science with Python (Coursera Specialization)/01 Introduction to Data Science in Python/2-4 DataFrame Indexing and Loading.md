@@ -36,3 +36,17 @@ Now if we look at our original DataFrame, we see those costs have risen as well:
 df
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/017.png' alt='017' width='36%' />
+
+This is an important consideration to watch out for. If you want to explicitly use a copy, then you should consider calling the `copy` method on the DataFrame for it first.
+
+<br/>
+
+In this course, we'll be largely using smaller, moderate-sized datasets. As I mentioned, a common workflow is to read the dataset in, usually from some external file. We saw previously how you can do this using Python, and lists, and dictionaries. You can imagine how you might use those dictionaries to create a Pandas DataFrame. Thankfully, Pandas has built-in support for delimited files such as CSV files as well as a variety of other data formats including relational databases, Excel, and HTML tables. I've saved a CSV file called **olympics.csv**, which has data from Wikipedia that contains a summary list of the medal various countries have won at the Olympics.
+
+We can take a look at this file using the shell command cat. Which we can invoke directly using the exclamation point:
+
+```python
+!cat olympics.csv
+```
+
