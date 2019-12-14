@@ -75,3 +75,39 @@ stats.skew(distribution)
 
 If we test our current sample data, we see that there isn't much of a skew. Let's switch distributions and take a look at a distribution called the **Chi Squared distribution**, which is also quite commonly used in statistic.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/082.png' alt='082' width='60%' />
+
+The Chi Squared Distribution has only one parameter called the **degrees of freedom**. The degrees of freedom is closely related to the number of samples that you take from a normal population. It's important for **significance testing**. But what I would like you to observe, is that as the degrees of freedom increases, the shape of the Chi Squared distribution changes. In particular, the skew to the left begins to move towards the center.
+
+We can observe this through simulation. First we'll sample 1,000 values from a Chi Squared distribution with **degrees of freedom** 2:
+
+```python
+chi_squared_df2 = np.random.chisquare(2, size=10000)
+stats.skew(chi_squared_df2)
+```
+
+```2.005342690090858```
+
+Now we can see that the skew is quite large. Now if we re-sample changing **degrees of freedom** to 5:
+
+```python
+chi_squared_df5 = np.random.chisquare(5, size=10000)
+stats.skew(chi_squared_df5)
+```
+
+```1.2630838950584582```
+
+<br/>
+
+I'm not going to talk much about the library we're using here for plotting, because that's the topic of the next course. But you can see a histogram with our plot with the two degrees of freedom is skewed much further to the left, while our plot with the five degrees of freedom is not as highly skewed:
+
+```python
+%matplotlib inline
+import matplotlib
+import matplotlib.pyplot as plt
+
+output = plt.hist([chi_squared_df2,chi_squared_df5], bins=50, histtype='step', 
+                  label=['2 degrees of freedom','5 degrees of freedom'])
+plt.legend(loc='upper right')
+```
+
