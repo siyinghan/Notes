@@ -117,3 +117,7 @@ I could encourage you as always to play with this notebook and change the parame
 
 The last aspect of distributions that I want to talk about is the **modality**. So far, all of the distributions I've shown have a single high point, a peak. But what if we have multiple peaks? This distribution has two high points, so we call it bimodal.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/084.png' alt='084' width='60%' />
+
+Well, this has been a long lecture but I think it can be tough to chop up a discussion of distributions and still get the main points across. Remember that a distribution is just a shape that describes the probability of a value being pulled when we sample a population. And `NumPy` and `SciPy` each have a number of different distributions built in for us to be able to sample from. The last point I want to leave you with here is a reference. If you find this way of exploring statistics interesting. Alan Downey wrote a nice book called **Think Stats** by the publisher O'Reilly.
+
