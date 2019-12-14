@@ -87,5 +87,39 @@ from scipy import stats
 stats.ttest_ind?
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/089.png' alt='089' width='75%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/089.png' alt='089' width='70%' />
+
+I'm not going to go into the details of any of this statistical test here. But instead, we'd recommend that you check out the Wikipedia page on particular test or consider taking a full statistics course if this is unfamiliar to you. But I do want to note that most statistical tests expect that the data conforms to a certain distribution, a shape. So, you shouldn't apply such tests blindly and should investigate your data first.
+
+If we want to compare the assignment grades for the first assignment between the two populations, we could generate a T test by passing these two series into the T test in-function. The result is a two with a test statistic and a **p-value**:
+
+```python
+stats.ttest_ind(early['assignment1_grade'], late['assignment1_grade'])
+```
+
+```
+Ttest_indResult(statistic=1.400549944897566, pvalue=0.16148283016060577)
+```
+
+The **p-value** here is much larger than our 0.05. So we cannot reject the null hypothesis, which is that the two populations are the same. In more late terms, we would say that there's no statistically significant difference between these two sample means.
+
+Let's check with assignment2 grade, that's much larger than 0.05:
+
+```python
+stats.ttest_ind(early['assignment2_grade'], late['assignment2_grade'])
+```
+
+```Ttest_indResult(statistic=1.3239868220912567, pvalue=0.18563824610067967)```
+
+How about with assignment three? Well, that's much closer, but still beyond our threshold value:
+
+```python
+stats.ttest_ind(early['assignment3_grade'], late['assignment3_grade'])
+```
+
+```Ttest_indResult(statistic=1.7116160037010733, pvalue=0.087101516341556676)```
+
+<br/>
+
+It's important to stop here and talk about serious process problems with how we're handling this investigation of the difference between these two populations. When we set the alpha to be 0.05, we're saying that we expect it that there will be positive result, 5% of the time just to the chance. As we run more and more T tests, we're more likely to find a positive result just because of the number of T tests we have run. When a data scientist run many tests in this way, it's called **p-hacking** or **dredging** and it's a serious methodological issue.
 
