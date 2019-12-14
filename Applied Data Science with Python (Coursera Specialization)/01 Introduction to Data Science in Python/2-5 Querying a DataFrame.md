@@ -51,3 +51,17 @@ only_gold.head()
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/025.png' alt='025' width='100%' />
+
+Remember that the axes is just an indicator for the columns or rows and that the default is zero, which means rows.
+
+<br/>
+
+When you find yourself talking about pandas and saying phrases like, often I want to, it's quite likely the developers have included a shortcut for this common operation. For instance, in this example, we don't actually have to use the `where` function explicitly. The pandas developers allow the indexing operator to take a Boolean mask as a value instead of just a list of column names. The syntax might look a little messy, especially if you're not used to programming languages with overloaded operators, but the result is that you're able to filter and reduce data frames relatively quickly.
+
+Here's a more concise example of how we could query this data frame. You'll notice that there are no NaNs when you query the data frame in this manner. pandas automatically filters out the rows with now values:
+
+```python
+only_gold = df[df['Gold'] > 0]
+only_gold.head()
+```
+
