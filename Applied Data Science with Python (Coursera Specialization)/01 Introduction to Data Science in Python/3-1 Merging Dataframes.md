@@ -61,4 +61,5 @@ The nice aspect of this approach is that we could just ignore the items that we 
 
 More commonly, we want to join two larger DataFrames together, and this is a bit more complex. Before we jump into the code, we need to address a little relational theory, and to get some language conventions down.
 
- 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/045.png' alt='045' width='60%' />
+
