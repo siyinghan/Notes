@@ -15,4 +15,13 @@ df.head()
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/035.png' alt='035' width='55%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/012.png' alt='012' width='29%' />
+In this data the first column is a timestamp in the Unix epoch format. The next column is the user name followed by a web page they're visiting and the video that they're playing. Each row of the DataFrame has a playback position. And we can see that as the playback position increases by one, the time stamp increases by about 30 seconds. Except for user Bob. It turns out that Bob has paused his playback so as time increases the playback position doesn't change.
+
+Note too how difficult it is for us to try and derive this knowledge from the data, because it's not sorted by time stamp as one might expect. This is actually not uncommon on systems which have a high degree of parallelism. There are a lot of missing values in the paused and volume columns. It's not efficient to send this information across the network if it hasn't changed. So this particular system just inserts null values into the database if there's no changes.
+
+One of the handy functions that Pandas has for working with missing values is the filling function, `fillna`. This function takes a number or parameters, for instance, you could pass in a single value which is called a *scalar value* to change all of the missing data to one value. This isn't really applicable in this case, but it's a pretty common use case. Next up though is the *method parameter*. The two common fill values are `ffill` and `bfill`. ffill is for forward filling and it updates an na value for a particular cell with the value from the previous row. It's important to note that your data needs to be sorted in order for this to have the effect you might want. Data that comes from traditional database management systems usually has no order guarantee, just like this data. So be careful.
+
+```python
+df.fillna?
+```
+
