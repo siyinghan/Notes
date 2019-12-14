@@ -1,5 +1,9 @@
 # 2-4 DataFrame Indexing and Loading
 
+**Material**: [mpg.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/mpg.csv)
+
+<br/>
+
 The common work flow is to read your data into a DataFrame then reduce this DataFrame to the particular columns or rows that you're interested in working with. As you've seen, the Panda's toolkit tries to give you views on a `DataFrame`. This is much faster than copying data and much more memory efficient too. But it does mean that if you're manipulating the data you have to be aware that any changes to the DataFrame you're working on may have an impact on the base data frame you used originally.
 
 Here's an example using our same purchasing DataFrame from earlier. We can create a series based on just the cost category using the square brackets `[]`:
