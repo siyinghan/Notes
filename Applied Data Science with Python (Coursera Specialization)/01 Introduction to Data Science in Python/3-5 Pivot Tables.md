@@ -12,3 +12,11 @@ df = pd.read_csv('cars.csv')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/066.png' alt='066' width='100%' />
+
+When we look at the head of the data frame, we'll see that there are model years, vendors, sizes of cars, and statistics, like how big the battery is in kilowatt hours. A pivot table allows us to pivot out one of these columns into a new column headers and compare it against another column as row indices. For instance, let's say we wanted to compare the makes of electric vehicles versus the years and that we wanted to do this comparison in terms of battery capacity. To do this, we tell pandas we want the values to be **kilowatts**, the index to be the **year** and the columns to be the **make**. Then we specify that the aggregation function, and here we'll use the `numpy.mean`:
+
+```python
+df.pivot_table(values='(kW)', index='YEAR', columns='Make', aggfunc=np.mean)
+```
+
