@@ -145,3 +145,22 @@ df = pd.DataFrame({'Count 1': 100 + np.random.randint(-5, 10, 9).cumsum(),
 df
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/070.png' alt='070' width='28%' />
+
+First, we can check what day of the week a specific date is. For example, here we can see that all the dates in our `index` are on a Sunday:
+
+```python
+df.index.weekday_name
+```
+
+```
+array(['Sunday', 'Sunday', 'Sunday', 'Sunday', 'Sunday', 'Sunday',
+       'Sunday', 'Sunday', 'Sunday'], dtype=object)
+```
+
+We can use `diff` to find the difference between each date's value:
+
+```python
+df.diff()
+```
+
