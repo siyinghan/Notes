@@ -141,7 +141,7 @@ student_df = student_df.reset_index()
 pd.merge(staff_df, student_df, how='left', left_on='Name', right_on='Name')
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/050.png' alt='005' width='30%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/050.png' alt='050' width='30%' />
 
 <br/>
 
@@ -155,5 +155,23 @@ student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business', 'Location': '
                            {'Name': 'Mike', 'School': 'Law', 'Location': 'Fraternity House #22'},
                            {'Name': 'Sally', 'School': 'Engineering', 'Location': '512 Wilson Crescent'}])
 pd.merge(staff_df, student_df, how='left', left_on='Name', right_on='Name')
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/051.png' alt='051' width='60%' />
+
+Now you try it. Here's a DataFrame of products and invoices. The product has an identifier and a sticker price. The invoice lists the people, products, identifiers, and quantity. Assuming that we want to generate totals, how do we join these two DataFrames together so that we have one which lists all of the information we need?
+
+Before we leave merging of DataFrames, let's talk about multi-indexing and multiple columns. It's quite possible that the first name for students and staff might overlap, but the last name might not. In this case, we use a list of the multiple columns that should be used to join keys on the left_on and right_on parameters:
+
+```python
+staff_df = pd.DataFrame([{'First Name': 'Kelly', 'Last Name': 'Desjardins', 'Role': 'Director of HR'},
+                         {'First Name': 'Sally', 'Last Name': 'Brooks', 'Role': 'Course liasion'},
+                         {'First Name': 'James', 'Last Name': 'Wilde', 'Role': 'Grader'}])
+student_df = pd.DataFrame([{'First Name': 'James', 'Last Name': 'Hammond', 'School': 'Business'},
+                           {'First Name': 'Mike', 'Last Name': 'Smith', 'School': 'Law'},
+                           {'First Name': 'Sally', 'Last Name': 'Brooks', 'School': 'Engineering'}])
+staff_df
+student_df
+pd.merge(staff_df, student_df, how='inner', left_on=['First Name','Last Name'], right_on=['First Name','Last Name'])
 ```
 
