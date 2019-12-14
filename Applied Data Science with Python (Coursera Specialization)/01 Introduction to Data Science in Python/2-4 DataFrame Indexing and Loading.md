@@ -60,4 +60,14 @@ What happens here is that when the Jupyter notebook sees a line beginning with a
 
  We see from the cat output that there seems to be a numeric list of columns followed by a bunch of column identifiers. The column identifiers have some odd looking characters in them. This is the **unicode numero sign**, which means number of:
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/019.png' alt='019' width='60%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/019.png' alt='019' width='55%' />
+
+Then we have rows of data, all columns separated.
+
+We can read this into a DataFrame by calling the `read_csv` function of the module:
+
+```python
+df = pd.read_csv('olympics.csv')
+df.head()
+```
+
