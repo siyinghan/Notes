@@ -1,6 +1,6 @@
 # 2-6 Indexing Dataframes
 
-**Material**: [olympics.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/olympics.csv)
+**Material**: [olympics.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/olympics.csv), [census.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/olympics.csv)
 
 <br/>
 
@@ -34,6 +34,19 @@ We can get rid of the index completely by calling the function `reset_index`. Th
 
 ```python
 df = df.reset_index()
+df.head()
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/029.png' alt='029' width='100%' />
+
+<br/>
+
+One nice feature of pandas is that it has the option to do multi-level indexing. This is similar to composite keys in relational database systems. To create a multi-level index, we simply call set index and give it a list of columns that we're interested in promoting to an index. Pandas will search through these in order, finding the distinct data and forming composite indices. A good example of this is often found when dealing with geographical data which is sorted by regions or demographics.
+
+Let's change data sets and look at some census data for a better example. This data is stored in the file **census.csv** and comes from the **United States Census Bureau**:
+
+```python
+df = pd.read_csv('census.csv')
 df.head()
 ```
 
