@@ -115,6 +115,11 @@ If we wanted to get the intersection, that is, just those students who are also 
 pd.merge(staff_df, student_df, how='inner', left_index=True, right_index=True)
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/046.png' alt='046' width='30%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/047.png' alt='047' width='30%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/046.png' alt='046' width='30%' />
+Now there are two other common use cases when merging DataFrames. Both are examples of what we would call set addition. The first is when we would want to get a list of all staff regardless of whether they were students or not. But if they were students, we would want to get their student details as well. To do this we would use a left join:
+
+```python
+pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
+```
+
