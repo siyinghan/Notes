@@ -88,3 +88,28 @@ def min_max(row):
 df.apply(min_max, axis=1)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/058.png' alt='058' width='100%' />
+
+Okay, this is all great, and `apply` is an extremely important tool in your toolkit. But this lecture wasn't really supposed to be about the new features of the API, but about making pandorable code. The reason I introduced supply here is because you rarely see it used with large function definitions, like we did. Instead, you typically see it used with `lambdas`. Now, you'll recall from the first week of this course that knowing lambda isn't a requirement of the course. But to get the most of the discussions you'll see online, you're going to need to know how at least read lambdas. Here's a one line example of how you might calculate the max of the columns using the apply function. You can imagine how you might chain several apply calls with lambdas together to create a readable yet succinct data manipulation script:
+
+```python
+rows = ['POPESTIMATE2010',
+        'POPESTIMATE2011',
+        'POPESTIMATE2012',
+        'POPESTIMATE2013',
+        'POPESTIMATE2014',
+        'POPESTIMATE2015']
+df.apply(lambda x: np.max(x[rows]), axis=1).head()
+```
+
+```
+STNAME   CTYNAME       
+Alabama  Autauga County     55347.0
+         Baldwin County    203709.0
+         Barbour County     27341.0
+         Bibb County        22861.0
+         Blount County      57776.0
+dtype: float64
+```
+
+So there are a couple of *pandas idioms*. But I think there's many more, and I haven't talked about them here. So here's an unofficial assignment for you. Go look at some of the top ranked questions on pandas on Stack Overflow, and look at how some of the more experienced authors, answer those questions. Do you see any interesting patterns? Chime in on the course discussion forums and let's build some pandorable documents together.
