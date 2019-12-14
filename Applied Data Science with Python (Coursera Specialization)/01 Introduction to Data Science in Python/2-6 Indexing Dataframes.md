@@ -101,3 +101,34 @@ df = df.set_index(['STNAME', 'CTYNAME'])
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/033.png' alt='033' width='100%' />
+
+An immediate question which comes up is how we can query this DataFrame. For instance, we saw previously that the `loc` attribute of the DataFrame can take multiple arguments. And it could query both the row and the columns. When you use a MultiIndex, you must provide the arguments in order by the level you wish to query. Inside of the index, each column is called a level and the outermost column is level zero. For instance, if we want to see the population results from Washtenaw County, which is where I live, you'd want to the first argument as the *state of Michigan*:
+
+```python
+df.loc['Michigan', 'Washtenaw County']
+```
+
+```
+BIRTHS2010            977
+BIRTHS2011           3826
+BIRTHS2012           3780
+BIRTHS2013           3662
+BIRTHS2014           3683
+BIRTHS2015           3709
+POPESTIMATE2010    345563
+POPESTIMATE2011    349048
+POPESTIMATE2012    351213
+POPESTIMATE2013    354289
+POPESTIMATE2014    357029
+POPESTIMATE2015    358880
+Name: (Michigan, Washtenaw County), dtype: int64
+```
+
+You might be interested in just comparing two counties. For instance, Washtenaw where I live and Wayne County which covers Detroit. To do this, we can pass the `loc` method, a list of tuples which describe the indices we wish to query. Since we have a MultiIndex of two values, the state and the county, we need to provide two values as each element of our filtering list:
+
+```python
+df.loc[ [('Michigan', 'Washtenaw County'),
+         ('Michigan', 'Wayne County')] ]
+```
+
