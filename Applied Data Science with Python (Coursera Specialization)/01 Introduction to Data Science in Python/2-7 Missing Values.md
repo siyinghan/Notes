@@ -27,4 +27,11 @@ df.fillna?
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/036.png' alt='036' width='100%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/018.png' alt='018' width='70%' />
+In Pandas we can *sort* either by index or by values. Here we'll just promote the time stamp to an index then sort on the index:
+
+```python
+df = df.set_index('time')
+df = df.sort_index()
+df.head()
+```
+
