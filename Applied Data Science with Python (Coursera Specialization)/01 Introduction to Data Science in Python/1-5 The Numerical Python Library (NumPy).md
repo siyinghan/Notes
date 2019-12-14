@@ -235,6 +235,13 @@ x.dot(y) # dot product  1*4 + 2*5 + 3*6
 **Dot Product:**  
 <img src='https://cdn.rawgit.com//siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.svg' alt='dot'/>
 
+
+<object data="https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/004.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 <br/>
 
 Let's create a new array using a previous array `y` and its squared values:
