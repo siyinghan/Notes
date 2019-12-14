@@ -126,6 +126,11 @@ df.drop('Store 1')
 ```
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/011.png' alt='011' width='29%' />
 
+This is another tricky place for new users to pad this. The `drop` function doesn't change the DataFrame by default. And instead, returns to you a copy of the DataFrame with the given rows removed. We can see that our original DataFrame is still intact:
+```python
+df
+```
+
 
 
 
