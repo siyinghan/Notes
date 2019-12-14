@@ -94,3 +94,54 @@ ts3.index = pd.to_datetime(ts3.index)
 ts3
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/069.png' alt='069' width='20%' />
+
+`to_datetime` also has options to change the date parse order. For example, we can pass in the argument `dayfirst = True` to parse the date in **European date format*:
+
+```python
+pd.to_datetime('4.7.12', dayfirst=True)
+```
+
+```Timestamp('2012-07-04 00:00:00')```
+
+<br/>
+
+`Timedeltas` are differences in times. We can see that when we take the difference between September 3rd and September 1st, we get a `Timedelta` of two days:
+
+```python
+pd.Timestamp('9/3/2016')-pd.Timestamp('9/1/2016')
+```
+
+```Timedelta('2 days 00:00:00')```
+
+We can also do something like find what the date and time is for 12 days and three hours past September 2nd, at 8:10 AM:
+
+```python
+pd.Timestamp('9/2/2016 8:10AM') + pd.Timedelta('12D 3H')
+```
+
+```Timestamp('2016-09-14 11:10:00')```
+
+<br/>
+Next, let's look at a few tricks for working with dates in a DataFrame. Suppose we want to look at nine measurements, taken bi-weekly, every Sunday, starting in October 2016. Using `date_range`, we can create this `DatetimeIndex`:
+
+```python
+dates = pd.date_range('10-01-2016', periods=9, freq='2W-SUN')
+dates
+```
+
+```
+DatetimeIndex(['2016-10-02', '2016-10-16', '2016-10-30', '2016-11-13',
+               '2016-11-27', '2016-12-11', '2016-12-25', '2017-01-08',
+               '2017-01-22'],
+              dtype='datetime64[ns]', freq='2W-SUN')
+```
+
+Now, let's create a `DataFrame` using these dates, and some random data, and see what we can do with it:
+
+```python
+df = pd.DataFrame({'Count 1': 100 + np.random.randint(-5, 10, 9).cumsum(),
+                  'Count 2': 120 + np.random.randint(-5, 10, 9)}, index=dates)
+df
+```
+
