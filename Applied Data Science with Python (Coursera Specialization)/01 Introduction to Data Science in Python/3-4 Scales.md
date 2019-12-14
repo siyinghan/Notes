@@ -1,1 +1,4 @@
-# Notes
+# 3-4 Scales
+
+Now that we've covered many of the mechanics of Pandas, I want to stop and talk for a moment about data types and scales. We've already seen that Pandas supports a number of different computational data types such as strings, integers and floating point numbers. What this doesn't capture is what we call the scale of the data. Let's say that we have a data frame of students and their academic levels such as being in grade 1 or grade 2 and grade 3. There's a difference between a student in grade 1 and a student in grade 2, the same as the difference between a student in grade 8 and a student in grade 9. Well let's think about the final exam scores these students might get on assignments. Is the difference between an A and an A minus the same as the difference between an A minus and a B plus? At the University of Michigan at least, the answer is usually no. We've intuitively seen some different scales, and as we move through data cleaning and statistical analysis and machine learning, it's important to clarify our knowledge and terminology.
+
