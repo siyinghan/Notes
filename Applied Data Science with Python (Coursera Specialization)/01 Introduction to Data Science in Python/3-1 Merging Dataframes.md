@@ -63,3 +63,45 @@ More commonly, we want to join two larger DataFrames together, and this is a bit
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/045.png' alt='045' width='50%' />
 
+This is a Venn Diagram. A Venn Diagram is traditionally used to show set membership. For example, the circle on the left is the population of students at a university. The circle on the right is the population of staff at a university. And the overlapping region in the middle are all of those students who are also staff. Maybe these students run tutorials for a course, or grade assignments, or engage in running research experiments.
+
+We could think of these two populations as indices in separate DataFrames, maybe with the label of Person Name. When we want to join the DataFrames together, we have some choices to make.
+
+First what if we want a list of all the people regardless of whether they're staff or student, and all of the information we can get on them? In database terminology, this is called a *full outer join*. And in set theory, it's called a *union*. In the Venn diagram, it represents everyone in any circle. It's quite possible though that we only want those people who we have maximum information for, those people who are both staff and students. In database terminology, this is called an *inner join*. Or in set theory, the *intersection*. And this is represented in the Venn diagram as the overlapping parts of each circle.
+
+Okay, so let's see an example of how we would do this in pandas, where we would use the `merge` function. First we create two DataFrames, staff and students. There's some overlap in these DataFrames, in that James and Sally are both students and staff, but Mike and Kelly are not. Importantly, both DataFrames are indexed along the value we want to merge them on, which is called **Name**:
+
+```python
+staff_df = pd.DataFrame([{'Name': 'Kelly', 'Role': 'Director of HR'},
+                         {'Name': 'Sally', 'Role': 'Course liasion'},
+                         {'Name': 'James', 'Role': 'Grader'}])
+staff_df = staff_df.set_index('Name')
+student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business'},
+                           {'Name': 'Mike', 'School': 'Law'},
+                           {'Name': 'Sally', 'School': 'Engineering'}])
+student_df = student_df.set_index('Name')
+print(staff_df.head())
+print()
+print(student_df.head())
+```
+
+```
+Role
+Name                 
+Kelly  Director of HR
+Sally  Course liasion
+James          Grader
+
+            School
+Name              
+James     Business
+Mike           Law
+Sally  Engineering
+```
+
+If we want the *union* of these, we would call merge passing in the DataFrame on the left and the DataFrame on the right, and telling merge that we want it to use an outer join. We tell merge that we want to use the left and right indices as the joining columns:
+
+```python
+pd.merge(staff_df, student_df, how='outer', left_index=True, right_index=True)
+```
+
