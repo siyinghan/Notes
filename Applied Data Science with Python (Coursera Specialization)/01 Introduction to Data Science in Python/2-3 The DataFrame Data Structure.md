@@ -159,9 +159,18 @@ del copy_df['Name']
 copy_df
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/015.png' alt='015' width='25%' />
 
+This way of dropping data, however, takes immediate effect on the DataFrame and does not return a view.
 
+<br/>
 
+Finally, adding a new column to the DataFrame is as easy as assigning it to some value. For instance, if we wanted to add a new location as a column with default value of none, we could do so by using the assignment operator after the square brackets:
+
+```python
+df['Location'] = None
+df
+```
 
 
 
