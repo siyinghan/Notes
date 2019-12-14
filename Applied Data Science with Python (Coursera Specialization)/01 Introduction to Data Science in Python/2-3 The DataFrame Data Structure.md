@@ -142,7 +142,13 @@ copy_df
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/013.png' alt='013' width='29%' />
 
+This is a very typical pattern in Pandas, where in place changes to a DataFrame are only done if need be, usually on changes involving indices. So it's important to be aware of.
 
+Drop has two interesting optional parameters. The first is called **inplace**, and if it's set to true, the DataFrame will be updated in place, instead of a copy being returned. The second parameter is the **axes**, which should be dropped. By default, this value is 0, indicating the row axes. But you could change it to 1 if you want to drop a column:
+
+```python
+copy_df.drop?
+```
 
 
 
