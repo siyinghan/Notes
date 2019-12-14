@@ -224,27 +224,73 @@ dtype: object
 Up until now I've shown only examples of a series where the index values were unique. I want to end this lecture by showing an example where index values are not unique, and this makes data frames different, conceptually, that a relational database might be.
 
 Revisiting the issue of countries and their national sports, it turns out that many countries seem to like this game cricket. We go back to our original series on sports. It's possible to create a new series object with multiple entries for cricket, and then use `append` to bring these together. There are a couple of important considerations when using `append`:
+
 * First, Pandas is going to take your series and try to infer the best data types to use. In this example, everything is a string, so there's no problems here.
+
 * Second, the append method doesn't actually change the underlying series. It instead returns a new series which is made up of the two appended together.
 
+We can see this by going back and printing the original series of values and seeing that they haven't changed:
+```python
+original_sports = pd.Series({'Archery': 'Bhutan',
+                             'Golf': 'Scotland',
+                             'Sumo': 'Japan',
+                             'Taekwondo': 'South Korea'})
+cricket_loving_countries = pd.Series(['Australia',
+                                      'Barbados',
+                                      'Pakistan',
+                                      'England'], 
+                                   index=['Cricket',
+                                          'Cricket',
+                                          'Cricket',
+                                          'Cricket'])
+all_countries = original_sports.append(cricket_loving_countries)
+```
+```python
+original_sports
+```
+```
+Archery           Bhutan
+Golf            Scotland
+Sumo               Japan
+Taekwondo    South Korea
+dtype: object
+```
+```python
+cricket_loving_countries
+```
+```
+Cricket    Australia
+Cricket     Barbados
+Cricket     Pakistan
+Cricket      England
+dtype: object
+```
+```python
+all_countries
+```
+```    
+Archery           Bhutan
+Golf            Scotland
+Sumo               Japan
+Taekwondo    South Korea
+Cricket        Australia
+Cricket         Barbados
+Cricket         Pakistan
+Cricket          England
+dtype: object
+```
+This is actually a significant issue for new Pandas users who are used to objects being changed in place. So watch out for it, not just with append but with other Pandas functions as well.
 
+* Finally, we see that when we query the appended series for those who have cricket as their national sport, we don't get a single value, but a series itself.
+```python
+all_countries.loc['Cricket']
+```
+```
+Cricket    Australia
+Cricket     Barbados
+Cricket     Pakistan
+Cricket      England
+dtype: object
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This is actually very common, and if you have a relational database background, this is very similar to every table query resulting in a return set which itself is a table.
