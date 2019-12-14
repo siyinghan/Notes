@@ -176,5 +176,3 @@ pd.merge(staff_df, student_df, how='inner', left_on=['First Name','Last Name'], 
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/052.png' alt='052' width='43%' />
-
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/051.png' alt='051' width='60%' />
