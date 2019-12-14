@@ -1,6 +1,6 @@
 # 2-7 Missing Values
 
-**Material**: [olympics.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/olympics.csv)
+**Material**: [log.txt](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/log.txt)
 
 <br/>We're going to end this week of lecture with a quick discussion of *missing values*. We've seen a preview of how Pandas handles missing values using the `None` type and `NumPy` `NaN` values. Missing values are pretty common in data cleaning activities.
 
