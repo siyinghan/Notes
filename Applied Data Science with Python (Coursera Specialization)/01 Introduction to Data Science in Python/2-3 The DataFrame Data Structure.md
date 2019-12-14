@@ -55,6 +55,30 @@ df.loc['Store 1']
 ```
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/008.png' alt='008' width='30%' />
 
+One of the powers of the Panda's DataFrame is that you can quickly select data based on multiple axes. For instance, if you wanted to just list the costs for **Store 1**, you would supply two parameters to `.loc`, one being the row index and the other being the column name. If we're only interested in **Store 1** costs, we could write this as `df.loc['Store 1', 'Cost']`:
+```python
+df.loc['Store 1', 'Cost']
+```
+```
+Store 1    22.5
+Store 1     2.5
+Name: Cost, dtype: float64
+```
+
+What if we just wanted to do column selection and just get a list of all of the costs? Well, there's a couple of options. First, you can get a transpose of the DataFrame, using the capital `T` attribute, which swaps all of the columns and rows:
+```python
+df.T
+```
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/009.png' alt='009' width='30%' />
+
+
+
+
+
+
+
+
+
 
 
 
