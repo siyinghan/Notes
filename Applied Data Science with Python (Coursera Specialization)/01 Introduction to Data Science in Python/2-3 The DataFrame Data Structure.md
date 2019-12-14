@@ -130,9 +130,9 @@ This is another tricky place for new users to pad this. The `drop` function does
 ```python
 df
 ```
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/012.png' alt='012' width='29%' />
 
-
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/011.png' alt='011' width='29%' />
 
 
 
