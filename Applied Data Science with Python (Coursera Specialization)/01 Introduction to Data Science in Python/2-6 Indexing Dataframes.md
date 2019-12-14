@@ -50,3 +50,22 @@ df = pd.read_csv('census.csv')
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/030.png' alt='030' width='100%' />
+
+In particular, this is a breakdown of the population level data at the US county level. It's a great example of how different kinds of data sets might be formatted when you're trying to clean them.
+
+For instance, in this data set there are two summarized levels, one that contains summary data for the whole country. And one that contains summary data for each state, and one that contains summary data for each county. I often find that I want to see a list of all the unique values in a given column. In this DataFrame, we see that the possible values for the sum level are using the `unique` function on the DataFrame. This is similar to the SQL distinct operator. Here we can run unique on the sum level of our current DataFrame and see that there are only two different values, 40 and 50:
+
+```python
+df['SUMLEV'].unique()
+```
+
+```array([40, 50])```
+
+Let's get rid of all of the rows that are summaries at the state level and just keep the county data:
+
+```python
+df=df[df['SUMLEV'] == 50]
+df.head()
+```
+
