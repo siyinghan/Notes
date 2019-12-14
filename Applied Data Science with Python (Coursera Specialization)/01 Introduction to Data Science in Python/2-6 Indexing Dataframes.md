@@ -92,3 +92,12 @@ df = df[columns_to_keep]
 df.head()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/032.png' alt='032' width='100%' />
+
+The US Census data breaks down estimates of population data by state and county. We can load the data and set the index to be a combination of the state and county values and see how pandas handles it in a DataFrame. We do this by creating a list of the column identifiers we want to have indexed. And then calling `set_index` with this list and assigning the output as appropriate. We see here that we have a *dual index*, first the state name and then the county name:
+
+```python
+df = df.set_index(['STNAME', 'CTYNAME'])
+df.head()
+```
+
