@@ -54,3 +54,6 @@ We can take a look at this file using the shell command cat. Which we can invoke
 !cat olympics.csv
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/018.png' alt='018' width='80%' />
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/017.png' alt='017' width='36%' />
