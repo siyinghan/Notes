@@ -1,1 +1,6 @@
-# Notes
+# 3-2 Pandas Idioms
+
+Python programmers will often suggest that there many ways the language can be used to solve a particular problem. But that some are more appropriate than others. The best solutions are celebrated as *Idiomatic Python* and there are lots of great examples of this on stack overflow and websites. An idiomatic solution is often one which has both high performance and high readability. This isn't necessarily true. A sort of sub-language within Python, Pandas has its own set of idioms. We've alluded to some of these already, such as using vectorization whenever possible, and not using iterative loops if you don't need to. Several developers and users within the Panda's community have used the term *pandorable* for these idioms. I think it's a great term. So, I wanted to share with you a couple of key features of how you can make your code pandorable.
+
+The first of these is called *method chaining*. Now we saw that previously, you could chain pandas calls together when you're querying DataFrames. For, instance if you wanted to select rows based on index like county name. Then you wanted to only project certain columns like the total population, you can write a query, like `df.loc['Washtenaw']['Total Population']` This is a form of chaining, called *chain indexing*:
+
