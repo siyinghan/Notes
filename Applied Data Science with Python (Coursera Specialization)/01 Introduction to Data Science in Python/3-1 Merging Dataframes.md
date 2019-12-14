@@ -141,3 +141,19 @@ student_df = student_df.reset_index()
 pd.merge(staff_df, student_df, how='left', left_on='Name', right_on='Name')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/050.png' alt='005' width='30%' />
+
+<br/>
+
+So what happens when we have conflicts between the DataFrames? Let's take a look by creating new staff and student DataFrames that have a location information added to them. In the staff DataFrame, this is an office location where we can find the staff person. And we can see the Director of HR is on State Street, while the two students are on Washington Avenue. But for the student DataFrame, the location information is actually their home address. The merge function preserves this information, but appends an _x or _y to help differentiate between which index went with which column of data. The _x is always the left DataFrame information, and the _ y is always the right DataFrame information. And you could control the names of _x and _y with additional parameters if you want to:
+
+```python
+staff_df = pd.DataFrame([{'Name': 'Kelly', 'Role': 'Director of HR', 'Location': 'State Street'},
+                         {'Name': 'Sally', 'Role': 'Course liasion', 'Location': 'Washington Avenue'},
+                         {'Name': 'James', 'Role': 'Grader', 'Location': 'Washington Avenue'}])
+student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business', 'Location': '1024 Billiard Avenue'},
+                           {'Name': 'Mike', 'School': 'Law', 'Location': 'Fraternity House #22'},
+                           {'Name': 'Sally', 'School': 'Engineering', 'Location': '512 Wilson Crescent'}])
+pd.merge(staff_df, student_df, how='left', left_on='Name', right_on='Name')
+```
+
