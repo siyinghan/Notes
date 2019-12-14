@@ -28,6 +28,50 @@ A second property is that the **variance** of the distribution can be described 
 
 Let's get a little bit more formal about **five different characteristics** of distributions. First, we can talk about the **distribution central tendency**, and the measures we would use for this are `mode`, `median`, or `mean`. This characteristic is really about where the bulk of probability is in the distribution. We can also talk about the **variability** in the distribution. There are a couple of ways we can speak of this. The standard deviation is one, the interquartile range is another. The **standard deviation** is simply a measure of how different each item, in our sample, is from the mean. Here's the formula for **standard deviation**:
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Image/081.png' alt='081' width='20%' />
 
  
+
+It might look a little more intimidating than it actually is. Let's just walk through how we would write this up. Let's draw 1,000 samples from a normal distribution with an *expected value of 0.75* and a *standard deviation* of 1. Then we calculate the actual mean using NumPy's mean feature. The part inside the summation says xi- x bar. Xi is the current item in the list and x bar is the mean. So we calculate the difference, then we square the result, then we sum all of these:
+
+```python
+distribution = np.random.normal(0.75,size=1000)
+
+np.sqrt(np.sum((np.mean(distribution)-distribution)**2)/len(distribution))
+```
+
+```0.98604288862247846```
+
+This might be a reasonable place to use a map and apply a lambda to calculate the differences between the mean and the measured value. Then to convert this back to a list, so `NumPy` can use it.
+
+Now we just have to *square each value*, *sum them together*, and *take the square root*. So that's the size of our standard deviation. It covers roughly 68% of the area around the mean, split evenly around the side of the mean. Now we don't normally have to do all this work ourselves, but I wanted to show you how you can sample from the distribution, create a precise programmatic description of a formula, and apply it to your data. But for standard deviation, which is just one particular measure of variability, `NumPy` has a built-in function that you can apply, called `std`:
+
+```python
+np.std(distribution)
+```
+
+```0.98604288862247846```
+
+There's a couple more measures of distribution that are interesting to talk about. One of these is the shape of the tales of the distribution and this is called the **kurtosis**. We can measure the kurtosis using the statistics functions in the `SciPy` package:
+
+```python
+import scipy.stats as stats
+stats.kurtosis(distribution)
+```
+
+```0.1385017635908934```
+
+A negative value means the curve is slightly more flat than a normal distribution, and a positive value means the curve is slightly more peaky than a normal distribution. Remember that we aren't measuring the kurtosis of the distribution per se, but of the thousand values which we sampled out of the distribution. This is a subtle but important distinction.
+
+We could also move out of the normal distributions and push the peak of the curve one way or the other. And this is called the `skew`:
+
+```python
+stats.skew(distribution)
+```
+
+```0.016351268208579166```
+
+<br/>
+
+If we test our current sample data, we see that there isn't much of a skew. Let's switch distributions and take a look at a distribution called the **Chi Squared distribution**, which is also quite commonly used in statistic.
+
