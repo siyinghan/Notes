@@ -43,3 +43,15 @@ v3 = np.concatenate((v1,v2))
 sns.kdeplot(v3);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/108.png' alt='108' width='65%' />
+
+The kernel density estimation plot estimates the probability density function of the variable v3. Plotting it on top of the stacked histograms of v1 and v2 allows us to see the relationship between these two visualizations.
+
+`Seaborn` provides a convenient function for these type of plots `sns.distplot`. Let's take a look at how it works. We can pass in the variable we want to visualize along with keyword arguments for each of the individual components of the plot. Let's set the histogram color to **teal** and the KDE color to **navy**. Now let's look at an example of one of the types of complex plots that Seborn provides a convenient interface for, the **joint plot**:
+
+```python
+plt.figure()
+# we can pass keyword arguments for each individual component of the plot
+sns.distplot(v3, hist_kws={'color': 'Teal'}, kde_kws={'color': 'Navy'});
+```
+
