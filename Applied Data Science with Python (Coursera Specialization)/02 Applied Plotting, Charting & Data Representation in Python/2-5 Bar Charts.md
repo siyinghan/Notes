@@ -40,3 +40,15 @@ linear_err = [randint(0,15) for x in range(len(linear_data))]
 plt.bar(xvals, linear_data, width = 0.3, yerr=linear_err)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/059.png' alt='059' width='65%' />
+
+We can also do stacked bar charts as well. For instance, if we wanted to show cumulative values while also keeping the series independent, we could do this by setting the bottom parameter and our second plot to be equal to first set of data to plot:
+
+```python
+# stacked bar charts are also possible
+plt.figure()
+xvals = range(len(linear_data))
+plt.bar(xvals, linear_data, width = 0.3, color='b')
+plt.bar(xvals, exponential_data, width = 0.3, bottom=linear_data, color='r')
+```
+
