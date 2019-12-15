@@ -17,6 +17,26 @@ plt.bar(xvals, linear_data, width=0.3)
 To add a **second bar**, we simply call the bar plot again with new data, keeping in mind that we need to adjust the x component to make up for the first bar we plotted. Of course, we'll throw this bar in as red:
 
 ```python
+new_xvals = []
 
+# plot another set of bars, adjusting the new xvals to make up for the first set of bars plotted
+for item in xvals:
+    new_xvals.append(item+0.3)
+
+plt.bar(new_xvals, exponential_data, width = 0.3 ,color='red')
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/058.png' alt='058' width='65%' />
+
+So the plot looks okay, but not great. All of the x labels are to the far left of the items being described, and not centered. Now, we can center them with a given bar, using the align parameter, but it's a bit frustrating when you have to make multiple bars, and you have to calculate it yourself. And it's a pain to go through and add a new data series manually. And this gets worse, we actually have to manually iterate through and add in dates if we want them. Because otherwise we couldn't set the bar left location appropriately. I'll be honest, bar charts are one of my least favorite things to create in matplotlib. I feel like the foundation is there, but some of the ways I would want to use the API, such as plotting several series of data in groups across time, are sadly missing.
+
+There are some other nice features of bar charts, though. For instance, you can add error bars to each bar as well, using the y-error parameter. For example, each of our pieces of data in the linear data might actually be a mean value, computed from many different observations. So we could just create a list of error values. I'll import from a random function which can generate some random integers, and then I'll use a list comprehension to generate this new list. Then we could just call `plt.bar` again, and see our new data appear:
+
+```python
+from random import randint
+linear_err = [randint(0,15) for x in range(len(linear_data))] 
+
+# This will plot a new set of bars with errorbars using the list of random error values
+plt.bar(xvals, linear_data, width = 0.3, yerr=linear_err)
 ```
 
