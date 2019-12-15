@@ -126,3 +126,8 @@ plt.subplot(122)
 sns.violinplot('Name', 'PetalLength', data=iris);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/115.png' alt='115' width='90%' />
+
+Looking at the swarmplot, each species has its own column and each observation's petal length is shown. With more common values appearing as the wide parts of the cluster, much like a histogram. The **violinplot** is like box plot with a rotated kernel density estimation on each side. Violin plots convey more information than box plots and are able to show particular phenomena within the distribution that box plots are unable to convey such as multi modality.
+
+`Seaborn` is a library that not only adds new styles and visual aspects. But also introduces new functionality such as **joint plots**, scatter **matrix plots**, and **violin plots**. `Seaborn` is being actively developed, and is easy to install, which makes it an indispensible part of a data scientist's toolkit. But keep in mind, this is functionality built on top of matplotlib, and these are largely matplotlib artists being used. So, if you have any ideas for a new statistical visualization, or you've read about one in a publication or journal. You should have the ability to create your own visualization toolkits.
