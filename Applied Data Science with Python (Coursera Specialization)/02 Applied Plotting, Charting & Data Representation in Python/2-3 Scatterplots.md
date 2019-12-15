@@ -117,3 +117,12 @@ And let's add a `legend` as well:
 plt.legend()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/046.png' alt='046' width='65%' />
+
+You'll see that matplotlib places this in the upper left hand corner and puts a little visual about our data series there. In the docs for the legend, you'll see that there are a number of different parameters and one of them is called `loc`. And a value of **4**, we'll put it in the lower right hand corner of the axis:
+
+```python
+# add the legend to loc=4 (the lower right hand corner), also gets rid of the frame and adds a title
+plt.legend(loc=4, frameon=False, title='Legend')
+```
+
