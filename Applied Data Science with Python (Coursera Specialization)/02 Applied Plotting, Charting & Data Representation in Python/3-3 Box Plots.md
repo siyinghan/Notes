@@ -31,3 +31,16 @@ plt.figure()
 _ = plt.boxplot(df['normal'], whis='range')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/082.png' alt='082' width='65%' />
+
+Now this is either horrendous or beautiful, depending on who you are. You see, *underscore* is actually a legal name for a variable on `Python`. But it's also completely uninformative. It's common practice by some to use an underscore when unpacking values which you don't care about and won't use later. I am using it here because if we don't assign the return value of plotting function to a variable, the Jupiter Notebook will assume that we wanted to print that output. Since plotting functions return a list of all of the artists plotted, this would really muddy up our display. It's up to you whether you want to use this underscore pattern or not in your own code.
+
+Great, this gives us a basic box plot. Now let's add the other two samples to it. Unfortunately we can't just pass a whole pandas data frame to matplotlib. Instead we need to pull out each column and send them in as a list of values:
+
+```python
+# clear the current figure
+plt.clf()
+# plot boxplots for all three of df's columns
+_ = plt.boxplot([ df['normal'], df['random'], df['gamma'] ], whis='range')
+```
+
