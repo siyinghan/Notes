@@ -46,3 +46,10 @@ _ = plt.boxplot([ df['normal'], df['random'], df['gamma'] ], whis='range')
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/083.png' alt='083' width='65%' />
 
+All right, that gives us our **three distributions**. Now, we didn't normalize the scale, so that's a little wonky. But if we look at the gamma distribution, for instance, we see the tail of it is very, very long. So the maximum values are very far out. Let's take a look at this by itself in a histogram:
+
+```python
+plt.figure()
+_ = plt.hist(df['gamma'], bins=100)
+```
+
