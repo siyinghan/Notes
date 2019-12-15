@@ -42,3 +42,6 @@ Now a legend is important and heatmaps are no different. When using the pyplot s
 plt.colorbar()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/091.png' alt='091' width='65%' />
+
+In fact, pyplot is finding the current rendered image, generating the colorbar, resizing the existing axes and using `gridspec` to add a new axes the size of the colorbar. It's quite a bit of bookkeeping. And that's all there is to this though. Now that you've seen this data in two different ways, a heatmap, where you have an X, a Y, and a color dimension, and a scatterplot, where you have two histograms, one for each axis.
