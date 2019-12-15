@@ -112,3 +112,17 @@ Similar to pandas, Seaborn has a built in function that creates a scatterplot ma
 sns.pairplot(iris, hue='Name', diag_kind='kde', size=2);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/114.png' alt='114' width='100%' />
+
+Looking at the pair plot, it's clear there are some clusters in the data set. It looks like peddle length and peddle width are good options for separating the observations, whereas width is not a strong separator. Using pair plot to look at your data frame can be a very useful tool in exploratory data analysis.
+
+One final plot I'd like to show you is called the **violin plot**. You can think of a violin plot as a more informative version of a box plot. To demonstrate, let's plot a violin plot next to a swarm plot, which you can think of as a scatter plot for categorical data. First let's create a new figure and a subplot. Next, we'll create the **swarmplot**, passing in Name and PetalLength, and the data, which is the iris data frame. For the next subplot, we'll create the violinplot, again passing in Name, PetalLength and the iris data frame:
+
+```python
+plt.figure(figsize=(8,6))
+plt.subplot(121)
+sns.swarmplot('Name', 'PetalLength', data=iris);
+plt.subplot(122)
+sns.violinplot('Name', 'PetalLength', data=iris);
+```
+
