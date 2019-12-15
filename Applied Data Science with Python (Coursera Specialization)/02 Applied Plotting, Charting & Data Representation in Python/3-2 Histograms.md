@@ -106,3 +106,6 @@ for ax in [side_histogram, lower_right]:
     ax.set_ylim(-5, 5)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/080.png' alt='080' width='70%' />
+
+We can see that our **top histogram** is random, pretty uniform, and that the histogram for the y values indeed looks like the normal distribution. In fact, this image looks sort of crudely like the image we looked at in the first module of this course, from the MIT and Harvard study on MOOC engagement. And it should be pretty clear to you now how we might adjust various aspects of this plot so that if we wanted to look even more like that engagement image, we could.
