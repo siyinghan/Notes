@@ -84,6 +84,16 @@ plt.show()
 Okay, so there are several different ways that we could do this. The way I chose was to add an alpha parameter to everything, which adds a bit of transparency and softens the colors up a bit. I also set the bars themselves to a neutral gray color then chose a nice blue from the Python website to accentuate the first bar. Of course, we've actually made the chart a little bit less accurate right now since we don't have any y labels. Let's fix this and remove the y axis label and just directly label the individual bars. We don't really need the y axis label, since the title tells us everything we need to know about the units in this chart:
 
 ```python
-
+# direct label each bar with Y axis values
+for bar in bars:
+    plt.gca().text(bar.get_x() + bar.get_width()/2, bar.get_height()-5,
+                   str(int(bar.get_height()))+'%',
+                   ha='center', color='w', fontsize=11)
 ```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/065.png' alt='065' width='65%' />
+
+Removing the label is easy, but changing the bars is a little bit of a pain. For this we want to iterate over each of the bars and grab its height. Then we want to create a new text object with the data information. Unfortunately, this means doing a little bit of playing with padding. Here I'll set up the x location to the bar x plus the width divided by two and the y location to be the bar height minus five. It might seem weird to get the middle of the bar in the x dimension, but that's because I'm setting the label to center itself, horizontally.
+
+**Before and After:**
 
