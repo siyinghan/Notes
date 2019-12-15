@@ -172,3 +172,6 @@ plt.figure()
 pd.plotting.parallel_coordinates(iris, 'Name');
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/106.png' alt='106' width='70%' />
+
+Each variable in the data set corresponds to an equally spaced parallel vertical line. The values of each variable are then connected by lines between for each individual observation. Coloring the lines by class, in this example the species of flower, allows the viewer to more easily see any patterns or clustering. For instance, looking at our iris data set, we can see that the petal length and petal width are two variables that split the different species fairly clearly. With iris virginica having the longest and widest petals. And iris setosa having the shortest and narrowest petals. Well that's it for visualization in pandas.
