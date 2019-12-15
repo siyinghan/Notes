@@ -19,3 +19,22 @@ plt.figure()
 plt.scatter(x, y) # similar to plt.plot(x, y, '.'), but the underlying child objects in the axes are not Line2D
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/042.png' alt='042' width='65%' />
+
+Now, `scatter` doesn't represent items as a series. Instead, we can pass it a list of colors which correspond to given points. Let's use some list arithmetic to create a new list just short of the number of data points we need and set all of the values to green. Then we'll add a final value of red. Then we'll plot this, and we'll set the size of the data points to 100 to make it a little easier to see. The separation of data points into lists, which describes them as components is a pretty common pattern in `matplotlib`:
+
+```python
+import numpy as np
+x = np.array([1,2,3,4,5,6,7,8])
+y = x
+
+# create a list of colors for each point to have
+# ['green', 'green', 'green', 'green', 'green', 'green', 'green', 'red']
+colors = ['green']*(len(x)-1)
+colors.append('red')
+
+plt.figure()
+# plot the point with size 100 and chosen colors
+plt.scatter(x, y, s=100, c=colors)
+```
+
