@@ -64,3 +64,6 @@ plt.barh(xvals, linear_data, height = 0.3, color='b')
 plt.barh(xvals, exponential_data, height = 0.3, left=linear_data, color='r')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/061.png' alt='061' width='65%' />
+
+So those are the basics of charting and plotting in `Matplotlib`. I think it's important to realize that there really isn't any magic. The **scripting layer** is really a set of convenience functions on top of the object layer. Some people share a preference for one or the other, but at the core, they manipulate the same data elements. And I don't think you should think of them as being opposed to one another or duplicative. They work together, and being able to move back and forth is really important.
