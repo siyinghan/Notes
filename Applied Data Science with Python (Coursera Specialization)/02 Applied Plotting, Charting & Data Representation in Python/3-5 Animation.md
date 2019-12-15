@@ -2,8 +2,6 @@
 
 So far we focused on static images, but matplotlib does have some support for both **animation** and **interactivity**. We call this the backend that renders the plot to the stream. Animation and interactivity heavily depend on support from this backend layer. And using a backend like the image png1 doesn't provide this. However, the NBN backend or the matplotlib notebook magic function does provide for some interactivity, so we can leverage that here. The `Maplotlib.animation` module contains important helpers for building animations. For our discussion, the important object here is to call `FuncAnimation`. And it builds an animation by iteratively calling a function which you define. Essentially, your function will either clear the axis object and redraw the next frame, which you want users to see or will return a list of objects which need to be redrawn.
 
- 
-
 Let's see an example. First, let's import the `animation` module. Next, let's define a cut-off for our animation. I'd like to show you how the histogram is built from one sample through 100 samples. So let's set our cut off to 100 then randomly pick 100 numbers and put them into a variable:
 
 ```python
@@ -36,5 +34,15 @@ Now let's just generate a new figure, then call the FuncAnimation constructor an
 ```python
 fig = plt.figure()
 a = animation.FuncAnimation(fig, update, interval=100)
+```
+
+
+
+save the gif:
+
+```python
+Writer = animation.writers['pillow']
+writer = Writer(fps=15, metadata=dict(artist='Me'), bitrate=1800)
+a.save('a.gif', writer='imagemagick')
 ```
 
