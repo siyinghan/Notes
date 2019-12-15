@@ -1,5 +1,9 @@
 # 4-1 Plotting with Pandas
 
+**Material**: [olympics.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/Material/olympics.csv)
+
+<br/>
+
 `pandas` uses `matplotlib` under the hood, and provides some convenient functions for **visualizing data**. Before we dive into visualization in pandas, lets take a look at the matplotlib's style package. Matplotlib comes with a number of predefined styles, which we can choose from, to change the default look of our plots. Because pandas is using matplotlib under the hood, this will change the default style of our pandas graphs as well. We can use `plt.style.available` to see the predefined styles provided:
 
 ```python
@@ -136,5 +140,16 @@ And **kernel density estimate plots**:
 
 ```python
 df.plot.kde();
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/103.png' alt='103' width='55%' />
+
+Which are useful for visualizing an estimate of a variable's probability density function. Kernel density estimation plots come in handy in data science application where you want to derive a smooth continuous function from a given sample.
+
+Pandas also has plotting tools that help with visualizing large amounts of data or high dimensional data. Let's explore a couple of these tools by loading in the **iris** flower data set:
+
+```python
+iris = pd.read_csv('iris.csv')
+iris.head()
 ```
 
