@@ -47,10 +47,29 @@ plt.legend(['Baseline', 'Competition', 'Us'])
 This is a good time to introduce the `fill_between` function of `matplotlib`. Now this function isn't specific to line plots, but you can see it commonly used with these plots, so I'll introduce it in this context. Let's imagine that we want to highlight the difference between the green and the blue curves. We could tell the axes to paint a color between these series using the fill between function. First we get the current axes object, then we indicate the range of x values we want to be filled. We didn't specify any x values in our call to plot, so we'll just use the same range of data points it's already using. Then we'll put in our lower bounds and our upper bounds along with the color we want painted and for fun I'll include a transparency value. And that's all there is to it. This is a great way to show, for instance, the standard deviation of results or error bars. More likely you'll have a series of x values and y values which you're looking to plot. Often with line plots this comes in the form of date time on the x axes:
 
 ```python
+plt.figure()
 # fill the area between the linear data and exponential data
 plt.gca().fill_between(range(len(linear_data)), 
                        linear_data, exponential_data, 
                        facecolor='blue', 
                        alpha=0.25)
 ```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/051.png' alt='051' width='65%' />
+
+Let's change our x axis to a series of eight date time instances in one day intervals. Let's first create a new image. Then the `numpy.arrange` function which you saw previously is really helpful at sampling some dates for us. We can ask for an arrangement of dates at daily intervals just by providing the start and end dates. We can now replot our linear and exponential data against this set of dates. That didn't seem to get us the effect that we were interested in:
+
+```python
+plt.figure()
+
+observation_dates = np.arange('2017-01-01', '2017-01-09', dtype='datetime64[D]')
+
+plt.plot(observation_dates, linear_data, '-o',  observation_dates, exponential_data, '-o')
+```
+
+
+
+The version of my Jupyter Notebook is higher than the tutorial, this part is good now.
+
+\------
 
