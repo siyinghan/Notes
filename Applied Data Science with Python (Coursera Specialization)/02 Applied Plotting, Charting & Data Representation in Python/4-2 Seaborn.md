@@ -104,7 +104,7 @@ iris = pd.read_csv('iris.csv')
 iris.head()
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/104.png' alt='104' width='65%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/104.png' alt='104' width='60%' />
 
 Similar to pandas, Seaborn has a built in function that creates a scatterplot matrix. We pass in the iris data of frame. Tell it to map name to different colors using the `hue` parameter. And tell it to use a `kde` along the diagonals instead of the default histograms:
 
