@@ -67,4 +67,9 @@ df.head()
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/096.png' alt='096' width='45%' />
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/094.png' alt='094' width='35%' />
+Now let's see what this data looks like a little more visually to plot this data we can use the plot method on the DataFrame:
+
+```python
+df.plot(); # add a semi-colon to the end of the plotting call to suppress unwanted output
+```
+
