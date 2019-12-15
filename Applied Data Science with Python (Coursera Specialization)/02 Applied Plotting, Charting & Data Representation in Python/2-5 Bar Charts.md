@@ -12,3 +12,11 @@ xvals = range(len(linear_data))
 plt.bar(xvals, linear_data, width=0.3)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/057.png' alt='057' width='65%' />
+
+To add a **second bar**, we simply call the bar plot again with new data, keeping in mind that we need to adjust the x component to make up for the first bar we plotted. Of course, we'll throw this bar in as red:
+
+```python
+
+```
+
