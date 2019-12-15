@@ -91,3 +91,8 @@ plt.figure()
 _ = plt.boxplot([ df['normal'], df['random'], df['gamma'] ] )
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/087.png' alt='087' width='65%' />
+
+You can also plot the confidence interval in a couple of different ways on the data. The most common is to add **notches** to the box plot representing the 95% confidence interval of the data and there are lots of other ways to customize the box plot.
+
+The box plot is one of the more common plots that you might use as a data scientist. And matplotlib has significant support for different kinds of box plots. Here the matplotlib documentation is key. You can find links in the course resources to the API, which describes the box plot functionality.
