@@ -105,3 +105,12 @@ Now let's try this and create something a little more complex. This time we want
 df.plot.scatter('A', 'C', c='B', s=df['B'], colormap='viridis')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/099.png' alt='099' width='55%' />
+
+Here we can see the A and C columns plotted against one another with the size and color changing based on the values of the B column. Because `df.plot.scatter` returns a matplotlib.axes._subplot, we can perform modification on this object just like objects returned by matplotlib plots. For example, let's see what it looks like when we change the aspect ratio of the `AxesSubplot` to equal:
+
+```python
+ax = df.plot.scatter('A', 'C', c='B', s=df['B'], colormap='viridis')
+ax.set_aspect('equal')
+```
+
