@@ -85,7 +85,7 @@ print(y)
 
 ```(6, 7, 8, 9, 10)```
 
-So that's a brief aside on a variable tool. When it comes to manipulating and cleaning data in the wild. Now, let's get back to plotting. Let's take these two lists and plot them to a new figure using `scatter`. Instead of plotting them as one data series, we'll slice the lists and plot them as two data series. You'll note that we can color each series with a single value if we want to. We can also do things like change the color or transparency of an entire series, or individual data points as well. Finally, we have the ability to label the data series, and I'll do that now:
+So that's a brief aside on a variable tool. When it comes to manipulating and cleaning data in the wild. Now, let's get back to plotting. Let's take these two lists and plot them to a new figure using `scatter`. Instead of plotting them as one data series, we'll slice the lists and plot them as two data series. You'll note that we can color each series with a single value if we want to. We can also do things like change the color or transparency of an entire series, or individual data points as well. Finally, we have the ability to label the data series, and I'll do that now (this will come in handy later when building a legend):
 
 ```python
 plt.figure()
@@ -94,4 +94,19 @@ plt.scatter(x[:2], y[:2], s=100, c='red', label='Tall students')
 # plot a second data series 'Short students' in blue using the last three elements of x and y 
 plt.scatter(x[2:], y[2:], s=100, c='blue', label='Short students')
 ```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/044.png' alt='044' width='65%' />
+
+Now before we leave the scatter plot, let's talk a bit more about the properties of axis. The axis generally have labels to them to explain what they represent or the units that they describe. Charts tend to have titles as well, so let's put this in place now. Since `pyplot` mirrors much of the axis API, we can make calls directly on `pyplot`. Let's do this now, adding in an `xlabel`, a `ylabel`, and then a `title`:
+
+```python
+# add a label to the x axis
+plt.xlabel('The number of times the child kicked a ball')
+# add a label to the y axis
+plt.ylabel('The grade of the student')
+# add a title
+plt.title('Relationship between ball kicking and grades')
+```
+
+
 
