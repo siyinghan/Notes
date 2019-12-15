@@ -394,3 +394,30 @@ plt.plot(2.5, 2.5, 'o')
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/041.png' alt='041' width='65%' />
+
+But we can go further with the **axes** object to the point where we can actually get all of the **child** objects that that axis contains. We do this with the axis get `children` function:
+
+```python
+# get current axes
+ax = plt.gca()
+# get all the child objects the axes contains
+ax.get_children()
+```
+
+```
+[<matplotlib.lines.Line2D at 0x112d0b748>,
+ <matplotlib.lines.Line2D at 0x112afff28>,
+ <matplotlib.lines.Line2D at 0x118ccc9b0>,
+ <matplotlib.spines.Spine at 0x11831deb8>,
+ <matplotlib.spines.Spine at 0x11831df60>,
+ <matplotlib.spines.Spine at 0x11831d5c0>,
+ <matplotlib.spines.Spine at 0x11831d0b8>,
+ <matplotlib.axis.XAxis at 0x11831d400>,
+ <matplotlib.axis.YAxis at 0x11816d940>,
+ Text(0.5, 1, ''),
+ Text(0.0, 1, ''),
+ Text(1.0, 1, ''),
+ <matplotlib.patches.Rectangle at 0x118334128>]
+```
+
+Here, we can see that there's actually three line to the objects contained in this axis, these are our data points. A number of spines which are actual renderings of the borders of the frame including tic markers, two axis objects, and a bunch of text which are the labels for the chart. There's even a rectangle which is the background for the axes.
