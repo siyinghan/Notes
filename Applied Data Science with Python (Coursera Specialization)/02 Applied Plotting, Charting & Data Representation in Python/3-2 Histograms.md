@@ -87,10 +87,22 @@ So let's just call the clear function on the two histograms. Then we can call th
 ```python
 # clear the histograms and plot normed histograms
 top_histogram.clear()
-top_histogram.hist(X, bins=100, normed=True)
+top_histogram.hist(X, bins=100, density=True)
 side_histogram.clear()
-side_histogram.hist(Y, bins=100, orientation='horizontal', normed=True)
+side_histogram.hist(Y, bins=100, orientation='horizontal', density=True)
 # flip the side histogram's x axis
 side_histogram.invert_xaxis()
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/079.png' alt='079' width='70%' />
+
+This gives us a rough solution. We can see that the axes values are not aligned. Unfortunately, Matplotlib requires that you share axes when creating plots, and we can't do that post hoc sharing. We can however, set the range of the axis to clear things up a little bit more. And we do this using the axes `set_xlim` and `set_ylim` values. I'll just hard code some of these in here to demonstrate. And there we go:
+
+```python
+# change axes limits
+for ax in [top_histogram, lower_right]:
+    ax.set_xlim(0, 1)
+for ax in [side_histogram, lower_right]:
+    ax.set_ylim(-5, 5)
 ```
 
