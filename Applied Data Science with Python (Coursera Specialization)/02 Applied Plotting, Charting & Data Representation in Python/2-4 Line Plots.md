@@ -29,3 +29,16 @@ plt.figure()
 plt.plot([22,44,55], '--r')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/049.png' alt='049' width='65%' />
+
+Here, let's plot another series. We can use the regular `axes` functions creating labels for the axes and for the figure as a whole. And we can create a `legend` too. But note that since we didn't label the data points as we did with the scatter plot, we need to create legend entries when we add the legend itself:
+
+```python
+plt.xlabel('Some data')
+plt.ylabel('Some other data')
+plt.title('A title')
+# add a legend with legend entries
+#(because we didn't have labels when we plotted the data series)
+plt.legend(['Baseline', 'Competition', 'Us'])
+```
+
