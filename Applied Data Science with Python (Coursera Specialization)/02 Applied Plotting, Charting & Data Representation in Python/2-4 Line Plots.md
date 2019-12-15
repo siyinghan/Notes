@@ -110,3 +110,12 @@ for item in x.get_ticklabels():
     item.set_rotation(45)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/053.png' alt='053' width='65%' />
+
+The text is a bit hard to read because it just runs off the image. So you can adjust the `subplot`. And there we go, wonderfully readable dates in `matplotlib`:
+
+```python
+# adjust the subplot so the text doesn't run off the image
+plt.subplots_adjust(bottom=0.25)
+```
+
