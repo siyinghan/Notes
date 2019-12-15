@@ -130,3 +130,10 @@ ax.set_ylabel('Units')
 ax.set_title('Exponential vs. Linear performance')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/055.png' alt='055' width='65%' />
+
+```python
+# you can add mathematical expressions in any text element
+ax.set_title("Exponential ($x^2$) vs. Linear ($x$) performance")
+```
+
