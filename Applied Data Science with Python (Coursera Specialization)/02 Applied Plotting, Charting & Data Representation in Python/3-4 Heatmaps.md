@@ -18,8 +18,16 @@ plt.figure()
 Y = np.random.normal(loc=0.0, scale=1.0, size=10000)
 X = np.random.random(size=10000)
 _ = plt.hist2d(X, Y, bins=25)
-
-plt.colorbar()
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/089.png' alt='089' width='65%' />
+
+See how the edge colors on the top and the bottom are very dark purple, while there are greens and yellows in the middle horizon of the image.
+
+Now we talked a bit about what happens when you increase or decrease the number of bins with regular histograms. But how do you think this changes when using **heatmaps**?
+
+```python
+plt.figure()
+_ = plt.hist2d(X, Y, bins=100)
+```
+
