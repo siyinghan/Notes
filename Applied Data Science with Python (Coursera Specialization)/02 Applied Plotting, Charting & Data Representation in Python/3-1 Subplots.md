@@ -208,3 +208,15 @@ linear_data = np.array([1,2,3,4,5,6,7,8])
 plt.plot(linear_data, '-o')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/068.png' alt='068' width='65%' />
+
+Okay, great we've got a skinny plot on the left hand side. We can then call `subplot` again with the last parameter as a two to plot new data to a plot on the right hand side:
+
+```python
+exponential_data = linear_data**2 
+
+# subplot with 1 row, 2 columns, and current axis is 2nd subplot axes
+plt.subplot(1, 2, 2)
+plt.plot(exponential_data, '-o')
+```
+
