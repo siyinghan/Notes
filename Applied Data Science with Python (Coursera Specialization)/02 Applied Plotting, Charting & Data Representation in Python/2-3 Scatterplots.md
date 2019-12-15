@@ -141,3 +141,69 @@ plt.legend(loc=4, frameon=False, title='Legend')
 | 'lower center'  | 8             |
 | 'upper center'  | 9             |
 | 'center'        | 10            |
+
+We could also get rid of the frame and add a title, and do any number of different transformations.
+
+The legend itself is an `artist`, which means it can contain `children`. Let's take advantage of this and write a little routine to recursively go through the list of `children` in an `artist`:
+
+```python
+# get children from current axes (the legend is the second to last item in this list)
+plt.gca().get_children()
+```
+
+```
+[<matplotlib.collections.PathCollection at 0x11d50a5c0>,
+ <matplotlib.collections.PathCollection at 0x11d50a898>,
+ <matplotlib.spines.Spine at 0x11c05f278>,
+ <matplotlib.spines.Spine at 0x11c05f198>,
+ <matplotlib.spines.Spine at 0x11c05fa20>,
+ <matplotlib.spines.Spine at 0x11c04b748>,
+ <matplotlib.axis.XAxis at 0x11c05f550>,
+ <matplotlib.axis.YAxis at 0x11cb31e80>,
+ Text(0.5, 1, 'Relationship between ball kicking and grades'),
+ Text(0.0, 1, ''),
+ Text(1.0, 1, ''),
+ <matplotlib.legend.Legend at 0x11d5a3278>,
+ <matplotlib.patches.Rectangle at 0x11cabce10>]
+```
+
+First, we'll import the `artist` class from matplotlib. Then we'll make a recursive function which takes in an artist and some depth parameter. Then checks if the object is an artist and if so, prints out its string name. Then recurses and increases the depth for pretty printing. Finally, we can call this on the `legend` object itself:
+
+```python
+# import the artist class from matplotlib
+from matplotlib.artist import Artist
+
+def rec_gc(art, depth=0):
+    if isinstance(art, Artist):
+        # increase the depth for pretty printing
+        print("  " * depth + str(art))
+        for child in art.get_children():
+            rec_gc(child, depth+2)
+
+# Call this function on the legend artist to see what the legend is made up of
+rec_gc(plt.legend())
+```
+
+```
+Legend
+    <matplotlib.offsetbox.VPacker object at 0x11d586278>
+        <matplotlib.offsetbox.TextArea object at 0x11d586588>
+            Text(0, 0, '')
+        <matplotlib.offsetbox.HPacker object at 0x11d586ba8>
+            <matplotlib.offsetbox.VPacker object at 0x11d586da0>
+                <matplotlib.offsetbox.HPacker object at 0x11d586cc0>
+                    <matplotlib.offsetbox.DrawingArea object at 0x11d5ae5c0>
+                        <matplotlib.collections.PathCollection object at 0x11d5ae550>
+                    <matplotlib.offsetbox.TextArea object at 0x11d5ae2e8>
+                        Text(0, 0, 'Tall students')
+                <matplotlib.offsetbox.HPacker object at 0x11d586940>
+                    <matplotlib.offsetbox.DrawingArea object at 0x11d5ae3c8>
+                        <matplotlib.collections.PathCollection object at 0x11d5aedd8>
+                    <matplotlib.offsetbox.TextArea object at 0x11d5aec50>
+                        Text(0, 0, 'Short students')
+    FancyBboxPatch((0, 0), width=1, height=1)
+```
+
+So you can see the `legend` `artist` is just made up of a number of different offsetboxes for drawing, as well as `TextArea`s and `PathCollections`.
+
+What I want you to take away from this is that there is nothing magical about what matplotlib is doing. Calls to the scripting interface, just create figures, subplots, and axis. Then load those axis up with various artists, which the back-end renders to the screen or some other medium like a file. While you'll spend 95% of your time at the scripting layer, happily creating graphs and charts, it's important to understand how the library works underneath for the other 5% of the time. And the time that you will use this is when you really want to have control over and to create your own charting functions, and you'll have a chance to do that by the end of this course.
