@@ -130,3 +130,11 @@ df.plot.box();
 df.plot.hist(alpha=0.7);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/102.png' alt='102' width='55%' />
+
+And **kernel density estimate plots**:
+
+```python
+df.plot.kde();
+```
+
