@@ -393,3 +393,4 @@ plt.plot(2, 2, 'o')
 plt.plot(2.5, 2.5, 'o')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/041.png' alt='041' width='65%' />
