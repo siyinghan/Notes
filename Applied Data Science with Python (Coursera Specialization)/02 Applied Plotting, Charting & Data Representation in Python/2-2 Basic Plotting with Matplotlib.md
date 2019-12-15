@@ -346,4 +346,30 @@ ax.plot(3, 2, '.')
 canvas.print_png('test.png')
  ```
 
+Then, we'll do a quick `HTML` cell magic, and execute that and see the rendered image:
+
+```python
+%%html
+<img src='test.png' />
+```
+
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/039.png' alt='039' width='65%' />
+
+That's a lot more work than using the **scripting layer**. The scripting layer though isn't magic, it's just doing some of the behind the scenes work for us. For instance, when we make the call to pyplots plotup plot, the **scripting layer** actually looks to see if there's a figure that currently exists, and if not it creates a new one. It then returns the axis for this figure. We can actually get access to the figure using the `GCF` function, which stands for get current figure of pyplot, and get access to the axis as well using the `GCA` function, get current axis.
+
+Okay. Let's create a new figure with `pyplot`. This means it won't update our figure at the top of this file. Then, let's make a plot, grab the axes, and set the x and y limits. We can do this using the axis function. This function takes four parameters, a minimum value for x which we'll put it zero, a maximum value for x which we'll put at six Then, corresponding minimum and maximum values for y which we'll put it zero and 10:
+
+```python
+# create a new figure
+plt.figure()
+
+# plot the point (3,2) using the circle marker
+plt.plot(3, 2, 'o')
+
+# get the current axes
+ax = plt.gca()
+
+# Set axis properties [xmin, xmax, ymin, ymax]
+ax.axis([0,6,0,10])
+```
+
