@@ -79,3 +79,11 @@ for spine in plt.gca().spines.values():
 plt.show()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/064.png' alt='064' width='65%' />
+
+Okay, so there are several different ways that we could do this. The way I chose was to add an alpha parameter to everything, which adds a bit of transparency and softens the colors up a bit. I also set the bars themselves to a neutral gray color then chose a nice blue from the Python website to accentuate the first bar. Of course, we've actually made the chart a little bit less accurate right now since we don't have any y labels. Let's fix this and remove the y axis label and just directly label the individual bars. We don't really need the y axis label, since the title tells us everything we need to know about the units in this chart:
+
+```python
+
+```
+
