@@ -34,3 +34,11 @@ plt.tick_params(top=False, bottom=False, left=False, right=False, labelleft=Fals
 plt.show()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/062.png' alt='062' width='65%' />
+
+I use the `tick_params` method of plot to turn them all off except for the bottom label. It's nice to have a single function which can handle all of this. Now our plot still has this frame around it, but it's not really necessary and it seems a little heavyweight. Let's remove that ink. This is a bit more involved, but we can get the current axis, then iterate through all the `spine`, setting their visibility to false:
+
+```python
+
+```
+
