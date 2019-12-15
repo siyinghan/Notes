@@ -126,3 +126,18 @@ You'll see that matplotlib places this in the upper left hand corner and puts a 
 plt.legend(loc=4, frameon=False, title='Legend')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/047.png' alt='047' width='65%' />
+
+| Location String | Location Code |
+| --------------- | ------------- |
+| 'best'          | 0             |
+| 'upper right'   | 1             |
+| 'upper left'    | 2             |
+| 'lower left'    | 3             |
+| 'lower right'   | 4             |
+| 'right'         | 5             |
+| 'center left'   | 6             |
+| 'center right'  | 7             |
+| 'lower center'  | 8             |
+| 'upper center'  | 9             |
+| 'center'        | 10            |
