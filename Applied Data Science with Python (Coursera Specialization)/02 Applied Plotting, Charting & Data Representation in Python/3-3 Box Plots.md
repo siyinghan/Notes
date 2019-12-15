@@ -68,3 +68,12 @@ ax2.hist(df['gamma'], bins=100)
 ax2.margins(x=0.5)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/085.png' alt='085' width='65%' />
+
+This isn't quite as flexible as with grid spec where we're essentially trying to connect the plot to one of ten different locations. I'll put in position two here, which will place the axes in the upper left of the figure. Then we just push a histogram to that axes and it behaves as we would expect. We've a little clash on the yaxis but that's easy enough to flip on the inset plot. We just access the yaxis of the plot and call `tick_right`:
+
+```python
+# switch the y axis ticks for ax2 to the right side
+ax2.yaxis.tick_right()
+```
+
