@@ -285,10 +285,18 @@ ax5.plot(linear_data, '-')
 The results however look really nice. Note that this method turns off the y and x labels except for those plots which are on the left hand side or the bottom of the figure. If you want to turn the labels back on, you need to iterate through the axis objects and do it yourself. You could do this directly through the axis objects you have or iterate through all the axis objects in the figure and change the x and y tick labels to be visible. Unfortunately, on the notebook backend on my installation, this doesn't redraw the figure:
 
 ```python
+# create a 3x3 grid of subplots
+fig, ((ax1,ax2,ax3), (ax4,ax5,ax6), (ax7,ax8,ax9)) = plt.subplots(3, 3, sharex=True, sharey=True)
+# plot the linear_data on the 5th subplot axes 
+ax5.plot(linear_data, '-')
 
+# set inside tick labels to visible
+for ax in plt.gcf().get_axes():
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_visible(True)
 ```
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/073.png' alt='073' width='70%' />
 
 But you can force the figure to redraw by calling the canvas draw function. Remember you can get the current figure at any time using `pyplots.gcf` or get current figure or function:
 
