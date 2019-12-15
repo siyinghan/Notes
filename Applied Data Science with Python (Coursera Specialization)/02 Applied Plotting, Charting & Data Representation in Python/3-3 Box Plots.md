@@ -53,3 +53,18 @@ plt.figure()
 _ = plt.hist(df['gamma'], bins=100)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/084.png' alt='084' width='65%' />
+
+Interesting, we see it starts at a moderate level, spikes up, then drops off much more gradually and does indeed have a very long tail. Let's add this to our box plot. Curiosity and to demonstrate something called inset axes. Recall that we have one figure with one subplot. Since we didn't do anything fancy with subplots, that means we only have one axes object. We can actually overlay an axes on top of another within a figure. Now, this functionality isn't in the basic matplotlib space, but it's in the toolkits, which tend to ship with matplotlib. There are several different toolkits available, and while they tend to be packaged, they aren't considered core. The toolkit that we're going to use is called the axes grid, and we import it from the `mpl_toolkits.axes_grid1.inset_locator`. We create a new figure and we put up our box plot. Then we just call the inset locator and pass it the current axes object we want composition on top of, followed by the size of our new axis. And we can specify this as both a width and a height in percentage from the parent axes. Then we give it a number from the place in which we wanted to drop the new axes:
+
+```python
+import mpl_toolkits.axes_grid1.inset_locator as mpl_il
+
+plt.figure()
+plt.boxplot([ df['normal'], df['random'], df['gamma'] ], whis='range')
+# overlay axis on top of another 
+ax2 = mpl_il.inset_axes(plt.gca(), width='60%', height='40%', loc=2)
+ax2.hist(df['gamma'], bins=100)
+ax2.margins(x=0.5)
+```
+
