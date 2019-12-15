@@ -67,9 +67,46 @@ observation_dates = np.arange('2017-01-01', '2017-01-09', dtype='datetime64[D]')
 plt.plot(observation_dates, linear_data, '-o',  observation_dates, exponential_data, '-o')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/052.png' alt='052' width='65%' />
 
-
-The version of my Jupyter Notebook is higher than the tutorial, this part is good now.
+The version of my Jupyter Notebook is higher than the tutorial, the following part is good now.
 
 ------
+
+This is unfortunately one of the great pain points in data science in `Python`, **date time handling**. The standard library does it in two different ways, while NumPy, which is used for scientific computing, does it a third way. In fact, there's probably a dozen replacement libraries for date times in Python. The solution I'm going to use here comes from a helper library in Pandas called `to_datetime`. This specifically converts `NumPy` dates into standard library dates which is what `matplotlib` is expecting.
+
+Let's first import `Pandas` then create a new figure. And let's arrange our set of dates as per the previous code block. Now I could iterate through the list, converting them. But instead I'll use the `map` function of the standard library. Which will apply the Pandas to datetime against each of the elements in `observation_dates`, and return the result. Now let's plot that result. That resulted in error.
+
+```python
+import pandas as pd
+
+plt.figure()
+observation_dates = np.arange('2017-01-01', '2017-01-09', dtype='datetime64[D]')
+observation_dates = map(pd.to_datetime, observation_dates) # trying to plot a map will result in an error
+plt.plot(observation_dates, linear_data, '-o',  observation_dates, exponential_data, '-o')
+```
+
+
+
+It's a pretty confusing one at that. You see, the problem is the `map` function returns an iterator. Matplotlib can't handle the iterator, so we need to convert it to a list first. This is really easy to do, but I wanted to demonstrate some of the real-world problems you can run into when you're looking to build plots in `Python`. And why it's important to understand, not only the toolkit, but how the language works. Here's a quick fix. We can convert the map result to a list, but keep in mind this isn't a very memory-efficient way of handling the data. This produces a pretty decent looking figure with the data we want. But the dates overlap pretty heavily:
+
+```python
+plt.figure()
+observation_dates = np.arange('2017-01-01', '2017-01-09', dtype='datetime64[D]')
+# convert the map to a list to get rid of the error
+observation_dates = list(map(pd.to_datetime, observation_dates)) 
+plt.plot(observation_dates, linear_data, '-o',  observation_dates, exponential_data, '-o')
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/052.png' alt='052' width='65%' />
+
+Now, there's a couple of things that we could do here. For instance, everything is from 2017. So we could iterate through and change the labels by stripping the year. And add an x axis label which clarifies that it's all for the year of 2017. This is pretty reasonable, but I wanted to show you a couple of features of how matplotlib uses text. First we can get a single axis using the x-axis or y-axis properties of the axes object which we can get, remember, with `GCA` or get `current axis`. There are lots of interesting properties of the axes object and you use some them in the assignment. For instance; you can get the grid lines, the tick locations for both major and minor ticks and so on. Just like all artists, an axes has a bunch of children which are themselves **artists**. In fact, if you're are following along in the Jupiter notebook with this lecture why don't you just pause the video. And run the wreck_gc function we wrote earlier to explore what kind of artists the x axes object actually contains. What I want to show you though, is that you can access the text of the tics using the `get_ticklabels` function. Each of the tick labels are a text object which itself is an **artist**. This means that you can use a number of different **artist** functions. One specific to text is the `set_rotation` function which changes the rotation based on degrees. Let's iterate through the axis labels and change that:
+
+```python
+x = plt.gca().xaxis
+
+# rotate the tick labels for the x axis
+for item in x.get_ticklabels():
+    item.set_rotation(45)
+```
 
