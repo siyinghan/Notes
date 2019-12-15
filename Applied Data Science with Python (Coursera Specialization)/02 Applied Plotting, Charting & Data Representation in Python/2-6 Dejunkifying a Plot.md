@@ -4,3 +4,33 @@ In this lecture, I want to walk you through the process of taking a regular `Mat
 
 We use a plot of data on the popularity of programming languages taken from stack overflow. Here there are five different languages, `Python`, `SQL`,  `Java`, `C++`, and `JavaScript`. We'll find their positions as a rank using NumPy as a range function. And here are the popularity values from stack overflow.
 
+| Language   | % Popularity |
+| ---------- | ------------ |
+| Python     | 56           |
+| SQL        | 39           |
+| Java       | 34           |
+| C++        | 34           |
+| JavaScript | 29           |
+
+We'll create a bar chart based on rank and popularity, then add x and y ticks and set a title. Then when we call `plot.show`, the figure will render. Okay, here's the first challenge. The tics along both axis are annoying and sort of clutter the document up a bit. And the labels on the y axis really should be direct. So let's remove all of these.
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure()
+
+languages = ['Python', 'SQL', 'Java', 'C++', 'JavaScript']
+pos = np.arange(len(languages))
+popularity = [56, 39, 34, 34, 29]
+
+plt.bar(pos, popularity, align='center')
+plt.xticks(pos, languages)
+plt.ylabel('% Popularity')
+plt.title('Top 5 Languages for Math & Data \nby % popularity on Stack Overflow', alpha=0.8)
+
+# remove all the ticks (both axes), and tick labels on the Y axis
+plt.tick_params(top='off', bottom='off', left='off', right='off', labelleft='off', labelbottom='on')
+plt.show()
+```
+
