@@ -19,3 +19,4 @@ Now we can use the `pandas.describe` function to see some summary statistics abo
 df.describe()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/081.png' alt='081' width='45%' />
