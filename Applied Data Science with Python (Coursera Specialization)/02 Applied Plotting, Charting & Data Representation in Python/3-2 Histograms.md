@@ -17,3 +17,19 @@ for n in range(0,len(axs)):
     axs[n].set_title('n={}'.format(sample_size))
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/074.png' alt='074' width='70%' />
+
+Well, there we go. The first plot only has ten samples, so it looks pretty jagged. And in my version here I don't think anyone would say this is obviously a normal distribution. When we jump to 100 samples, it gets better, but still quite jagged. Then it seems to smooth out a bit on the plots for 1,000 and 10,000 samples. But if we look closely, we can see that the bar of the 10,000 plots are actually wider than those of the 10 or the 100 plot. What's going on here? By default, the histogram in Matplotlib uses ten bins, that is ten different bars. Here we created a shared x-axis, and as we sample more from the distribution, we're more likely to get outlier values further from our mean. Thus, ten bins for n=10 is at best capturing ten unique values, while for n=10,000, many values have to be combined into a single bin. Let's do the same function with the bin set to 100:
+
+```python
+# repeat with number of bins set to 100
+fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, sharex=True)
+axs = [ax1,ax2,ax3,ax4]
+
+for n in range(0,len(axs)):
+    sample_size = 10**(n+1)
+    sample = np.random.normal(loc=0.0, scale=1.0, size=sample_size)
+    axs[n].hist(sample, bins=100)
+    axs[n].set_title('n={}'.format(sample_size))
+```
+
