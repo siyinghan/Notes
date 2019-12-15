@@ -1,5 +1,9 @@
 # 4-2 Seaborn
 
+**Material**: [iris.csv](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Material/iris.csv)
+
+<br/>
+
 Hi, everyone. Today, we'll be looking at `Seaborn`, a Python visualization library based on `matplotlib`. `Seaborn` is really just a wraparound matplotlib. It adds styles to make default data visualizations much more visually appealing and makes creation of specific types of complicated plots much simpler. To get us started, I've imported `seaborn` as `sns`:
 
 ```python
@@ -89,5 +93,22 @@ The hexbin style of plot works well with relatively large data sets. Another goo
 sns.set_style('white')
 
 sns.jointplot(v1, v2, kind='kde', space=0);
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/113.png' alt='113' width='65%' />
+
+We can see that `Seaborn` has some built-in options for easy customization. And provides us with easy to create and beautiful plots for exploring the distributions of your data. For the last part of this tutorial, let's load in the iris dataset, to see how `Seaborn` handles visualizations of categorical data:
+
+```python
+iris = pd.read_csv('iris.csv')
+iris.head()
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/104.png' alt='104' width='65%' />
+
+Similar to pandas, Seaborn has a built in function that creates a scatterplot matrix. We pass in the iris data of frame. Tell it to map name to different colors using the `hue` parameter. And tell it to use a `kde` along the diagonals instead of the default histograms:
+
+```python
+sns.pairplot(iris, hue='Name', diag_kind='kde', size=2);
 ```
 
