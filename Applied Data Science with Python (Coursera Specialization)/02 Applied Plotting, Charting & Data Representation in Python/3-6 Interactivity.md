@@ -36,3 +36,13 @@ df
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/094.png' alt='094' width='35%' />
 
+Great, now we have some C data to play with. Now we can create a scatterplot with the x and y values as the height and weight respectively, pulling from the data frame. Note that we've added a new argument here called picker and set it to 5. This informs the Matplotlib backend that the mouse doesn't have to click directly on a rendered object that can be up to 5 pixels away and it should find the closest object. What works for you depends on how you're rendering your charts. With axis labeled, let's go render this:
+
+```python
+plt.figure()
+# picker=5 means the mouse doesn't have to click directly on an event, but can be up to 5 pixels away
+plt.scatter(df['height'], df['weight'], picker=5)
+plt.gca().set_ylabel('Weight')
+plt.gca().set_xlabel('Height')
+```
+
