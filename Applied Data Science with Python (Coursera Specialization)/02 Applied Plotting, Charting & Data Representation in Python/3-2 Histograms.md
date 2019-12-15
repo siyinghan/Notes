@@ -48,3 +48,21 @@ X = np.random.random(size=10000)
 plt.scatter(X,Y)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/076.png' alt='076' width='65%' />
+
+I'm going to define a 3x3 grid, nine cells in total. I want the first histogram to take up the top right space, and the second histogram to take up the far left bottom two spaces, rotated on its side. The original scatter plot can take up a two by two square in the bottom right.
+
+To use the `GridSpec`, we first import it, then create a new `GridSpec`, the overall shape that we want. When we add new items with the subplot, instead of specifying the three numbers of row, column and position, we pass in the elements of the `GridSpec` object which we wish to cover. And very important here. Because we are using the elements of a list, all of the indexing starts at zero, and is very reasonable to use slicing for the beginning or ends of lists. The `GridSpec` is indexed as rows and columns using the indexing operator, or square brackets. So we'll create the first subplot and histogram in row 0, covering off the first element, the middle position, and going to the end of the row. We'll create the side_histogram starting in row 1, and continuing to the end of row elements, but limited to the 0 column. Finally we'll create the scatter plot in the `lower_right`:
+
+```python
+# use gridspec to partition the figure into subplots
+import matplotlib.gridspec as gridspec
+
+plt.figure()
+gspec = gridspec.GridSpec(3, 3)
+
+top_histogram = plt.subplot(gspec[0, 1:])
+side_histogram = plt.subplot(gspec[1:, 0])
+lower_right = plt.subplot(gspec[1:, 1:])
+```
+
