@@ -52,7 +52,7 @@ plt.scatter(X,Y)
 
 I'm going to define a 3x3 grid, nine cells in total. I want the first histogram to take up the top right space, and the second histogram to take up the far left bottom two spaces, rotated on its side. The original scatter plot can take up a two by two square in the bottom right.
 
-To use the `GridSpec`, we first import it, then create a new `GridSpec`, the overall shape that we want. When we add new items with the subplot, instead of specifying the three numbers of row, column and position, we pass in the elements of the `GridSpec` object which we wish to cover. And very important here. Because we are using the elements of a list, all of the indexing starts at zero, and is very reasonable to use slicing for the beginning or ends of lists. The `GridSpec` is indexed as rows and columns using the indexing operator, or square brackets. So we'll create the first subplot and histogram in row 0, covering off the first element, the middle position, and going to the end of the row. We'll create the side_histogram starting in row 1, and continuing to the end of row elements, but limited to the 0 column. Finally we'll create the scatter plot in the `lower_right`:
+To use the `GridSpec`, we first import it, then create a new `GridSpec`, the overall shape that we want. When we add new items with the subplot, instead of specifying the three numbers of row, column and position, we pass in the elements of the `GridSpec` object which we wish to cover. And very important here. Because we are using the elements of a list, all of the indexing starts at zero, and is very reasonable to use slicing for the beginning or ends of lists. The `GridSpec` is indexed as rows and columns using the indexing operator, or square brackets. So we'll create the first subplot and histogram in row 0, covering off the first element, the middle position, and going to the end of the row. We'll create the side_histogram starting in row 1, and continuing to the end of row elements, but limited to the 0 column. Finally we'll create the scatter plot in the `lower_right`. When we execute this, we see our basic set of plots, great:
 
 ```python
 # use gridspec to partition the figure into subplots
@@ -64,5 +64,17 @@ gspec = gridspec.GridSpec(3, 3)
 top_histogram = plt.subplot(gspec[0, 1:])
 side_histogram = plt.subplot(gspec[1:, 0])
 lower_right = plt.subplot(gspec[1:, 1:])
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/077.png' alt='077' width='70%' />
+
+Now, let's fill this with some data. First the scatter plot, then the top histogram, which is for the x values, then the side histogram for the y values. And we want the side histogram to be lined up, so let's rotate the layout by setting the orientation. There are actually a few ways of doing this, but since it's so common, `Matplotlib` has an `orientation` parameter which we can set to horizontal:
+
+```python
+Y = np.random.normal(loc=0.0, scale=1.0, size=10000)
+X = np.random.random(size=10000)
+lower_right.scatter(X, Y)
+top_histogram.hist(X, bins=100)
+s = side_histogram.hist(Y, bins=100, orientation='horizontal')
 ```
 
