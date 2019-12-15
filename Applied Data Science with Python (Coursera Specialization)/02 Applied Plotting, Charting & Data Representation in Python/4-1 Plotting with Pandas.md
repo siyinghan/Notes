@@ -81,3 +81,27 @@ The plot method on series and DataFrame is just a simple wrapper around plt.plot
 df.plot('A','B', kind = 'scatter');
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/098.png' alt='098' width='55%' />
+
+We pass in **scatter** to the kind parameter to change the plot type. This is what we'd get if we called plt.plot on the A and B columns with the point marker parameter. Passing scatter into the kind keyword argument changed the plot to a scatterplot. You can also choose the plot kind by using the methods `dataframe.plot.kind` instead of providing the kind keyword argument.
+
+`kind` :
+- `'line'` : line plot (default)
+- `'bar'` : vertical bar plot
+- `'barh'` : horizontal bar plot
+- `'hist'` : histogram
+- `'box'` : boxplot
+- `'kde'` : Kernel Density Estimation plot
+- `'density'` : same as 'kde'
+- `'area'` : area plot
+- `'pie'` : pie plot
+- `'scatter'` : scatter plot
+- `'hexbin'` : hexbin plot
+
+Now let's try this and create something a little more complex. This time we want to make a scatterplot with points varying in color and size. We'll use `df.plot.scatter`, pass in columns A and C. And set the color C and size S to change based on the value of column B. Finally, we can choose the color palette used by passing a string into the parameter color map. Here, I'll use viridis, which is particularly pleasing to the eye:
+
+```python
+# create a scatter plot of columns 'A' and 'C', with changing color (c) and size (s) based on column 'B'
+df.plot.scatter('A', 'C', c='B', s=df['B'], colormap='viridis')
+```
+
