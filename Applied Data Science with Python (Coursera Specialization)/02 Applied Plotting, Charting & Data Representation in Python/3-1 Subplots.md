@@ -220,3 +220,13 @@ plt.subplot(1, 2, 2)
 plt.plot(exponential_data, '-o')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/069.png' alt='069' width='65%' />
+
+And that's nice. Now we have two plots, each with their own axis objects.
+
+Now the norm with `matplotlib` is that you store the axis object that you get back from the subplot. But you can call `subplot` again. At any time with the parameters that interest you in order to get back a given axis. Here, let's put exponential on the linear graph 2:
+
+```python
+
+```
+
