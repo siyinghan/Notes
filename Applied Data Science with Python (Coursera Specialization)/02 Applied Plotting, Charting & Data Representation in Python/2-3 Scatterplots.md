@@ -45,6 +45,53 @@ You have some set of items, but they're actually described as the same slice acr
 Here we'll create a new `zip` generator with a zip function passing in two lists of numbers. When we convert this generator to a list, we see there's a list of pairwise tuples:
 
 ```python
+# convert the two lists into a list of pairwise tuples
+zip_generator = zip([1,2,3,4,5], [6,7,8,9,10])
+print(list(zip_generator))
+```
 
+```[(1, 6), (2, 7), (3, 8), (4, 9), (5, 10)]```
+
+```python
+# The single star * unpacks a collection into positional arguments
+print(*zip_generator)
+```
+
+```(1, 6) (2, 7) (3, 8) (4, 9) (5, 10)```
+
+Storing point data as tuples is common and you should be familiar with being able to convert data to and from this form. If we want to turn the data back into two lists, one with the **x component** and one with the **y component**, we can use parameter unpacking with zip. When you pass a list or an interval more generally to a function and prepend it with an asterisk, each item is taken out of the iterable and passed as a separate argument.
+
+So we can do that here, passing into a new `zip` function five parameters, each of length two.`zip` will then create a new two value list which is identical to our original x and y values. If we want to get even fancier, we can unpack this result into two variables directly, **x** and **y**:
+
+```python
+# use zip to convert 5 tuples with 2 elements each to 2 tuples with 5 elements each
+print(list(zip((1, 6), (2, 7), (3, 8), (4, 9), (5, 10))))
+```
+
+```[(1, 2, 3, 4, 5), (6, 7, 8, 9, 10)]```
+
+```python
+zip_generator = zip([1,2,3,4,5], [6,7,8,9,10])
+# let's turn the data back into 2 lists
+x, y = zip(*zip_generator) # This is like calling zip((1, 6), (2, 7), (3, 8), (4, 9), (5, 10))
+print(x)
+```
+
+```(1, 2, 3, 4, 5)```
+
+```python
+print(y)
+```
+
+```(6, 7, 8, 9, 10)```
+
+So that's a brief aside on a variable tool. When it comes to manipulating and cleaning data in the wild. Now, let's get back to plotting. Let's take these two lists and plot them to a new figure using `scatter`. Instead of plotting them as one data series, we'll slice the lists and plot them as two data series. You'll note that we can color each series with a single value if we want to. We can also do things like change the color or transparency of an entire series, or individual data points as well. Finally, we have the ability to label the data series, and I'll do that now:
+
+```python
+plt.figure()
+# plot a data series 'Tall students' in red using the first two elements of x and y
+plt.scatter(x[:2], y[:2], s=100, c='red', label='Tall students')
+# plot a second data series 'Short students' in blue using the last three elements of x and y 
+plt.scatter(x[2:], y[2:], s=100, c='blue', label='Short students')
 ```
 
