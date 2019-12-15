@@ -373,4 +373,23 @@ ax = plt.gca()
 ax.axis([0,6,0,10])
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/041.png' alt='041' width='65%' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/040.png' alt='040' width='65%' />
+
+```[0, 6, 0, 10]```
+
+Since we're doing this with the scripting layer, once we run the Jupyter cell, it renders to the NBI backend as we might expect.
+
+All right, one more demonstration on the fundamentals of putting together a plot. You can add artists to an axis object at any time. Pyplot is doing this for us when we call the `plot` function, it's determining what shape we want from the string, the location associated with that shape, that it's creating a patch object, and adding that to the axis. If we make subsequent calls to the `plot` function, this will add more data to our chart. You can see that when this is done, the points are rendered in **different colors** as the axis recognizes them as different data series:
+
+```python
+# create a new figure
+plt.figure()
+
+# plot the point (1.5, 1.5) using the circle marker
+plt.plot(1.5, 1.5, 'o')
+# plot the point (2, 2) using the circle marker
+plt.plot(2, 2, 'o')
+# plot the point (2.5, 2.5) using the circle marker
+plt.plot(2.5, 2.5, 'o')
+```
+
