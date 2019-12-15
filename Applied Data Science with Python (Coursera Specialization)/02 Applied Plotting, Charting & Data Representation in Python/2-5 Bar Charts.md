@@ -52,3 +52,15 @@ plt.bar(xvals, linear_data, width = 0.3, color='b')
 plt.bar(xvals, exponential_data, width = 0.3, bottom=linear_data, color='r')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/060.png' alt='060' width='65%' />
+
+Finally, we can pivot this bar graph into a horizontal bar graph by calling the `barh` function instead. But note that we have to change the bottom to a left and the width to a height:
+
+```python
+# or use barh for horizontal bar charts
+plt.figure()
+xvals = range(len(linear_data))
+plt.barh(xvals, linear_data, height = 0.3, color='b')
+plt.barh(xvals, exponential_data, height = 0.3, left=linear_data, color='r')
+```
+
