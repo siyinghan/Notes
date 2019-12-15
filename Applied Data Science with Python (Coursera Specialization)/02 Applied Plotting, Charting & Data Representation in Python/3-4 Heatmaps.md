@@ -31,3 +31,14 @@ plt.figure()
 _ = plt.hist2d(X, Y, bins=100)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/090.png' alt='090' width='65%' />
+
+You see, as you increase the bins you get the same effect. Every data point starts to fall into its own category. So you get a more clear picture. But everything eventually is just one color since every data point ends up being unique.
+
+Now a legend is important and heatmaps are no different. When using the pyplot scripting layer, this is as easy as calling the `pyplot.colorbar` function. Be warned though, there's lots of accounting and bookkeeping happening there under the hood:
+
+```python
+# add a colorbar legend
+plt.colorbar()
+```
+
