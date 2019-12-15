@@ -227,6 +227,29 @@ And that's nice. Now we have two plots, each with their own axis objects.
 Now the norm with `matplotlib` is that you store the axis object that you get back from the subplot. But you can call `subplot` again. At any time with the parameters that interest you in order to get back a given axis. Here, let's put exponential on the linear graph 2:
 
 ```python
+plt.figure()
+# subplot with 1 row, 2 columns, and current axis is 1st subplot axes
+plt.subplot(1, 2, 1)
+linear_data = np.array([1,2,3,4,5,6,7,8])
+plt.plot(linear_data, '-o')
 
+# plot exponential data on 1st subplot axes
+plt.subplot(1, 2, 1)
+plt.plot(exponential_data, '-x')
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/070.png' alt='070' width='65%' />
+
+This demonstrates a common problem, it looked like linear had roughly the same area under the line on the chart until we asked matplotlib to put them into one graph. Then the y axis was refreshed. There would be a big problem with misleading the reader if we didn't find a way to lock axis between two plots. When you create a new subplot you are able to share the x, y, or both axis using the share x and share y parameters.
+
+Here's how we could clean this up, we create a new figure. Then created a subplot on the left-hand side store it in AX1. After plotting that data we create the axis on the right-hand side, and we indicate explicitly we want to share the y-axis. Now we don't have to store the subplot to a variable like we did with AX1. Remember that when you use the scripting interface, high plot is going to get the current axis object with `GCA` or get current axis underneath. So a call to pipeplot.plot will transparently work with the last axis objects that we're using:
+
+```python
+plt.figure()
+ax1 = plt.subplot(1, 2, 1)
+plt.plot(linear_data, '-o')
+# pass sharey=ax1 to ensure the two subplots share the same y axis
+ax2 = plt.subplot(1, 2, 2, sharey=ax1)
+plt.plot(exponential_data, '-x')
 ```
 
