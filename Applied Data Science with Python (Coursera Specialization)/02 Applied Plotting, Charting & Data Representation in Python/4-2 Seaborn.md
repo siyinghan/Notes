@@ -72,3 +72,11 @@ grid = sns.jointplot(v1, v2, alpha=0.4);
 grid.ax_joint.set_aspect('equal')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/111.png' alt='111' width='65%' />
+
+**Hexbin plots** are the bivariate counterpart to histograms. Hexbin plots show the number of observations that fall within hexagonal bins. `sns.jointplot` includes the **hexbin** style we can use by passing in hex to the `kind` parameter:
+
+```python
+sns.jointplot(v1, v2, kind='hex');
+```
+
