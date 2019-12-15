@@ -253,3 +253,30 @@ ax2 = plt.subplot(1, 2, 2, sharey=ax1)
 plt.plot(exponential_data, '-x')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/071.png' alt='071' width='65%' />
+
+There we go. Two plots side by side and we've locked the y axis.
+
+Now, those of you who have been playing close attention will note that I used the add subplot function in the last module. But I didn't pass in three parameters, just one. The maplotlib developers allow you to specify the row, columns, and number of the plot that you want with either three parameters or a single parameter. Where the hundreds values the first argument, the tens the second argument, and the ones the third argument. So we will call subplot with three parameters, one, two, and one. And the axis that return should be equal to 1, which is created with the 1 parameter, 121:
+
+```python
+plt.figure()
+# the right hand side is equivalent shorthand syntax
+plt.subplot(1,2,1) == plt.subplot(121)
+```
+
+```True```
+
+I'm frankly not a big fan of this second syntax. It feels pretty hacky and it really only saves typing two commas and yet limits us to single digit radius.
+
+Now computer science folks might feel a little twitch inside like something's wrong with this notation. And I'll say that it certainly bugged me the first few times I saw it. An important fact to remember is that the plot location in the matrix of items is index starting at one and not at zero, as would be the convention if you were using something like NumPy. So if you're iterating through a matrix or list, create subplots. Remember to start at position plus one. Now, there's a nice function called `subplots`, note the plural, which allows you to get many axis objects at once, and I think this is great.
+
+So, if we wanted to get a three by three grid with all of the axis x and y ranges locked, we can do so like this. The syntax looks a little goofy maybe since we're unpacking the results of the subplots function directly. Wherein it's an effective way to build a grid where everything shares an axis. And of course, you could just return the tuple of plots and iterate it over if you wanted to.
+
+```python
+# create a 3x3 grid of subplots
+fig, ((ax1,ax2,ax3), (ax4,ax5,ax6), (ax7,ax8,ax9)) = plt.subplots(3, 3, sharex=True, sharey=True)
+# plot the linear_data on the 5th subplot axes 
+ax5.plot(linear_data, '-')
+```
+
