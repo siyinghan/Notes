@@ -161,3 +161,14 @@ The iris data set is a classic multivariate data set, which includes the sepal l
 pd.plotting.scatter_matrix(iris);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/105.png' alt='105' width='70%' />
+
+The scatter matrix creates scatter plots between the different variables and histograms along the diagonals. This allows us to quickly see some of the more obvious patterns in the data set. Looking at the scatter plots, it appears that there are some distinct groupings of the points, which might indicate that there could be some clustering going on. And while this looks impressive and is certainly useful, realize that in the last two weeks you have gained all of the skills to manually build these kinds of plots if you want to. This is nothing more than a four by four grid of subplots, with some plots histograms and the others scatterplots.
+
+Let's look at one more plotting tool in pandas which will help us visualize multivariate data. pandas includes a plotting tool for creating **parallel coordinates plots**. Parallel coordinate plots are a common way of visualizing high dimensional multivariate data:
+
+```python
+plt.figure()
+pd.plotting.parallel_coordinates(iris, 'Name');
+```
+
