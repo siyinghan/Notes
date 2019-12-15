@@ -300,3 +300,14 @@ plt.plot(3, 2)
 ```
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/037.png' alt='037' width='65%' />
+
+Here, we see that the return value is a line to the object, and we see our first figure up here. We don't see the data points though, which is a bit odd. It turns out that the third argument should be a string which signifies how we want that data point to be rendered.
+
+Let's use a period for a dot, and we'll see that our data point shows up:
+
+```python
+# we can pass in '.' to plt.plot to indicate that we want
+# the point (3,2) to be indicated with a marker '.'
+plt.plot(3, 2, '.')
+```
+
