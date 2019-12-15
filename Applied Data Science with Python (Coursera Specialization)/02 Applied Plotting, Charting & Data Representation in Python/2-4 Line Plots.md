@@ -14,3 +14,16 @@ plt.figure()
 plt.plot(linear_data, '-o', exponential_data, '-o')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/048.png' alt='048' width='65%' />
+
+So there are a couple of things which are new about this versus the scatter plots:
+
+- First, we only gave `y-axes` values to our plot call, no `x-axes` values. Instead, the `plot` function was smart enough to figure out that what we wanted was to use the **index** of the series as the x value. Which is pretty handy when you want to make quick plots.
+- Second we see that the plot     identifies this as two series of data and that the colors of the data from     the series are different including the data points and the lines between     the data points. This is different from the scatter plot which required us     to label the lines directly.
+
+Like all good `Python` libraries `matplotlib` invents *a string based mini language* for commonly used formatting. For instance, we could use an **s** inside of the formatting string which would plot another point using a **square marker**. Or we could use a series of dashes and dots to identify that a line should be dashed instead of solid:
+
+```python
+
+```
+
