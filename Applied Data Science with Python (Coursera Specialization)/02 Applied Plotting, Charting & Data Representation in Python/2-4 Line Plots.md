@@ -71,5 +71,5 @@ plt.plot(observation_dates, linear_data, '-o',  observation_dates, exponential_d
 
 The version of my Jupyter Notebook is higher than the tutorial, this part is good now.
 
-\------
+------
 
