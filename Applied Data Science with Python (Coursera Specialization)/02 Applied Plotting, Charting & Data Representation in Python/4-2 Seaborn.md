@@ -80,3 +80,14 @@ grid.ax_joint.set_aspect('equal')
 sns.jointplot(v1, v2, kind='hex');
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/112.png' alt='112' width='65%' />
+
+The hexbin style of plot works well with relatively large data sets. Another good option for visualizing the distribution of data sets is **kernel density estimations** or **KDE plots**. You can think of two dimensional KDE plots as the continuous version of the hexbin jointplot. First, let's tell Seaborn to use a different style using `sns.set_style('white')`. All of the following charts will have the gray grid turned off. Now we'll create a joint plot just like before, except this time, let's set the kind to **kde**. Finally, let's space to 0, which will plot the marginal distributions directly on the border of the scatter plot:
+
+```python
+# set the seaborn style for all the following plots
+sns.set_style('white')
+
+sns.jointplot(v1, v2, kind='kde', space=0);
+```
+
