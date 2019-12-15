@@ -55,3 +55,5 @@ plt.figure()
 sns.distplot(v3, hist_kws={'color': 'Teal'}, kde_kws={'color': 'Navy'});
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/109.png' alt='109' width='65%' />
+
