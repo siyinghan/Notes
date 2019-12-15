@@ -78,3 +78,19 @@ top_histogram.hist(X, bins=100)
 s = side_histogram.hist(Y, bins=100, orientation='horizontal')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/078.png' alt='078' width='70%' />
+
+Okay, this is close. We don't really care about the value of the y-axes for the top histogram or the value of the x-axes for the bottom histogram. Since these are probability density histograms, we care only about the relative values. One handy function of an axes object is that you can clear it. So we don't have to create a new figure and do all the GridSpec work all over again.
+
+So let's just call the clear function on the two histograms. Then we can call the hist function with the `density=True` argument. Which tells Matplotlib to scale the frequency data in the histogram between 0 and 1. Also we can flip the axes of the left-hand side histogram using the `invert_xaxis` function:
+
+```python
+# clear the histograms and plot normed histograms
+top_histogram.clear()
+top_histogram.hist(X, bins=100, normed=True)
+side_histogram.clear()
+side_histogram.hist(Y, bins=100, orientation='horizontal', normed=True)
+# flip the side histogram's x axis
+side_histogram.invert_xaxis()
+```
+
