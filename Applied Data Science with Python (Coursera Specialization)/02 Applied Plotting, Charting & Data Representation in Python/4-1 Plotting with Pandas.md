@@ -73,3 +73,11 @@ Now let's see what this data looks like a little more visually to plot this data
 df.plot(); # add a semi-colon to the end of the plotting call to suppress unwanted output
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/097.png' alt='097' width='55%' />
+
+The plot method on series and DataFrame is just a simple wrapper around plt.plot. So when we call df.plot, we get a line graph of all the columns in the data frame with labels. Notice how the colors are slightly different from the default matplotlib colors because of the style we used. Also, notice this cool Jupyter Notebook trick. If you add a semicolon to the end of the plotting call, this will suppress unwanted output. And this works with regular matplotlib, too. DataFrame.plot allows us to plot a number of different kinds of plots. We can select which plot we want to use by pressing it into the kind parameter. Let's try and create a scatter plot that takes the A and B columns of df:
+
+```python
+df.plot('A','B', kind = 'scatter');
+```
+
