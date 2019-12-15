@@ -33,3 +33,18 @@ for n in range(0,len(axs)):
     axs[n].set_title('n={}'.format(sample_size))
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/075.png' alt='075' width='70%' />
+
+Now we see that the 10,000 sampled plot looks much smoother than all of the others. And the 10 sample plot shows that each sample is basically in its own bin.
+
+So I think this brings up an important question of how many bins you should plot when using a histogram. I'm afraid that the answer isn't really clear. Both of these plots are true, one is a visual of the data at a coarse granularity, and one at a more fine grain granularity. When we look at the finest granularity in our data, plotting with 10,000 bins then the histograms became basically useless for decision making. Since they aren't showing trends between samples as much as they're just showing the sample size themselves. This is similar to using aggregate statistics like the mean in standard deviation to describe a sample of a population. These values are coarse and whether they are appropriate depends highly on your questions and interests. I've linked here to an optional reading which considers the issue of how many bins are appropriate from a couple of different statistical stances. But keep in mind this understanding that there's just no right or wrong, just useful and useless for a given need. 
+
+I want to use our newfound knowledge of histograms and subplots to introduce you to a more flexible `GridSpec` layout for subplots. The GridSpec allows you to map axes over multiple cells in a grid. For instance, let's create a scatter plot where the y values come from the normal distribution, and the x values come from a random distribution. It's not totally clear from looking at this plot what the actual distributions are for each axis, but we could add two smaller plots, each histograms, to make this a bit more clear:
+
+```python
+plt.figure()
+Y = np.random.normal(loc=0.0, scale=1.0, size=10000)
+X = np.random.random(size=10000)
+plt.scatter(X,Y)
+```
+
