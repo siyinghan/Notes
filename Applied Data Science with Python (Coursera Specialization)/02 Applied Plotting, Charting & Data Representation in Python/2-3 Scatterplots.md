@@ -85,7 +85,7 @@ print(y)
 
 ```(6, 7, 8, 9, 10)```
 
-So that's a brief aside on a variable tool. When it comes to manipulating and cleaning data in the wild. Now, let's get back to plotting. Let's take these two lists and plot them to a new figure using `scatter`. Instead of plotting them as one data series, we'll slice the lists and plot them as two data series. You'll note that we can color each series with a single value if we want to. We can also do things like change the color or transparency of an entire series, or individual data points as well. Finally, we have the ability to label the data series, and I'll do that now (this will come in handy later when building a legend):
+So that's a brief aside on a variable tool. When it comes to manipulating and cleaning data in the wild. Now, let's get back to plotting. Let's take these two lists and plot them to a new figure using `scatter`. Instead of plotting them as one data series, we'll slice the lists and plot them as two data series. You'll note that we can color each series with a single value if we want to. We can also do things like change the color or transparency of an entire series, or individual data points as well. Finally, we have the ability to label the data series, and I'll do that now:
 
 ```python
 plt.figure()
@@ -108,5 +108,12 @@ plt.ylabel('The grade of the student')
 plt.title('Relationship between ball kicking and grades')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/045.png' alt='045' width='65%' />
 
+And let's add a `legend` as well:
+
+```python
+# add a legend (uses the labels from plt.scatter)
+plt.legend()
+```
 
