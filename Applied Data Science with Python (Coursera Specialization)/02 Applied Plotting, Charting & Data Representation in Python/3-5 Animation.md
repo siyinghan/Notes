@@ -38,7 +38,7 @@ a = animation.FuncAnimation(fig, update, interval=100)
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/092.gif' alt='092' width='65%' />
 
-save the gif:
+**Save the gif:**
 
 ```python
 Writer = animation.writers['pillow']
@@ -46,3 +46,6 @@ writer = Writer(fps=15, metadata=dict(artist='Me'), bitrate=1800)
 a.save('a.gif', writer='imagemagick')
 ```
 
+There we go. A nice example of how sampling from a distribution an be used with an animation.
+
+`FuncAnimation` like most of the other classes in the animation package is a subclass of the animation object. The animation object has a handy safe function, which allows you to write the animation to a file. This requires additional third party library such as **FFmpeg** which can take a bit to install and set up. But the result is that you can fairly easily export your animations directly from the Jupiter Web programming environment. A figure animation with four sub-plots, one for each kind of distribution we might be interested in understanding, could be pretty neat. We could plot the samples for the normal distribution in one, for a gamma distribution in another, and then maybe a couple of paramaterized distributions like the normal distribution with different levels of standard deviation. This would be a great way to practice the skills that you've learned in this module, as it would require that you manage multiple sub-plots within an animation using histograms.
