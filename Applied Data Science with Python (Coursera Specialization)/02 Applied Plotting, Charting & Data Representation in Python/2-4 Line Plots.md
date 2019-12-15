@@ -119,3 +119,14 @@ The text is a bit hard to read because it just runs off the image. So you can ad
 plt.subplots_adjust(bottom=0.25)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/054.png' alt='054' width='65%' />
+
+And when we're talking of text let me share one more insight. `Matplotlib` has a fairly strong connection to `LaTeX` (a type setting language used by mathematicians and scientists). This means that you can use a subset of LaTeX directly in your labels then `matplotlib` will render them as equations. Here, for instance, we can set the `title` of the axes so that there's an x squared directly in it. We do this by escaping to `LaTeX` math mode with dollar signs. Note that this works regardless of whether you have `LaTeX` installed. But with a full `LaTeX` installation, you have significant control over text formatting:
+
+```python
+ax = plt.gca()
+ax.set_xlabel('Date')
+ax.set_ylabel('Units')
+ax.set_title('Exponential vs. Linear performance')
+```
+
