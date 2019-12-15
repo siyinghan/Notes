@@ -8,3 +8,14 @@ In the previous lecture, I introduced the `plot` function, which generates a ser
 
 With that in mind let's move on to talk first about **scatterplots**.
 
+A **scatterplot** is a two dimensional plot similar to the line plots I've shown. The scatter function takes an x-axis value as a first argument and y-axis value as the second. If the two arguments are the same, we get a nice diagonal alignment of points. Let's do this now. I'll bring in `numpy` as we're going to use it later and matplotlib is really based on numpy arrays. I'll create a short array for **x** and make **y** the same. Then create a new figure and scatterplot. You can see in this plot a nice diagonal line and `matplotlib` has sized our axises accordingly:
+
+```python
+import numpy as np
+x = np.array([1,2,3,4,5,6,7,8])
+y = x
+
+plt.figure()
+plt.scatter(x, y) # similar to plt.plot(x, y, '.'), but the underlying child objects in the axes are not Line2D
+```
+
