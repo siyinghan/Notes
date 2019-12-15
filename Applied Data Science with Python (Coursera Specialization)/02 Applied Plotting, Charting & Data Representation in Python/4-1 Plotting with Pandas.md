@@ -114,3 +114,11 @@ ax = df.plot.scatter('A', 'C', c='B', s=df['B'], colormap='viridis')
 ax.set_aspect('equal')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/100.png' alt='100' width='35%' />
+
+Setting the aspect ratio to equal allows the viewer to easily see that the range of series A is much smaller than series C. Using pandas, we can also easily do **box plots**:
+
+```python
+df.plot.box();
+```
+
