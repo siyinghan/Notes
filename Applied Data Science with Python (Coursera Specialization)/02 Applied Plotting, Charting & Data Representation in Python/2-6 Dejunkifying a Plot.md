@@ -97,3 +97,8 @@ Removing the label is easy, but changing the bars is a little bit of a pain. For
 
 **Before and After:**
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/066.png' alt='066' width='100%' />
+
+**The difference is even more stark when comparing to the matplotlib 1.5.3 defaults:**
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/067.png' alt='067' width='100%' />
