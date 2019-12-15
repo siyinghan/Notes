@@ -18,3 +18,19 @@ def onclick(event):
 plt.gcf().canvas.mpl_connect('button_press_event', onclick)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/093.png' alt='093' width='65%' />
+
+Now when we click on our plot we see the most information printed to the title. The `Matplotlib` documentation describes the kinds of events you can listen from. But whether they work or not, depends on the backend you're using, and some backends are not interactive. Button presses, key presses, scroll events and figuring axis enter and leave events are almost common. But the most important event for us is the **pick event**. The pick event allows you to respond when the user is actually clicked on a visual element in the figure. Let's look at an example. For this, I want to create a list of countries in randomized order. We can do this with the shuffle function from the random module. Then I'll create a new DataFrame with random values for height and weight, and another column for origin:
+
+```python
+from random import shuffle
+origins = ['China', 'Brazil', 'India', 'USA', 'Canada', 'UK', 'Germany', 'Iraq', 'Chile', 'Mexico']
+
+shuffle(origins)
+
+df = pd.DataFrame({'height': np.random.rand(10),
+                   'weight': np.random.rand(10),
+                   'origin': origins})
+df
+```
+
