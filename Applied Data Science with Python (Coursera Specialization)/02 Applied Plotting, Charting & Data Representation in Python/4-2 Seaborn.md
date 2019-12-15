@@ -63,3 +63,12 @@ The jointplot creates a scatterplot along the histograms for each individual var
 sns.jointplot(v1, v2, alpha=0.4);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/110.png' alt='110' width='65%' />
+
+The jointplot allows us to visualize the distribution of the two variables individually. As well as relationships between the variables. Using `jointplot` we can see that v1 and v2 appear to be normally distributed variables that are positively correlated. Because Seaborn uses matplotlib we can tweak the plots using Matplotlib's tools. Some of the plotting functions in Seaborn return a matplotlib axis object. While others operate on an entire figure and produce plots with several panels, returning a `Seaborn` grid object. In both cases, `matplotlib` can be used to further tweak the plots. For example, `sns.jointplot` returns a `Seaborn` grid object. From this we can plot a map plot axis subplot object using `grid.ax_joint`. Then, we can set the aspect ratio to be equal, using `set_aspect` equal:
+
+```python
+grid = sns.jointplot(v1, v2, alpha=0.4);
+grid.ax_joint.set_aspect('equal')
+```
+
