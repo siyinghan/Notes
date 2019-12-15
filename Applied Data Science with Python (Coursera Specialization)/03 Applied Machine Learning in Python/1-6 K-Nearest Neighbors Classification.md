@@ -1,1 +1,1 @@
-# Notes
+# 1-6 K-Nearest Neighbors Classification
