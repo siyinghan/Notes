@@ -46,3 +46,19 @@ plt.gca().set_ylabel('Weight')
 plt.gca().set_xlabel('Height')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/095.png' alt='095' width='65%' />
+
+Okay, nothing special with this chart yet but let's wired it up. We'll create a function called onpick, which takes on an event. This event is a pick event which has different data than the most event. In particular, it's got an index value which happens to correspond to our index and the dataframe. Now Matplotlib isn't aware of the data frame but it renders the data in the same order. So we can use the data frame iloc indexer to pull out the origin information:
+
+```python
+def onpick(event):
+    origin = df.iloc[event.ind[0]]['origin']
+    plt.gca().set_title('Selected item came from {}'.format(origin))
+
+# tell mpl_connect we want to pass a 'pick_event' into onpick when the event is detected
+plt.gcf().canvas.mpl_connect('pick_event', onpick)
+```
+
+```7```
+
+Now you can see that when you click on an item, it renders the origin as we would expect. And there we have it, a fairly straight forward example of adding interactivity to your graphs and plots. Now I'll be honest, this looks like very little code to write and this lecture was pretty short but there is a lot of hunting through documentation and forms that you have to do it in order to understand the details of the events which are being passed around. Pythons lack of static typing has an unfortunate side effect and it matches the documentation for features like events is buried or missing.
