@@ -29,3 +29,17 @@ plt.hist(v2, alpha=0.7, bins=np.arange(-50,150,5), label='v2');
 plt.legend();
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/107.png' alt='107' width='65%' />
+
+Looking at the histograms we can quickly see that v1 has a lower mean than v2, and that v2 has a larger spread than v1. Even though up to this point we've only used matplotlib for plotting we see that even importing Seaborn has changed the aesthetics of the plot to a different style from the matplotlib default.
+
+Let's visualize these histograms again but in a different way. First, let's pass in both of the series v1 and v2 in a list. And set the histtype to barstacked. Setting normed to True will normalize the histogram to form a probability density. Next, let's create a variable v3, which is the combination of v1 and v2. We'll use v3 to plot a kernel density estimate plot over the stacked histogram:
+
+```python
+# plot a kernel density estimation over a stacked barchart
+plt.figure()
+plt.hist([v1, v2], histtype='barstacked', density=True);
+v3 = np.concatenate((v1,v2))
+sns.kdeplot(v3);
+```
+
