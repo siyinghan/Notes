@@ -57,3 +57,9 @@ sns.distplot(v3, hist_kws={'color': 'Teal'}, kde_kws={'color': 'Navy'});
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/109.png' alt='109' width='65%' />
 
+The jointplot creates a scatterplot along the histograms for each individual variable on each axis. You've actually seen jointplots in module two and created them manually yourself. To create a jointplot, we just type `sns.jointplot` and pass in the two series, v1 and v2. Setting alpha to 0.4 will help with visualizing overlapping points:
+
+```python
+sns.jointplot(v1, v2, alpha=0.4);
+```
+
