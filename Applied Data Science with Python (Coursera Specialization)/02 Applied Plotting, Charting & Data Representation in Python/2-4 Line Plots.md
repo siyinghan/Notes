@@ -24,6 +24,8 @@ So there are a couple of things which are new about this versus the scatter plot
 Like all good `Python` libraries `matplotlib` invents *a string based mini language* for commonly used formatting. For instance, we could use an **s** inside of the formatting string which would plot another point using a **square marker**. Or we could use a series of dashes and dots to identify that a line should be dashed instead of solid:
 
 ```python
-
+# plot another series with a dashed red line
+plt.figure()
+plt.plot([22,44,55], '--r')
 ```
 
