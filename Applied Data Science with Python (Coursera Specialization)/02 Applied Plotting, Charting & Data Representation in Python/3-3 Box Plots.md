@@ -77,3 +77,17 @@ This isn't quite as flexible as with grid spec where we're essentially trying to
 ax2.yaxis.tick_right()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/086.png' alt='086' width='65%' />
+
+And there we are. An inset plot showing a distribution as a histogram layered on top of a box plot.
+
+Now, the box plot has a few more functions which are worth investigating before we finish this lecture off. First, if you don't supply the whis argument, the whiskers actually only go out to halfway between the interquartile range. You can figure that out through the top of the box minus the bottom of the box and times that value by 1.5.
+
+This is one method of detecting **outliers**. And the points which are plotted beyond the whiskers are called fliers. You can see how this method of outlier detection differs with respect to our three distributions:
+
+```python
+# if `whis` argument isn't passed, boxplot defaults to showing 1.5*interquartile (IQR) whiskers with outliers
+plt.figure()
+_ = plt.boxplot([ df['normal'], df['random'], df['gamma'] ] )
+```
+
