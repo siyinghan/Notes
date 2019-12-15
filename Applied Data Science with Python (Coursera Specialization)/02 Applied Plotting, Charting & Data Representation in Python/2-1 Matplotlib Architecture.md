@@ -31,4 +31,3 @@ I just want to address one more topic before we move on, and that's the differen
 
 * The `pyplot` **scripting layer** is a **procedural method** for building a visualization, in that we tell the underlying software which drawing     actions we want it to take in order to render our data.
 * There are also **declarative methods** for visualizing data. **HTML** is a great example of this. Instead of issuing command after command to the backend rendering agent, which is the browser with HTML, HTML documents are formatted as models of relationships in a document, often called the **DOM**, or Document Object Model. These are two fundamentally different ways of creating and representing graphical interfaces. The popular `JavaScript` library, for instance, D3.JS is an example of a declarative information visualization method. While matplotlib's pyplot is an example of a procedural information visualization method.
-
