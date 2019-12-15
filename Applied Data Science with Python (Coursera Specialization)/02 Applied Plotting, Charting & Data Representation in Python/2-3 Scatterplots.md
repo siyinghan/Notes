@@ -38,3 +38,13 @@ plt.figure()
 plt.scatter(x, y, s=100, c=colors)
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/043.png' alt='043' width='65%' />
+
+You have some set of items, but they're actually described as the same slice across many different data sources. It's in one object-based language, but you might expect that each data point is represented with its own instance, which encapsulates all of its properties. For instance, it's called an x value and a y value and a color and a size. That's not the case here. This is where it's useful to have some knowledge of list comprehensions and lambdas as we talked about in the first course. Also important is the zip function and list unpacking. And because this is so common in the Python data science world, I'm going to take a brief aside and talk about that here. Recall that the zip method takes a number of iterables and creates tuples out of them, matching elements based on index. So if we have two lists of numbers, zip will take the first from each and create a tuple, then the second from each and create a tuple, and so on. Also remember that zip has lazy evaluation because it's actually a generator in Python 3 which means we need to use the list function if we want to see the results of iterating over zip. Let's demonstrate.
+
+Here we'll create a new `zip` generator with a zip function passing in two lists of numbers. When we convert this generator to a list, we see there's a list of pairwise tuples:
+
+```python
+
+```
+
