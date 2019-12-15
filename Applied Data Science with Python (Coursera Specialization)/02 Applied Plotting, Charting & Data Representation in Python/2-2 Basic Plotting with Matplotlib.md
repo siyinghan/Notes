@@ -311,3 +311,38 @@ Let's use a period for a dot, and we'll see that our data point shows up:
 plt.plot(3, 2, '.')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/Image/038.png' alt='038' width='65%' />
+
+There we go. You'll notice that the subsequent calls to plot have actually updated our visualization.
+
+This is a particular feature of this interactive backend, other backends might not. For instance, you might see some web tutorials using the older `%matplotlib inline` magic instead of the `%matplotlib notebook` magic. The inline magic is not interactive, so subsequent calls create new plots as new cells in the notebook, and this can be handy to.
+
+Here's where some of the confusion with matplotlib as a library tends to come from. In the last lecture, I explained that there's an **artist's layer**, and that it is figures with subplots and axes and data points, which are rendered as patches onto these axes, but we haven't seen any of that here. Instead, we just called one function on a module named **plot**, so what's going on? The `pyplot` scripting interface is managing a lot of objects for you. It keeps track of the latest figure of subplots, and of the axis objects. Moreover, it actually hides some of these behind methods of its own. So the `pyplot` module itself has a function which is called **plot**, but it redirects calls to this function to the current axes object. This makes for a significant learning curve, and you'll see many discussions in web tutorials, and Stack Overflow, where people are confused by these two different approaches to making figures show up.
+
+<br/>
+
+So let's take a look at a comparable approach that's a bit more verbose, and some people would call this the **matplotlib object API**, but I think it's more accurate to think of it as directly interfacing with the **artist layer** instead. First, I'm going to import a new **backend** called `FigureCanvasAgg`. I don't have to use the module or level use function since we're not calling this from the scripting API. Also import, the figure object. Then we'll go ahead and create a new figure and associate it with the backend. We can then add a subplot directly to this. We're going to talk more about subplots in a future lecture, but this number 111 actually means that we just want one plot. The return value for the subplot is the axes object, which contains methods for plotting, so we can plot our image as per usual. Now, the backend that we're using, the one for the Jupyter Notebooks isn't able to render this directly, since it expects the **scripting layer**, pyplot to create it all of the objects. So here we'll save the figure to a ping file instead.
+
+ ```python
+# First let's set the backend without using mpl.use() from the scripting layer
+from matplotlib.backends.backend_agg import FigureCanvasAgg
+from matplotlib.figure import Figure
+
+# create a new figure
+fig = Figure()
+
+# associate fig with the backend
+canvas = FigureCanvasAgg(fig)
+
+# add a subplot to the fig
+ax = fig.add_subplot(111)
+
+# plot the point (3,2)
+ax.plot(3, 2, '.')
+
+# save the figure to test.png
+# you can see this figure in your Jupyter workspace afterwards by going to
+# https://hub.coursera-notebooks.org/
+canvas.print_png('test.png')
+ ```
+
