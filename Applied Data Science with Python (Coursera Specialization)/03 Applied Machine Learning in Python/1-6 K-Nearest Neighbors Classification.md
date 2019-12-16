@@ -172,3 +172,25 @@ plot_fruit_knn(X_train, y_train, 5, 'distance')
 
 You can also pass your own function, but we'll leave that for later. We can also see how our new classifier behaves for different values of k. So in this series of plots, we can see the different decision boundaries that are produced as **k** is varied from **one** to **five** to **ten**:
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/056.png' alt='056' />
+
+We can see that when K has a small value like 1, the classifier is good at learning the classes for individual points in the training set. But with a decision boundary that's fragmented with considerable variation. *This is because when K = 1, the prediction is sensitive to noise, outliers, mislabeled data, and other sources of variation in individual data points.* For larger values of K, the areas assigned to different classes are smoother and not as fragmented and more robust to noise in the individual points. *But possibly with some mistakes, more mistakes in individual points.* This is an example of what's known as the bias variance tradeoff. And we'll look at that phenomenon and its implications in more depth in next week's class.
+
+Given the changes in the classifier's decision boundaries we observed when we changed k, the natural question might be *how the value of k, how the choice of k, affects the accuracy of the classifier*. We can plot the accuracy as a function of k very easily using this short snippet of code:
+
+```python
+k_range = range(1,20)
+scores = []
+
+for k in k_range:
+    knn = KNeighborsClassifier(n_neighbors = k)
+    knn.fit(X_train, y_train)
+    scores.append(knn.score(X_test, y_test))
+
+plt.figure()
+plt.xlabel('k')
+plt.ylabel('accuracy')
+plt.scatter(k_range, scores)
+plt.xticks([0,5,10,15,20]);
+```
+
