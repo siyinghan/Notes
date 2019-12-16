@@ -16,6 +16,8 @@
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/095.jpg' alt='095' width='500px' />
 
+Every figure can include additional information. You can include an image, multimedia, or a combination of all of them. But it also has some additional tags such as the **figcaption** (it provides additional information for somebody who may not be able to see it.).
+
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/096.jpg' alt='096' width='500px' />
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/097.jpg' alt='097' width='500px' />
