@@ -16,4 +16,4 @@ Let's look at a visual example of a **k-NN classifier** that is based on our **f
 
 So what I've done here is taken our training set and plotted each piece of fruit using two of its features. The **width** and the **height**. These two features together form what is called the feature space of the classifier. And I've shown each data point's label using the colors shown in the legend. So as you can see, there are four different colors here that correspond to the four types of fruit that are in our data set. These broad areas of color show how any point, given a width and height, could be classified according to a one nearest neighbor rule. So, in other words, I've set **k = 1** here.
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/045.png' alt='045' width='370px'/>
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/045.png' alt='045' width='350px'/>
