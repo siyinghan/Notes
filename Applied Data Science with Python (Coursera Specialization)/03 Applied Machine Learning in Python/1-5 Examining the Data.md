@@ -30,3 +30,36 @@ Now the visualization techniques that I'll be showing here work well when you ha
 
 But for now, the first visualization tool we'll use is called a **feature pair plot** and that's shown here.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/041.png' alt='041'/>
+
+So this plot shows all possible pairs of features and produces a scatter plot for each pair, showing how the features are correlated to each other or not. Each point in the scatter plot represents a piece of fruit, colored according to the class it belongs to. And positioned using the parafeatures assigned to that scatter plot. Along the diagonal is a histogram showing the distribution of feature values for that feature. So in this pair plot, the dimensions shown here in order are, **height**, **width**, **mass**. And **color score** of the fruit examples in our training set. So the upper left corner of the histogram here shows the distribution of the **height feature** for all samples in the training set. And the scatter plot to its immediate right plots the **width** of each sample on the **x-axis** and the **height** of the sample on the **y-axis**. Just by looking at this pair plot, we can already see that some pairs of features, like the height and color score in the top right corner here, are *good for separating out different classes of fruit*. And this suggests that a classifier that was trained using those features could likely learn to classify the various fruit types reasonably well.
+
+```python
+# plotting a scatter matrix
+from matplotlib import cm
+
+X = fruits[['height', 'width', 'mass', 'color_score']]
+y = fruits['fruit_label']
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
+
+cmap = cm.get_cmap('gnuplot')
+scatter = pd.plotting.scatter_matrix(X_train, c= y_train, marker = 'o', s=40, hist_kwds={'bins':15}, figsize=(9,9), cmap=cmap)
+```
+
+Here's the code that we'll use to create this plot, and let's run this now on our training set. Note that *a pair plot like this does not show interactions between all features that might exist, just between pairs of them*. So the plot itself may not show all the interesting relationships that do exist between the features. But it does give you a rough idea of some of the interactions that might exist.
+
+We can also look at features that use a subset of three features by creating a three dimensional plot. And here's the code that we can use to do this:
+
+```python
+# plotting a 3D scatter plot
+from mpl_toolkits.mplot3d import Axes3D
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection = '3d')
+ax.scatter(X_train['width'], X_train['height'], X_train['color_score'], c = y_train, marker = 'o', s=100)
+ax.set_xlabel('width')
+ax.set_ylabel('height')
+ax.set_zlabel('color_score')
+plt.show()
+```
+
