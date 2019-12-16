@@ -106,6 +106,7 @@
   + **Course 2: Introduction to CSS3**
     - [1-1 Welcome]
     - [1-2 Cascading Style Sheets (CSS)]
+    - [1-3 Colors]
     - 
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
