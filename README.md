@@ -101,7 +101,8 @@
     - [3-4 cPanel (free host)]
     - [3-5 Using Secure File Transfer Protocol [SFTP]]
     - [3-6 Final Project]
-    - 
+    - [3-7 Closing]
+    - [3-8 The Secret Lecture]
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
   + **Course 3: Interactivity with JavaScript**
