@@ -1,5 +1,9 @@
 # 1-4 An Example Machine Learning Problem
 
+**Material**: [fruit_data_with_colors.txt](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Material/fruit_data_with_colors.txt)
+
+<br/>
+
 For our first machine learning exploration, we're going to build an extremely simple form of object recognition system. Now although the example we'll use is very simple, it does reflect many of the same key machine learning concepts that go into building real world commercial systems. The dataset we're going to use is a small, very simple, example dataset derived from one originally created by Dr. Iain Murray at the University of Edinburgh for the task of training a classifier to distinguish between different types of fruit.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/034.png' alt='034'/>
