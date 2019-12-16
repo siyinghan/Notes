@@ -25,6 +25,25 @@
     + [4-2 More Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-2%20More%20Distributions.md)
     + [4-3 Hypothesis Testing in Python](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-3%20Hypothesis%20Testing%20in%20Python.md)
   * **Course 2: Applied Plotting, Charting & Data Representation in Python**
+    + 1-1 Tools for Thinking about Design (Alberto Cairo)
+    + 1-2 Graphical heuristics: Data-ink ratio (Edward Tufte)
+    + 1-3 Graphical heuristics: Chart junk (Edward Tufte)
+    + 1-4 Graphical heuristics: Lie Factor and Spark Lines (Edward Tufte)
+    + 1-5 The Truthful Art (Alberto Cairo)
+    + 2-1 Matplotlib Architecture
+    + 2-2 Basic Plotting with Matplotlib
+    + 2-3 Scatterplots
+    + 2-4 Line Plots
+    + 2-5 Bar Charts
+    + 2-6 Dejunkifying a Plot
+    + 3-1 Subplots
+    + 3-2 Histograms
+    + 3-3 Box Plots
+    + 3-4 Heatmaps
+    + 3-5 Animation
+    + 3-6 Interactivity
+    + 4-1 Plotting with Pandas
+    + 4-2 Seaborn
   * **Course 3: Applied Machine Learning in Python**
   * **Course 4: Applied Text Mining in Python**
   * **Course 5: Applied Social Network Analysis in Python**
