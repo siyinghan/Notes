@@ -78,3 +78,14 @@
     + [4-6 Data Leakage](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/4-6%20Data%20Leakage.md)
   * **Course 4: Applied Text Mining in Python**
   * **Course 5: Applied Social Network Analysis in Python**
+
+* Web Design for Everybody (Coursera Specialization)
+  + **Course 1: Introduction to HTML5**
+    - [1-1 Introduction to HTML5]
+    - [1-2 The Evolution of HTML]
+  + **Course 2: Introduction to CSS3**
+    - [1-1 Introduction to HTML5]
+  + **Course 3: Interactivity with JavaScript**
+    - [1-1 Introduction to HTML5]
+  + **Course 4: Advanced Styling with Responsive Design**
+    - [1-1 Introduction to HTML5]
