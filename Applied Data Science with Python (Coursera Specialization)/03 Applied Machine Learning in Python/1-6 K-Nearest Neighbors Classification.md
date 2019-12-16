@@ -1,6 +1,6 @@
 # 1-6 K-Nearest Neighbors Classification
 
-**Material**: [fruit_data_with_colors.txt](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Material/fruit_data_with_colors.txt)
+**Material**: [fruit_data_with_colors.txt](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Material/fruit_data_with_colors.txt), [adspy_shared_utilities.py](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Material/adspy_shared_utilities.py)
 
 <br/>
 
