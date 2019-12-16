@@ -105,6 +105,7 @@
     - [3-8 The Secret Lecture]
   + **Course 2: Introduction to CSS3**
     - [1-1 Welcome]
+    - [1-2 Cascading Style Sheets (CSS)]
     - 
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
