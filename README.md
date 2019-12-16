@@ -99,6 +99,7 @@
     - [3-2 Validating Your Site]
     - [3-3 Hosting Your Site]
     - [3-4 cPanel (free host)]
+    - [3-5 Using Secure File Transfer Protocol [SFTP]]
     - 
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
