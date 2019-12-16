@@ -1,1 +1,3 @@
 # 1-4 An Example Machine Learning Problem
+
+For our first machine learning exploration, we're going to build an extremely simple form of object recognition system. Now although the example we'll use is very simple, it does reflect many of the same key machine learning concepts that go into building real world commercial systems. The dataset we're going to use is a small, very simple, example dataset derived from one originally created by Dr. Iain Murray at the University of Edinburgh for the task of training a classifier to distinguish between different types of fruit.
