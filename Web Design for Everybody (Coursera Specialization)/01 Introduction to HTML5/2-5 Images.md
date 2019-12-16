@@ -34,6 +34,7 @@ Creating good alternative text is almost an art. The good news is that it is an 
 
 - **Decide what information the image conveys:** Does someone need to see the page to understand your     message? If not, you can treat the image as decorative use a null (empty)     text alternative (alt=""). Make sure not to include a space     inside the quotes since some screen readers may then read it aloud.
 - **If the image is information, be complete, but concise**: In most cases you should be able to use a     short phrase or sentence as alt text. 
+- **Prioritize information in text alternative:** Aim to put the most important information at the     beginning.
 
 - **Avoid superfluous information:** There is rarely a need to use the words “image”, “icon”, or “picture” in the alt text. 
 - **Handle complex images as a special case:** Complex images such as graphs, charts, maps, and     illustrations contain substantial information – more than can be conveyed in a short phrase or sentence. In these cases, a two-part text alternative is required. The first part is the short description to identify the image and, where appropriate, indicate the location of the long description. The     second part is the long description – a textual representation of the essential information conveyed by the image. 
