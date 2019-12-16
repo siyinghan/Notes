@@ -51,10 +51,10 @@
     + [1-4 An Example Machine Learning Problem](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-4%20An%20Example%20Machine%20Learning%20Problem.md)
     + [1-5 Examining the Data](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-5%20Examining%20the%20Data.md)
     + [1-6 K-Nearest Neighbors Classification]
-    + [2-01 Introduction to Supervised Machine Learning]
+    + [2-1 Introduction to Supervised Machine Learning]
     + [2-02 Overfitting and Underfitting]
     + [2-03 Supervised Learning: Datasets]
-    + [2-04 K-Nearest Neighbors: Classification and Regression]
+    + [2-4 K-Nearest Neighbors: Classification and Regression]
     + [2-05 Linear Regression: Least-Squares]
     + [2-06 Linear Regression: Ridge, Lasso, and Polynomial Regression]
     + [2-07 Logistic Regression]
