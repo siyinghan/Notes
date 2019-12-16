@@ -104,7 +104,8 @@
     - [3-7 Closing]
     - [3-8 The Secret Lecture]
   + **Course 2: Introduction to CSS3**
-    - [1-1 Introduction to HTML5]
+    - [1-1 Welcome]
+    - 
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
   + **Course 4: Advanced Styling with Responsive Design**
