@@ -6,7 +6,7 @@
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/146.jpg' alt='146' width='500px' />
 
-<td>is table cell. Inside the table, you're going to have one or more table rows. And then inside each table row, you're going to have one or more <td> elements.
+`<td>`is table cell. Inside the table, you're going to have one or more table rows. And then inside each table row, you're going to have one or more `<td>` elements.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/147.jpg' alt='147' width='500px' />
 
@@ -14,7 +14,7 @@ Three rows, three elements inside each row.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/148.jpg' alt='148' width='500px' />
 
-<th>: table heading
+`<th>`: table heading
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/149.jpg' alt='149' width='500px' />
 
