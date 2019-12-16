@@ -87,6 +87,7 @@
     - [1-4 Looking at Your Browser Options]
     - [1-5 Editors: How to use an editor to create an HTML file]
     - [2-1 The Document Object Model [DOM]]
+    - [2-2 HTML5 Tags and Syntax]
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
   + **Course 3: Interactivity with JavaScript**
