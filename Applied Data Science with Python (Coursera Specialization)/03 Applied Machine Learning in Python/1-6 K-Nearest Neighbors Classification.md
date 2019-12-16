@@ -168,3 +168,7 @@ from adspy_shared_utilities import plot_fruit_knn
 plot_fruit_knn(X_train, y_train, 5, 'distance')
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/055.png' alt='055' width='650px'/>
+
+You can also pass your own function, but we'll leave that for later. We can also see how our new classifier behaves for different values of k. So in this series of plots, we can see the different decision boundaries that are produced as **k** is varied from **one** to **five** to **ten**:
+
