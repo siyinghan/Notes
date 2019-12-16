@@ -93,6 +93,7 @@
     - [2-5 Images]
     - [2-6 Hyperlinks]
     - [2-7 Multimedia (video & audio)]
+    - [Tables]
     - 
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
