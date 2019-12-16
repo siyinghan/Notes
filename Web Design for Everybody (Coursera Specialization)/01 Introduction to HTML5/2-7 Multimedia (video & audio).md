@@ -23,10 +23,48 @@
 **Example for Video element:**
 ------
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/139.png' alt='139' width='500px' />
+Video does not play automatically when the web page is opened：
+
+```html
+<h1>Video</h1>
+<video src="BoxCar.MOV" widht="400">
+  Your browser does not support the <code>video</code> element.
+</video>
+```
+
+Video plays automatically when the web page is opened：
+
+```html
+<h1>Video</h1>
+<video src="BoxCar.MOV" widht="400" autoplay>
+  Your browser does not support the <code>video</code> element.
+</video>
+```
+
+Video with a **control panel**:
+
+```html
+<h1>Video</h1>
+<video src="BoxCar.MOV" widht="400" controls>
+  Your browser does not support the <code>video</code> element.
+</video>
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/139.png' alt='139' width='350px' />
+
+Multiple attributes:
+
+```html
+<h1>Video</h1>
+<video src="BoxCar.MOV" widht="400" controls loop>
+  Your browser does not support the <code>video</code> element.
+</video>
+```
 
 **Example for Audio element:**
 ------
+
+
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/140.png' alt='140' width='500px' />
 
