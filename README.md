@@ -45,21 +45,21 @@
     + [4-1 Plotting with Pandas](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-1%20Plotting%20with%20Pandas.md)
     + [4-2 Seaborn](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-2%20Seaborn.md)
   * **Course 3: Applied Machine Learning in Python**
-    + [1-1 Introduction]
-    + [1-2 Key Concepts in Machine Learning]
-    + [1-3 Python Tools for Machine Learning]
-    + [1-4 An Example Machine Learning Problem]
-    + [1-5 Examining the Data]
+    + [1-1 Introduction](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-1%20Introduction.md)
+    + [1-2 Key Concepts in Machine Learning](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-2%20Key%20Concepts%20in%20Machine%20Learning.md)
+    + [1-3 Python Tools for Machine Learning](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-3%20Python%20Tools%20for%20Machine%20Learning.md)
+    + [1-4 An Example Machine Learning Problem](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-4%20An%20Example%20Machine%20Learning%20Problem.md)
+    + [1-5 Examining the Data](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-5%20Examining%20the%20Data.md)
     + [1-6 K-Nearest Neighbors Classification]
-    + [2-1 Introduction to Supervised Machine Learning]
-    + [2-2 Overfitting and Underfitting]
-    + [2-3 Supervised Learning: Datasets]
-    + [2-4 K-Nearest Neighbors: Classification and Regression]
-    + [2-5 Linear Regression: Least-Squares]
-    + [2-6 Linear Regression: Ridge, Lasso, and Polynomial Regression]
-    + [2-7 Logistic Regression]
-    + [2-8 Linear Classifiers: Support Vector Machines]
-    + [2-9 Multi-Class Classification]
+    + [2-01 Introduction to Supervised Machine Learning]
+    + [2-02 Overfitting and Underfitting]
+    + [2-03 Supervised Learning: Datasets]
+    + [2-04 K-Nearest Neighbors: Classification and Regression]
+    + [2-05 Linear Regression: Least-Squares]
+    + [2-06 Linear Regression: Ridge, Lasso, and Polynomial Regression]
+    + [2-07 Logistic Regression]
+    + [2-08 Linear Classifiers: Support Vector Machines]
+    + [2-09 Multi-Class Classification]
     + [2-10 Kernelized Support Vector Machines]
     + [2-11 Cross-Validation]
     + [2-12 Decision Trees]
