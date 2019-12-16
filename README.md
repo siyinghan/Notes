@@ -1,7 +1,7 @@
 # Notes
 
-- Applied Data Science with Python (Coursera Specialization)
-  * 01 Introduction to Data Science in Python
+- **Applied Data Science with Python (Coursera Specialization)**
+  * **Course 1: Introduction to Data Science in Python**
     + [00 Miniconda and Jupyter Notebook](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/00%20Miniconda%20and%20Jupyter%20Notebook.md)
     + [1-1 Reading and Writing CSV files](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/1-1%20Reading%20and%20Writing%20CSV%20files.md)
     + [1-2 Dates and Times](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/1-2%20Dates%20and%20Times.md)
@@ -24,7 +24,7 @@
     + [4-1 Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-1%20Distributions.md)
     + [4-2 More Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-2%20More%20Distributions.md)
     + [4-3 Hypothesis Testing in Python](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-3%20Hypothesis%20Testing%20in%20Python.md)
-  * 02 Applied Plotting, Charting & Data Representation in Python
-  * 03 Applied Machine Learning in Python
-  * 04 Applied Text Mining in Python
-  * 05 Applied Social Network Analysis in Python
+  * **Course 2: Applied Plotting, Charting & Data Representation in Python**
+  * **Course 3: Applied Machine Learning in Python**
+  * **Course 4: Applied Text Mining in Python**
+  * **Course 5: Applied Social Network Analysis in Python**
