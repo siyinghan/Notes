@@ -63,3 +63,6 @@ ax.set_zlabel('color_score')
 plt.show()
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/042.png' alt='042'/>
+
+So in this example, we plot different fruits using three coordinates. So here we'll the show the **width**, the **height**, and the **color score**. Here again, each point represents a single piece of fruit and its color according to its fruit label value. So in this 3D plot, you could actually rotate the plot along the various axes by holding down the mouse button and then dragging. And you can clearly see that the different fruit types are in pretty well-defined clusters that are also well-separated in feature space. So now that we've taken a look at the data, next we'll look at a simple prediction task for this data set in a bit more detail.
