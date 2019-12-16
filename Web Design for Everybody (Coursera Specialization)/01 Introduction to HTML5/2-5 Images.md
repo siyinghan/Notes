@@ -77,3 +77,27 @@ If you want to learn more about creating good alt text, I recommend the W3 alt d
     <i class="fab fa-500px fa-10x"></i>
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/119.png' alt='119' width='400px'/>
+
+**Use the icon for hyperlink:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Page</title>
+    <link rel='stylesheet'
+    href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'
+    integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf'
+    crossorigin='anonymous'
+  </head>
+  <body>
+    <i class="fab fa-500px"></i>
+    <br />
+    <a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-5x"></i></a>
+    <br />
+  </body>
+</html>
+```
+
