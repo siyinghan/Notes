@@ -64,6 +64,22 @@ Multiple attributes:
 **Example for Audio element:**
 ------
 
+```html
+<h1>Audio</h1>
+<audio
+  src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Tchaikovsky_-_1812_overture.ogg"
+  controls>
+  Pyotr Ilyich Tchaikovsky - 1812 overture
+</audio>
+<br />
+<audio
+  src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Tchaikovsky_-_1812_overture.ogg#t=15:35"
+  controls>
+  Pyotr Ilyich Tchaikovsky - 1812 overture, but set to start at the exciting
+  part!
+</audio>
+```
+
 
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/140.png' alt='140' width='500px' />
