@@ -1,1 +1,1 @@
-# Notes
+# 3-4 cPanel (free host)
