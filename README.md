@@ -89,6 +89,7 @@
     - [2-1 The Document Object Model [DOM]]
     - [2-2 HTML5 Tags and Syntax]
     - [2-3 Semantic Tags]
+    - [2-4 Template Page]
     - 
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
