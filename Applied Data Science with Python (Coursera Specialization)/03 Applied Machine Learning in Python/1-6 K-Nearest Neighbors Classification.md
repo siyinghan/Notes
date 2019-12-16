@@ -155,6 +155,16 @@ Now let's use a utility function called `plot_fruit_knn` that's included in the 
 ```python
 from adspy_shared_utilities import plot_fruit_knn
 
-plot_fruit_knn(X_train, y_train, 5, 'uniform')
+plot_fruit_knn(X_train, y_train, 5, 'uniform') # we choose 5 nearest neighbors
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/054.png' alt='054' width='650px'/>
+
+You can then try out different values of k for yourself to see what the effect is on the decision boundaries. The **uniform** parameter that I pass in here, as the last parameter is the waiting method to be used. So here I'm passing in the string uniform, which *means to treat all neighbours equally when combining their labels*. If you like, you can try changing this to the word **distance**, if you want to try a distance wave method:
+
+```python
+from adspy_shared_utilities import plot_fruit_knn
+
+plot_fruit_knn(X_train, y_train, 5, 'distance')
 ```
 
