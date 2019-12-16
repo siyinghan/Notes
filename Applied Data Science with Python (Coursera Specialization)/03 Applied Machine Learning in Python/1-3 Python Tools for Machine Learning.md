@@ -2,4 +2,11 @@
 
 Okay, now that we've covered a little bit of background on what machine learning is and some of the major types of machine learning problems, there's nothing like getting started with our own machine learning application in Python. And we're going to get started on that right now. So to do that, we're going to make use of several important Python libraries that will support our work. These include `scikit-learn`, `SciPy`, `NumPy`, `pandas`, and `matplotlib`. We recommend installing all of these using the Anaconda Python distribution since it comes with all the libraries we'll need in this part of the course. If you have some other existing Python installation, you can install the libraries we'll be using from the command line using pip, like this.
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/027.png' alt='023'/>
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/028.png' alt='028' width='650px'/>
+
+https://scikit-learn.org/stable/
+
+https://scikit-learn.org/stable/user_guide.html
+
+https://scikit-learn.org/stable/modules/classes.html
+
