@@ -32,5 +32,4 @@ Now, this will read the dataset from disk, and store it into a data frame variab
 fruits.head()
 ```
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/040.png' alt='040' width='550px'/>
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/040.png' alt='040' width='520px'/>
