@@ -4,4 +4,4 @@ Hi, and welcome to the applied machine learning component of the University of M
 
 So what defines the field of **machine learning**?
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/001.png' alt='001' width='500px' />
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/001.png' alt='001' width='450px' />
