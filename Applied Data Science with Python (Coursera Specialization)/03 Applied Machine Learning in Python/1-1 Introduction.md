@@ -5,3 +5,7 @@ Hi, and welcome to the applied machine learning component of the University of M
 So what defines the field of **machine learning**?
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/001.png' alt='001' width='500px' />
+
+In a lot of cases when a computing problem needs to be solved, for example, storing and retrieving data from a database, the way we often address it is to write a program that manually specifies a series of programming steps that need to be run to solve that particular problem. This works great for the vast number of computer science problems that are out there. However, not all problems lend themselves to being solved effectively by writing a handcrafted program or set of rules. For example, how would you write down a set of rules in a programming language for accurately converting human speech to text?
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/002.png' alt='002' width='500px' />
