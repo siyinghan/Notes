@@ -17,6 +17,18 @@ Where each object, so in our case a piece of fruit, is represented by a row, and
 So the first thing we are going to do is to load the fruit dataset file using the very handy read table command in pandas:
 
 ```python
+%matplotlib notebook
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.model_selection import train_test_split
 
+fruits = pd.read_csv('fruit_data_with_colors.txt', delimiter='\t')
+```
+
+Now, this will read the dataset from disk, and store it into a data frame variable that we'll call **fruits** here. Okay, let's look at this dataset and dump out the first few rows of the data frame.
+
+```python
+fruits.head()
 ```
 
