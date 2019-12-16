@@ -222,6 +222,6 @@ plt.xlabel('Training set proportion (%)')
 plt.ylabel('accuracy');
 ```
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/059.png' alt='059' width='600px'/>
 
 So we've taken several steps in this course so far. We've looked at a data set, plotted some features. We then took the features and learned how to compute a `train_test_split`. Used that to train a classifier and used the resulting classifier to make some predictions for new objects. So congratulations, you've just created and run your first machine learning application in Python. In next week's class, we'll go into some supervised learning methods in more depth. And look beyond **k-nearest neighbors** to learn how and why to apply other types of classifiers to machine learning problems.
