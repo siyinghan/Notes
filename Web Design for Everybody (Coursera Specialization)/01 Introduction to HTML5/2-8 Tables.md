@@ -14,7 +14,7 @@ Three rows, three elements inside each row.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/148.jpg' alt='148' width='500px' />
 
-<th>: table heading
+`<th>`: table heading
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/149.jpg' alt='149' width='500px' />
 
