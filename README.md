@@ -90,6 +90,7 @@
     - [2-2 HTML5 Tags and Syntax]
     - [2-3 Semantic Tags]
     - [2-4 Template Page]
+    - [2-5 Images]
     - 
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
