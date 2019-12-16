@@ -25,25 +25,25 @@
     + [4-2 More Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-2%20More%20Distributions.md)
     + [4-3 Hypothesis Testing in Python](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-3%20Hypothesis%20Testing%20in%20Python.md)
   * **Course 2: Applied Plotting, Charting & Data Representation in Python**
-    + 1-1 Tools for Thinking about Design (Alberto Cairo)
-    + 1-2 Graphical heuristics: Data-ink ratio (Edward Tufte)
-    + 1-3 Graphical heuristics: Chart junk (Edward Tufte)
-    + 1-4 Graphical heuristics: Lie Factor and Spark Lines (Edward Tufte)
-    + 1-5 The Truthful Art (Alberto Cairo)
-    + 2-1 Matplotlib Architecture
-    + 2-2 Basic Plotting with Matplotlib
-    + 2-3 Scatterplots
-    + 2-4 Line Plots
-    + 2-5 Bar Charts
-    + 2-6 Dejunkifying a Plot
-    + 3-1 Subplots
-    + 3-2 Histograms
-    + 3-3 Box Plots
-    + 3-4 Heatmaps
-    + 3-5 Animation
-    + 3-6 Interactivity
-    + 4-1 Plotting with Pandas
-    + 4-2 Seaborn
+    + [1-1 Tools for Thinking about Design (Alberto Cairo)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-2%20Graphical%20heuristics%20-%20Data-ink%20ratio%20(Edward%20Tufte).md)
+    + [1-2 Graphical heuristics: Data-ink ratio (Edward Tufte)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-3%20Graphical%20heuristics%20-%20Chart%20junk%20(Edward%20Tufte).md)
+    + [1-3 Graphical heuristics: Chart junk (Edward Tufte)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-3%20Graphical%20heuristics%20-%20Chart%20junk%20(Edward%20Tufte).md)
+    + [1-4 Graphical heuristics: Lie Factor and Spark Lines (Edward Tufte)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-4%20Graphical%20heuristics%20-%20Lie%20Factor%20and%20Spark%20Lines%20(Edward%20Tufte).md)
+    + [1-5 The Truthful Art (Alberto Cairo)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-5%20The%20Truthful%20Art%20(Alberto%20Cairo).md)
+    + [2-1 Matplotlib Architecture](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-1%20Matplotlib%20Architecture.md)
+    + [2-2 Basic Plotting with Matplotlib](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-2%20Basic%20Plotting%20with%20Matplotlib.md)
+    + [2-3 Scatterplots](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-3%20Scatterplots.md)
+    + [2-4 Line Plots](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-4%20Line%20Plots.md)
+    + [2-5 Bar Charts](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-5%20Bar%20Charts.md)
+    + [2-6 Dejunkifying a Plot](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/2-6%20Dejunkifying%20a%20Plot.md)
+    + [3-1 Subplots](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-1%20Subplots.md)
+    + [3-2 Histograms](https://github.com/siyinghan/Notes/blob/master/Applied Data Science with Python (Coursera Specialization)/02 Applied Plotting%2C Charting %26 Data Representation in Python/3-2 Histograms.md)
+    + [3-3 Box Plots](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-3%20Box%20Plots.md)
+    + [3-4 Heatmaps](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-4%20Heatmaps.md)
+    + [3-5 Animation](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-5%20Animation.md)
+    + [3-6 Interactivity](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-6%20Interactivity.md)
+    + [4-1 Plotting with Pandas](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-1%20Plotting%20with%20Pandas.md)
+    + [4-2 Seaborn](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-2%20Seaborn.md)
   * **Course 3: Applied Machine Learning in Python**
   * **Course 4: Applied Text Mining in Python**
   * **Course 5: Applied Social Network Analysis in Python**
