@@ -1,5 +1,9 @@
 # 1-6 K-Nearest Neighbors Classification
 
+**Material**: [fruit_data_with_colors.txt](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Material/fruit_data_with_colors.txt)
+
+<br/>
+
 Now that we've gotten a sense for what's in our data set, as a simple example to get started, we're going to use this data set to train a **classifier** that will automatically identify any future pieces of fruit that might come our way. Based on the features available to the classifier such as the object's color, size and mass. To do this, we'll use a popular and easy to understand type of machine learning algorithm known as **k-nearest neighbors** or **k-NN**. *The K-Nearest Neighbors algorithm can be used for* **classification** *and* **regression**. Though, here we'll focus for the time being on using it for classification. **k-NN classifiers** are an example of what's called *instance based or memory based supervised learning*. What this means is that instance based learning methods work by memorizing the labeled examples that they see in the training set. And then they use those memorized examples to classify new objects later. The **k** in **k-NN** refers to **the number of nearest neighbors** the classifier will retrieve and use in order to make its prediction.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/043.png' alt='043' width='650px'/>
@@ -73,5 +77,84 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 fruits = pd.read_csv('fruit_data_with_colors.txt', delimiter='\t')
+```
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/036.png' alt='036' width='520px'/>
+
+Now, what I'm doing next here in the notebook is defining a dictionary that takes a numeric fruit label as the input key. And returns a value that's a string with the name of the fruit, and this dictionary just makes it easier to convert the output of a classifier prediction to something a person can more easily interpret, the name of a fruit in this case.
+
+```python
+# create a mapping from fruit label value to fruit name to make results easier to interpret
+lookup_fruit_name = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))   
+lookup_fruit_name
+```
+
+```{1: 'apple', 2: 'mandarin', 3: 'orange', 4: 'lemon'}```
+
+So, for this example we'll define a variable capital X that holds the features of our data set without the label. And here I 'm going to use the mass, width and height of the fruit as features. So, this collection of features is called the feature space. We define a second variable, lower case y, to hold the corresponding labels for the instances in x. Now, we can parse x and y to the train test split function in circuit LAN. Normally these splitting into training and test sets is done randomly, but for this lecture *I want to make sure we all get the same results. So, I set the random state parameter to a specific* *value, in this case I happen to choose zero*:
+
+```python
+# For this example, we use the mass, width, and height features of each fruit instance
+X = fruits[['mass', 'width', 'height']]
+y = fruits['fruit_label']
+
+# default is 75% / 25% train-test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
+```
+
+The results of the train test split function are put into the four variables you see on the left. And these are marked as **X_train**, **X_test**, **y_train**, and **y_test**. We're going to be using this X and y variable naming convention throughout the course to refer to data and labels. Once we have our train-test split, we then need to create an instance of the classifier object. And in this case a **k-NN classifier**. And the set the important parameter in this case the number of neighbors to a specific value to be used by the classifier:
+
+```python
+from sklearn.neighbors import KNeighborsClassifier
+
+knn = KNeighborsClassifier(n_neighbors = 5)
+```
+
+We then train the classifier by passing in the training set date in **X_train**, and the labels in **y_train** to the classifiers fit method:
+
+```python
+knn.fit(X_train, y_train)
+```
+
+```
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                     weights='uniform')
+```
+
+Now, the k-NN classifier that I'm using in this case is an example of a more general class called an **estimator** in scikit-learn. So, all estimators have a fit method that takes the training data, and then changes the state of the classifier, or estimator object to essentially enable prediction once the training is finished. In other words it updates the state of the k and n variable here, which means, that in the case of k-nners neighbors it will memorize the training set examples in some kind of internal storage for future use. And that's really all there is to training the k-NN classifier, and the first thing we can do with this newly trained classifier is to see how accurate it's likely to be on some new, previously unseen instances. To do this, we can apply the classifier to all the instances in the test set that we've put aside. Since these test instances were not explicitly included in the classifiers training. One simple way to assess if the classifier is likely to be good at predicting the label of future, previously unseen data instances, is to compute the classifier's accuracy on the test set data items. Remember, that the k-NN classifier did not see any of the fruits in the test set during the training phase. To do this we use the `score` method for the classifier object. This will take the test set points as input and compute the accuracy. *The accuracy is defined as the fraction of test set items, whose true label was correctly predicted by the classifier*:
+
+```python
+knn.score(X_test, y_test)
+```
+
+```0.5333333333333333```
+
+We can also use our new classifier to classify individual instances of a fruit. In fact this was our goal in the first place. Was to be able to take individual instances of objects and assign them a label. So, here, for example. I'll enter the mass, width and height for a hypothetical piece of fruit that is fairly small. And if we ask the classifier to predict the label using the predict method. We can see the output is that it predicts it's a mandarin orange:
+
+```python
+# first example: a small fruit with mass 20g, width 4.3 cm, height 5.5 cm
+fruit_prediction = knn.predict([[20, 4.3, 5.5]])
+lookup_fruit_name[fruit_prediction[0]]
+```
+
+```'mandarin'```
+
+I can then pass a different example, which is maybe a larger, slightly elongated fruit that has a height that's greater than the width and a larger mass. In this case, using the predict method on this instance results in a label that says the classifier thinks this object is a lemon:
+
+```python
+# second example: a larger, elongated fruit with mass 100g, width 6.3 cm, height 8.5 cm
+fruit_prediction = knn.predict([[100, 6.3, 8.5]])
+lookup_fruit_name[fruit_prediction[0]]
+```
+
+```'lemon'```
+
+Now let's use a utility function called `plot_fruit_knn` that's included in the shared utilities module that comes with this course. This will produce the **colored plots** I showed you earlier that have the decision boundaries:
+
+```python
+from adspy_shared_utilities import plot_fruit_knn
+
+plot_fruit_knn(X_train, y_train, 5, 'uniform')
 ```
 
