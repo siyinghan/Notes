@@ -86,6 +86,7 @@
     - [1-3 How it Works: The "Magic" of Page Requests]
     - [1-4 Looking at Your Browser Options]
     - [1-5 Editors: How to use an editor to create an HTML file]
+    - [2-1 The Document Object Model [DOM]]
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
   + **Course 3: Interactivity with JavaScript**
