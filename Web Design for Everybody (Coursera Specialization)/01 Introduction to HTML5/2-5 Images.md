@@ -103,7 +103,7 @@ If you want to learn more about creating good alt text, I recommend the W3 alt d
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/Image/120.png' alt='120' width='150px'/>
 
-By adding in these aria labels, you're basically giving screen readers the ability to tell somebody where this link is going to go, to read a label. This is a huge in terms of accessibility:
+By adding in the `aria-label`, you're basically giving screen readers the ability to tell somebody where this link is going to go, to read a label. This is a huge in terms of accessibility:
 
 ```html
 <!DOCTYPE html>
