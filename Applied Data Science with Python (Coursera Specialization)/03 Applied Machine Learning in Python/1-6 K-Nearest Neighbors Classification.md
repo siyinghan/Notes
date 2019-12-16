@@ -194,3 +194,8 @@ plt.scatter(k_range, scores)
 plt.xticks([0,5,10,15,20]);
 ```
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/057.png' alt='057' width='600px'/>
+
+We see that, indeed, *larger values of k do lead to worse accuracy* for this particular dataset and fixed single train test split. Keep in mind though, these results are only for this particular training test split. To get a more reliable estimate of likely future accuracy for a particular value of k, we would want to look at results over multiple possible train test splits. We'll go into this issue of model selection next week as well. In general, the best choice of the value of k, that is the one that leads to the highest accuracy, can vary greatly depending on the data set. In general with **k-nearest neighbors**, using a larger k suppresses the effects of noisy individual labels. But results in classification boundaries that are less detailed.
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/057.png' alt='057' width='600px'/>
