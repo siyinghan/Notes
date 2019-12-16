@@ -96,6 +96,7 @@
     - [2-8 Tables]
     - [2-9 Useful Tags]
     - [3-1 Accessibility]
+    - [3-2 Validating Your Site]
     - 
   + **Course 2: Introduction to CSS3**
     - [1-1 Introduction to HTML5]
