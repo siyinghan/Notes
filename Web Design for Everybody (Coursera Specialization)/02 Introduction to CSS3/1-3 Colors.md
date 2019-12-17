@@ -62,3 +62,10 @@ I highlighted the body tag and then used the color picker to change the backgrou
 
 ---
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/084.png' alt='084' />
+
+**Firefox:**
+
+---
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/085.png' alt='085' />
