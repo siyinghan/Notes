@@ -112,6 +112,17 @@
     - [1-7 Homework Description]
     - [2-1 Box Model]
     - [2-3 Styling Links and Lists]
+    - [2-4 Advanced Selectors]
+    - [2-5 Browser Capabilities]
+    - [2-7 Designing for Accessibility]
+    - [2-8 Homework Description]
+    - [3-1 Pseudo Classes and Elements]
+    - [3-2 Transitions]
+    - [3-3 Transforms]
+    - [3-5 Positioning]
+    - [4-3 Accessible Navigation]
+    - [4-6 Homework Description]
+    - [4-7 Conclusion]
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
   + **Course 4: Advanced Styling with Responsive Design**
