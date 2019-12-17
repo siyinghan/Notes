@@ -4,6 +4,26 @@
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/027.jpg' alt='027' width='500px' />
 
+Hexadecimal is probably the most common way of doing colors when you look at a lot of people's pages.
+
+**RGBA**: alpha transparency
+
+You have a fourth value on the end that says, I want to use this blue color, but I want kind of make it a little bit see through. If I were to actually make it zero, it would be completely see through.
+
+value 1: it would look just like the regular RGB value.
+
+<br/>
+
+**Example: View webpage elements**
+
+---
+
+**Dock side:**
+
+
+
+
+
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/028.jpg' alt='028' width='500px' />
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/029.jpg' alt='029' width='500px' />
