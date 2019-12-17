@@ -40,6 +40,10 @@ Select `style` part in the left side, modify the right part directly:
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/029.jpg' alt='029' width='500px' />
 
+http://wave.webaim.org/
+
+http://webaim.org/resources/contrastchecker/
+
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/030.jpg' alt='030' width='500px' />
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/031.jpg' alt='031' width='500px' />
@@ -47,3 +51,14 @@ Select `style` part in the left side, modify the right part directly:
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/032.jpg' alt='032' width='500px' />
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/033.jpg' alt='033' width='500px' />
+
+If you are on a desktop or laptop computer, take a minute and try to use Inspect Element. You can try it on any page you would like, but I recommend going to one that is basic, or at the very least, clean code. Can you change the background-color of the page? Here is a screenshot of me playing with the code at wikipedia.org.
+
+On both Chrome and Firefox you can get to Inspect Element by right-clicking on the screen. In Firefox you can also select Tools -> Inspect Element from the options at the top of the browser window. In Chrome you can select View-->Developer --> Developer Tools.
+
+I highlighted the body tag and then used the color picker to change the background color to red.
+
+**Chrome**
+
+---
+
