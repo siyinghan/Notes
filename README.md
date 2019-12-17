@@ -110,6 +110,8 @@
     - [1-4 Styling Your Text]
     - [1-6 Display and Visibility]
     - [1-7 Homework Description]
+    - [2-1 Box Model]
+    - [2-3 Styling Links and Lists]
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
   + **Course 4: Advanced Styling with Responsive Design**
