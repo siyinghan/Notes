@@ -20,9 +20,21 @@ value 1: it would look just like the regular RGB value.
 
 **Dock side:**
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/080.png' alt='080' width='400px' />
+
+**Color:**
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/081.png' alt='081' />
+
+*hexadecimal* or *RGBA* will show up:
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/082.png' alt='082' />
+
+Select `style` part in the left side, modify the right part directly:
 
 
 
+<br/>
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/028.jpg' alt='028' width='500px' />
 
