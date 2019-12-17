@@ -32,7 +32,7 @@ value 1: it would look just like the regular RGB value.
 
 Select `style` part in the left side, modify the right part directly:
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/083.png' alt='083' />
 
 <br/>
 
