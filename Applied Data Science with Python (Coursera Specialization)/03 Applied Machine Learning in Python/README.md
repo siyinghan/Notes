@@ -40,6 +40,23 @@ Focus the ad, the resume should:
   - Information Literacy: the ability to understand and use information, whether at home, at work, or in the community (reading skills, writing skills, and numeracy skills)
   - Media Literacy: the ability to analyze, access, evaluate, and create media content (e.g. you need both media and information literacy to work with this MOOC)
   - Digital Citizenship: the ability to participate in informed discussion in the public sphere and your willingness to engage as an active stakeholder in broad, societal decisions
-  - ICT Proficiencies: includes any communication device or application (radio, television, cell phones, )
+  - ICT Proficiencies: includes any communication device or application (radio, television, cell phones, computer, etc.)
 - Capacity for Change
+  - Creativity & Innovation
+  - Adaptive Learning: use knowledge and skills to contribute to the production of new knowledge within the workplace
+  - Learning to Learn: the ability to deal with change, learn from experience, and think and act in a way that promotes positive change
+  - Flexibility
+
+<br/>
+
+### Gathering Your Materials to Write
+
+**Think about the big picture:**
+
+- Why do you do what you do? What inspires you? (What's the purpose you've set for yourself in your life? not money, the deeper reason)
+- What makes you unique? (What skills and talents set you apart?)
+- What have you accomplished thus for? (think about your accomplishments, particularly those enjoyable accomplishments you brainstormed earlier)
+- What qualities make you truly distinctive? (think about what qualities make you distictive)
+- What characteristics describe you?
+- What problems have you solved? (what projects you've worked on that you enjoyed, how can these experiences benefit the organization you're interested in?)
 
