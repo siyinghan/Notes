@@ -22,7 +22,19 @@ Focus the ad, the resume should:
 ### 21st Century competencies:
 
 - Analytic Skills
+  - Problem Solving: goal-directed thinking and action in situations where no routine solution is available.
+  - Critical Thinking: the objective analysis and evaluation of an issue in order to form a sound judgement.
+  - Decision Making
+  - Research and Inquiry
 - Interpersonal Skills
+  - Communication
+  - Collaboration
+  - Leadership
+  - Responsibility
 - Ability to Execute
+  - Initiative
+  - Self-Direction: instead of always being told what to do
+  - Productivity: being able to organize your own work and manage your own time
+
 - Information Processing
 - Capacity for Change
