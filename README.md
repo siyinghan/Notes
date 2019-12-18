@@ -83,6 +83,7 @@
 
   * **Course 5: Applied Social Network Analysis in Python**
 
+<br/>
 
 * Web Design for Everybody (Coursera Specialization)
   + **Course 1: Introduction to HTML5**
