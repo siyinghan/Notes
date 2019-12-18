@@ -2,6 +2,8 @@
 
 To explore different **supervised learning algorithms**, we're going to use a combination of small synthetic or artificial datasets as examples, together with some larger real world datasets. `scikit-learn` has a variety of methods in the `Sklearn` datasets library to create **synthetic datasets**. The synthetic dataset will use, for illustration purposes are typically low dimensional examples. Because they only use a *small number of features, typically one or two*. This makes them easy to explain and visualize. Many real world datasets, on the other hand have a *higher dimensional feature space*. In other words they have dozens, hundreds, or even thousands, or millions of features. So some of the intuition we gain from looking at low dimensional examples doesn't always translate to high dimensional datasets, and we'll discuss that a bit more later. For example, **high dimensional data sets** in some sense have most of their data in corners with lots of empty space and that's kind of difficult to visualize. We'll go through some examples later in the course. But the **low dimensional examples** are still useful so that we can understand things like how a model's complexity changes with changes in some **key parameters**.
 
+<br/>
+
 So for basic regression we'll start with the simple problem that has one informative input variable. **One noisy linear output** and **100 data set samples**.
 
 
