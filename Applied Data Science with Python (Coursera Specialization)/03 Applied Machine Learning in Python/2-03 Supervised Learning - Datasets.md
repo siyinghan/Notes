@@ -41,6 +41,17 @@ X_R1, y_R1 = make_regression(n_samples = 100, n_features=1,
                             noise = 30, random_state=0)
 plt.scatter(X_R1, y_R1, marker= 'o', s=50)
 plt.show()
+
+# synthetic dataset for classification (binary) 
+plt.figure()
+plt.title('Sample binary classification problem with two informative features')
+X_C2, y_C2 = make_classification(n_samples = 100, n_features=2,
+                                n_redundant=0, n_informative=2,
+                                n_clusters_per_class=1, flip_y = 0.1,
+                                class_sep = 0.5, random_state=0)
+plt.scatter(X_C2[:, 0], X_C2[:, 1], c=y_C2,
+           marker= 'o', s=50, cmap=cmap_bold)
+plt.show()
 ```
 
 To illustrate **binary classification** we will include a simple two class dataset with two informative features.
@@ -53,4 +64,36 @@ In this case, these two classes are approximately **linearly separable**, which 
 
 <br/>
 
-We'll also look at a more **complex binary classification problem** that uses **two features**. But where the two classes are not really linearly separable, instead forming into various clusters in different parts of the feature space. This dataset was created in two steps. First using the make_blobs function in SK learn datasets to randomly generate 100 samples in 8 different clusters. And then by changing the cluster label assigned by make_blobs, which is a number from 1 to 8, to a binary number by converting it using a modulo 2 function. Assigning the even index points to class 0 and odd index points to class 1. To illustrate multi-class classification, we'll use our familiar fruits dataset, which, as you may remember has four features and four possible target labels. Here on the left, I'm showing the array of scatter plots that we saw in week one that shows the relationship between all possible pairs of features and the class labels, with the distribution of values for each feature along the diagonal. To illustrate a real-world regression problem, we'll use a dataset derived from the communities and crime dataset in the UCI repository. Our dataset uses a subset of the original features and target values. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the load_crime_dataset function that's included with the share utilities module for this course
+We'll also look at a more **complex binary classification problem** that uses **two features**. But where the two classes are not really linearly separable, instead forming into various clusters in different parts of the feature space.
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/085.png' alt='085' />
+
+```python
+# more difficult synthetic dataset for classification (binary) 
+# with classes that are not linearly separable
+X_D2, y_D2 = make_blobs(n_samples = 100, n_features = 2, centers = 8,
+                       cluster_std = 1.3, random_state = 4)
+y_D2 = y_D2 % 2
+plt.figure()
+plt.title('Sample binary classification problem with non-linearly separable classes')
+plt.scatter(X_D2[:,0], X_D2[:,1], c=y_D2,
+           marker= 'o', s=50, cmap=cmap_bold)
+plt.show()
+
+
+# Breast cancer dataset for classification
+cancer = load_breast_cancer()
+(X_cancer, y_cancer) = load_breast_cancer(return_X_y = True)
+
+
+# Communities and Crime dataset
+(X_crime, y_crime) = load_crime_dataset()
+```
+
+
+
+This dataset was created in two steps. First using the `make_blobs` function in `sklearned.datasets` to randomly generate 100 samples in 8 different clusters. And then by changing the cluster label assigned by `make_blobs`, which is a number from 1 to 8, to a binary number by converting it using a modulo 2 function. Assigning the even index points to class 0 and odd index points to class 1. To **illustrate multi-class classification**, we'll use our familiar fruits dataset, which, as you may remember has four features and four possible target labels.
+
+
+
+Here on the left, I'm showing the array of scatter plots that we saw in week one that shows the relationship between all possible pairs of features and the class labels, with the distribution of values for each feature along the diagonal. To illustrate a real-world regression problem, we'll use a dataset derived from the communities and crime dataset in the UCI repository. Our dataset uses a subset of the original features and target values. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the load_crime_dataset function that's included with the share utilities module for this course
