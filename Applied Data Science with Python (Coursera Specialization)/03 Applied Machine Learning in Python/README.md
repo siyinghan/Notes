@@ -62,12 +62,9 @@ Focus the ad, the resume should:
 
 
 
-For each previous job held, how did you contribute to the success of the organization? Use specific numbers or percentages.
-
-
-
-For each previous job held, how did you measure your success? What was your favorite project? Why?
-
-
-
-Who were the people you worked best with? What traits of their resonated with you?
+- For each previous job held, how did you contribute to the success of the organization? Use specific numbers or percentages.
+- For each previous job held, how did you measure your success? What was your favorite project? Why?
+- Who were the people you worked best with? What traits of their resonated with you?
+- What did your past reviews say about you? (consider performance reviews from supervisors, or fellow workers, students etc.)
+- What is the highest level of education you have received? (As you're writing a targeted resume you don't need to include all your education, but only that which pertains to the specific purpose of this resume)
+- Have you received any awards or honors? Educational or professional?
