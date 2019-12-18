@@ -10,4 +10,19 @@ Focus the ad, the resume should:
 
 <br/>
 
-Beyond the job description:
+### Beyond the job description:
+
+1. Reflect on typical competencies.
+2. Review competitors' positions.
+3. Compile a list from other sources.
+4. Select the 10 to 15 most important.
+
+<br/>
+
+### 21st Century competencies:
+
+- Analytic Skills
+- Interpersonal Skills
+- Ability to Execute
+- Information Processing
+- Capacity for Change
