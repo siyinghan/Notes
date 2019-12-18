@@ -67,3 +67,7 @@ For each previous job held, how did you contribute to the success of the organiz
 
 
 For each previous job held, how did you measure your success? What was your favorite project? Why?
+
+
+
+Who were the people you worked best with? What traits of their resonated with you?
