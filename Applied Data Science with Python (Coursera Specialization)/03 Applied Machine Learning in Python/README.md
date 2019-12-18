@@ -37,4 +37,9 @@ Focus the ad, the resume should:
   - Productivity: being able to organize your own work and manage your own time
 
 - Information Processing
+  - Information Literacy: the ability to understand and use information, whether at home, at work, or in the community (reading skills, writing skills, and numeracy skills)
+  - Media Literacy: the ability to analyze, access, evaluate, and create media content (e.g. you need both media and information literacy to work with this MOOC)
+  - Digital Citizenship: the ability to participate in informed discussion in the public sphere and your willingness to engage as an active stakeholder in broad, societal decisions
+  - ICT Proficiencies: includes any communication device or application (radio, television, cell phones, )
 - Capacity for Change
+
