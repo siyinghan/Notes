@@ -76,3 +76,8 @@ Focus the ad, the resume should:
 
 ### Understanding Applicant Tracking Systems
 
+**Applicant Tracking Software (ATS)**
+
+make your resume **Robot Friendly**
+
+write **Keyword-Rich Summary**
