@@ -60,3 +60,10 @@ Focus the ad, the resume should:
 - What characteristics describe you?
 - What problems have you solved? (what projects you've worked on that you enjoyed, how can these experiences benefit the organization you're interested in?)
 
+
+
+For each previous job held, how did you contribute to the success of the organization? Use specific numbers or percentages.
+
+
+
+For each previous job held, how did you measure your success? What was your favorite project? Why?
