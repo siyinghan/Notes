@@ -90,10 +90,16 @@ cancer = load_breast_cancer()
 (X_crime, y_crime) = load_crime_dataset()
 ```
 
-
-
 This dataset was created in two steps. First using the `make_blobs` function in `sklearned.datasets` to randomly generate 100 samples in 8 different clusters. And then by changing the cluster label assigned by `make_blobs`, which is a number from 1 to 8, to a binary number by converting it using a modulo 2 function. Assigning the even index points to class 0 and odd index points to class 1. To **illustrate multi-class classification**, we'll use our familiar fruits dataset, which, as you may remember has four features and four possible target labels.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/086.png' alt='086' />
+
+Here on the left, I'm showing the array of scatter plots that we saw in week one that shows the relationship between all possible pairs of features and the class labels, with the distribution of values for each feature along the diagonal.
+
+<br/>
+
+To **illustrate a real-world regression problem**, we'll use a dataset derived from the communities and crime dataset in the UCI repository.
 
 
-Here on the left, I'm showing the array of scatter plots that we saw in week one that shows the relationship between all possible pairs of features and the class labels, with the distribution of values for each feature along the diagonal. To illustrate a real-world regression problem, we'll use a dataset derived from the communities and crime dataset in the UCI repository. Our dataset uses a subset of the original features and target values. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the load_crime_dataset function that's included with the share utilities module for this course
+
+Our dataset uses a subset of the original features and target values. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the load_crime_dataset function that's included with the share utilities module for this course
