@@ -100,6 +100,6 @@ Here on the left, I'm showing the array of scatter plots that we saw in week one
 
 To **illustrate a real-world regression problem**, we'll use a dataset derived from the communities and crime dataset in the UCI repository.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/087.png' alt='087' />
 
-
-Our dataset uses a subset of the original features and target values. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the load_crime_dataset function that's included with the share utilities module for this course
+Our dataset uses a subset of the **original features** and **target values**. Which were originally created from combining several U.S. government data sources, like the U.S. census. Each data instance corresponds to a particular geographic area, typically a town or a region of a city. Our version of this dataset has 88 features that encode various demographic and social economic properties of each location. With 1994 location data instances. The target value that we'll try to predict is the per capita violent crime rate. To use this data set, we use the `load_crime_dataset` function that's included with the share utilities module for this course.
