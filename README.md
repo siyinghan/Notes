@@ -81,11 +81,11 @@
 
 * Web Design for Everybody (Coursera Specialization)
   + **Course 1: Introduction to HTML5**
-    - [1-1 Introduction to HTML5]
-    - [1-2 The Evolution of HTML]
-    - [1-3 How it Works: The "Magic" of Page Requests]
-    - [1-4 Looking at Your Browser Options]
-    - [1-5 Editors: How to use an editor to create an HTML file]
+    - [1-1 Introduction to HTML5](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-1%20Introduction%20to%20HTML5.md)
+    - [1-2 The Evolution of HTML](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-2%20The%20Evolution%20of%20HTML.md)
+    - [1-3 How it Works: The "Magic" of Page Requests](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-3%20How%20it%20Works%20-%20The%20%22Magic%22%20of%20Page%20Requests.md)
+    - [1-4 Looking at Your Browser Options](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-4%20Looking%20at%20Your%20Browser%20Options.md)
+    - [1-5 Editors: How to use an editor to create an HTML file](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-5%20Editors%20-%20How%20to%20use%20an%20editor%20to%20create%20an%20HTML%20file.md)
     - [2-1 The Document Object Model [DOM]]
     - [2-2 HTML5 Tags and Syntax]
     - [2-3 Semantic Tags]
