@@ -60,11 +60,19 @@ Focus the ad, the resume should:
 - What characteristics describe you?
 - What problems have you solved? (what projects you've worked on that you enjoyed, how can these experiences benefit the organization you're interested in?)
 
-
+#### Quick overview of the 20 questions attached to this lesson
 
 - For each previous job held, how did you contribute to the success of the organization? Use specific numbers or percentages.
 - For each previous job held, how did you measure your success? What was your favorite project? Why?
 - Who were the people you worked best with? What traits of their resonated with you?
 - What did your past reviews say about you? (consider performance reviews from supervisors, or fellow workers, students etc.)
 - What is the highest level of education you have received? (As you're writing a targeted resume you don't need to include all your education, but only that which pertains to the specific purpose of this resume)
-- Have you received any awards or honors? Educational or professional?
+- Have you received any awards or honors? Educational or professional? (professional license or a certificate that provides evidence of a competency you've identified for the position you're seeking)
+- What special skills could you offer to an organization that apply to the position you're seeking? (e.g. do you have proficiency in certain computer languages or with certain program or platforms?, or additional language)
+- Which professional associations do you belong to? What positions have you held in these groups? What significant volunteer work have you done? (think outside the realm of employment, think about professional organizations you belong to. If you are a recent graduate, what organization were you involved with in college? Is there significant volunteer work you've done? Your answers here might be especially important if there are gaps in your work history)
+- Why should you be hired over all the other applicants? What sets you apart?
+
+<br/>
+
+### Understanding Applicant Tracking Systems
+
