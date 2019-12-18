@@ -24,6 +24,7 @@
     + [4-1 Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-1%20Distributions.md)
     + [4-2 More Distributions](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-2%20More%20Distributions.md)
     + [4-3 Hypothesis Testing in Python](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/01%20Introduction%20to%20Data%20Science%20in%20Python/4-3%20Hypothesis%20Testing%20in%20Python.md)
+
   * **Course 2: Applied Plotting, Charting & Data Representation in Python**
     + [1-1 Tools for Thinking about Design (Alberto Cairo)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-1%20Tools%20for%20Thinking%20about%20Design%20(Alberto%20Cairo).md)
     + [1-2 Graphical heuristics: Data-ink ratio (Edward Tufte)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/1-2%20Graphical%20heuristics%20-%20Data-ink%20ratio%20(Edward%20Tufte).md)
@@ -44,6 +45,7 @@
     + [3-6 Interactivity](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/3-6%20Interactivity.md)
     + [4-1 Plotting with Pandas](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-1%20Plotting%20with%20Pandas.md)
     + [4-2 Seaborn](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/02%20Applied%20Plotting%2C%20Charting%20%26%20Data%20Representation%20in%20Python/4-2%20Seaborn.md)
+
   * **Course 3: Applied Machine Learning in Python**
     + [1-1 Introduction](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-1%20Introduction.md)
     + [1-2 Key Concepts in Machine Learning](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/1-2%20Key%20Concepts%20in%20Machine%20Learning.md)
@@ -76,8 +78,11 @@
     + [4-4 Neural Networks](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/4-4%20Neural%20Networks.md)
     + [4-5 Deep Learning (Optional)](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/4-5%20Deep%20Learning%20(Optional).md)
     + [4-6 Data Leakage](https://github.com/siyinghan/Notes/blob/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/4-6%20Data%20Leakage.md)
+
   * **Course 4: Applied Text Mining in Python**
+
   * **Course 5: Applied Social Network Analysis in Python**
+
 
 * Web Design for Everybody (Coursera Specialization)
   + **Course 1: Introduction to HTML5**
@@ -86,23 +91,24 @@
     - [1-3 How it Works: The "Magic" of Page Requests](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-3%20How%20it%20Works%20-%20The%20%22Magic%22%20of%20Page%20Requests.md)
     - [1-4 Looking at Your Browser Options](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-4%20Looking%20at%20Your%20Browser%20Options.md)
     - [1-5 Editors: How to use an editor to create an HTML file](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/1-5%20Editors%20-%20How%20to%20use%20an%20editor%20to%20create%20an%20HTML%20file.md)
-    - [2-1 The Document Object Model [DOM]]
-    - [2-2 HTML5 Tags and Syntax]
-    - [2-3 Semantic Tags]
-    - [2-4 Template Page]
-    - [2-5 Images]
-    - [2-6 Hyperlinks]
-    - [2-7 Multimedia (video & audio)]
-    - [2-8 Tables]
-    - [2-9 Useful Tags]
-    - [3-1 Accessibility]
-    - [3-2 Validating Your Site]
-    - [3-3 Hosting Your Site]
-    - [3-4 cPanel (free host)]
-    - [3-5 Using Secure File Transfer Protocol [SFTP]]
-    - [3-6 Final Project]
-    - [3-7 Closing]
-    - [3-8 The Secret Lecture]
+    - [2-1 The Document Object Model [DOM](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-1%20The%20Document%20Object%20Model%20%5BDOM%5D.md)
+    - [2-2 HTML5 Tags and Syntax](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-2%20HTML5%20Tags%20and%20Syntax.md)
+    - [2-3 Semantic Tags](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-3%20Semantic%20Tags.md)
+    - [2-4 Template Page](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-4%20Template%20Page.md)
+    - [2-5 Images](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-5%20Images.md)
+    - [2-6 Hyperlinks](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-6%20Hyperlinks.md)
+    - [2-7 Multimedia (video & audio)](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-7%20Multimedia%20(video%20%26%20audio).md)
+    - [2-8 Tables](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-8%20Tables.md)
+    - [2-9 Useful Tags](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/2-9%20Useful%20Tags.md)
+    - [3-1 Accessibility](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-1%20Accessibility.md)
+    - [3-2 Validating Your Site](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-2%20Validating%20Your%20Site.md)
+    - [3-3 Hosting Your Site](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-3%20Hosting%20Your%20Site.md)
+    - [3-4 cPanel (free host)](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-4%20cPanel%20(free%20host).md)
+    - [3-5 Using Secure File Transfer Protocol [SFTP](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-5%20Using%20Secure%20File%20Transfer%20Protocol%20%5BSFTP%5D.md)
+    - [3-6 Final Project](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-6%20Final%20Project.md)
+    - [3-7 Closing](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-7%20Closing.md)
+    - [3-8 The Secret Lecture](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-8%20The%20Secret%20Lecture.md)
+
   + **Course 2: Introduction to CSS3**
     - [1-1 Welcome]
     - [1-2 Cascading Style Sheets (CSS)]
