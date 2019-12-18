@@ -110,26 +110,28 @@
     - [3-8 The Secret Lecture](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/01%20Introduction%20to%20HTML5/3-8%20The%20Secret%20Lecture.md)
 
   + **Course 2: Introduction to CSS3**
-    - [1-1 Welcome]
-    - [1-2 Cascading Style Sheets (CSS)]
-    - [1-3 Colors]
-    - [1-4 Styling Your Text]
-    - [1-6 Display and Visibility]
-    - [1-7 Homework Description]
-    - [2-1 Box Model]
-    - [2-3 Styling Links and Lists]
-    - [2-4 Advanced Selectors]
-    - [2-5 Browser Capabilities]
-    - [2-7 Designing for Accessibility]
-    - [2-8 Homework Description]
-    - [3-1 Pseudo Classes and Elements]
-    - [3-2 Transitions]
-    - [3-3 Transforms]
-    - [3-5 Positioning]
-    - [4-3 Accessible Navigation]
-    - [4-6 Homework Description]
-    - [4-7 Conclusion]
+    - [1-1 Welcome](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-1%20Welcome.md)
+    - [1-2 Cascading Style Sheets (CSS)](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-2%20Cascading%20Style%20Sheets%20(CSS).md)
+    - [1-3 Colors](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-3%20Colors.md)
+    - [1-4 Styling Your Text](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-4%20Styling%20Your%20Text.md)
+    - [1-6 Display and Visibility](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-6%20Display%20and%20Visibility.md)
+    - [1-7 Homework Description](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/1-7%20Homework%20Description.md)
+    - [2-1 Box Model](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-1%20Box%20Model.md)
+    - [2-3 Styling Links and Lists](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-3%20Styling%20Links%20and%20Lists.md)
+    - [2-4 Advanced Selectors](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-4%20Advanced%20Selectors.md)
+    - [2-5 Browser Capabilities](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-5%20Browser%20Capabilities.md)
+    - [2-7 Designing for Accessibility](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-7%20Designing%20for%20Accessibility.md)
+    - [2-8 Homework Description](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/2-8%20Homework%20Description.md)
+    - [3-1 Pseudo Classes and Elements](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/3-1%20Pseudo%20Classes%20and%20Elements.md)
+    - [3-2 Transitions](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/3-2%20Transitions.md)
+    - [3-3 Transforms](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/3-3%20Transforms.md)
+    - [3-5 Positioning](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/3-5%20Positioning.md)
+    - [4-3 Accessible Navigation](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/4-3%20Accessible%20Navigation.md)
+    - [4-6 Homework Description](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/4-6%20Homework%20Description.md)
+    - [4-7 Conclusion](https://github.com/siyinghan/Notes/blob/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/4-7%20Conclusion.md)
+
   + **Course 3: Interactivity with JavaScript**
     - [1-1 Introduction to HTML5]
+
   + **Course 4: Advanced Styling with Responsive Design**
     - [1-1 Introduction to HTML5]
