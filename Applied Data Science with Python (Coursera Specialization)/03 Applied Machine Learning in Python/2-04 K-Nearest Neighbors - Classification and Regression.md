@@ -2,7 +2,7 @@
 
 Let's revisit the first example of machine learning that we encountered in week one, **k-Nearest Neighbor** models. Those were a good starting point to continue our exploration of supervised learning because they're simple to understand and can be used for both **classification** and **regression**.
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/088.png' alt='088' width='650px'/>
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/088.png' alt='088' width='600px'/>
 
 Let's recall that, for **classification**, the **k-Nearest Neighbor Classifier** simply memorizes the entire training set. And then to classify a new instance does 3 steps.
 
@@ -90,7 +90,7 @@ plt.scatter(X_C2[:, 0], X_C2[:, 1], c=y_C2,
 plt.show()
 ```
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/102.png' alt='102' width='500px'/>
 
 ```python
 from sklearn.neighbors import KNeighborsRegressor
@@ -115,7 +115,7 @@ These use the `KNeighborsRegressor` Class, which like the classification case, t
 
 <br/>
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/101.png' alt='101' width='650px'/>
+<img src='https://github.com/siyinghan/Notes/raw/master/Applied%20Data%20Science%20with%20Python%20(Coursera%20Specialization)/03%20Applied%20Machine%20Learning%20in%20Python/Image/101.png' alt='101' width='600px'/>
 
 Because the target values in a regression problem are continuous as compared to the discrete values that we see for classifier target labels. To assess how well a regression model fits the data, we use a regression score called **r-squared** that's between 0 and 1. We'll cover some additional types of regression evaluation scores later in the course. For the **r-squared** value, a value of **1** corresponds to the **best possible performance**. A model that makes perfect predictions. A value of **0** corresponds to a model that makes a constant value prediction that's always **just a mean value** of all the training target values. The r-squared value is sometimes known as the **coefficient of determination**.
 
