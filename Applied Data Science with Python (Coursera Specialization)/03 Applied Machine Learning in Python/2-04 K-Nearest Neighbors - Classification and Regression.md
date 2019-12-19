@@ -78,6 +78,8 @@ Similarly, if we have a query point that is here. Then the three nearest neighbo
 Here's the corresponding code in the notebook that produced these regression plots.
 
 ```python
+from sklearn.datasets import make_classification, make_blobs
+
 # synthetic dataset for classification (binary) 
 plt.figure()
 plt.title('Sample binary classification problem with two informative features')
