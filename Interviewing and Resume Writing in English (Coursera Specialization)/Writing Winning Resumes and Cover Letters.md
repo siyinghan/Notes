@@ -130,3 +130,8 @@ describe:
 1. **problem**: a high rate of billing errors and a protracted AR cycle
 2. **action**: design and develop a database
 3. **results**: results in *quantifiable terms* communicate that something of values was accomplished
+
+<br/>
+
+### The 3rd Principle
+
