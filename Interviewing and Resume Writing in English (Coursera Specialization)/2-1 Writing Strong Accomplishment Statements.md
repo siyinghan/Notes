@@ -1,4 +1,4 @@
-# Notes
+# 2-1 Writing Strong Accomplishment Statements
 
 Job description: **Specific Keywords** for knowledge, skills, and abilities the hiring manager is looking for.
 
