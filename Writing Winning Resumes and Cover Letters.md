@@ -88,3 +88,15 @@ write **Keyword-Rich Summary**
 
 ## Writing Strong Accomplishment Statements
 
+**Statement Example 1**
+
+*marketing communications manager with a bit more than 10 years of experience*
+
+Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.
+
+- 使用过去时 built, constructed, managed, trained，因为表示已经做完的事情，a result achieved
+
+- result是什么：generated $4 million return on investment to date
+
+**Statement Example 2**
+
