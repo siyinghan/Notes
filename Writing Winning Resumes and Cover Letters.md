@@ -81,3 +81,10 @@ Focus the ad, the resume should:
 make your resume **Robot Friendly**
 
 write **Keyword-Rich Summary**
+
+<br/>
+
+<br/>
+
+## Writing Strong Accomplishment Statements
+
