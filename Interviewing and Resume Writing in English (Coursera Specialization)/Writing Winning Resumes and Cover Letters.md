@@ -88,6 +88,8 @@ write **Keyword-Rich Summary**
 
 ## Writing Strong Accomplishment Statements
 
+<img https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/001.png />
+
 **Statement Example 1** *marketing communications manager with a bit more than 10 years of experience*
 
 ```Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.```
