@@ -88,9 +88,7 @@ write **Keyword-Rich Summary**
 
 ## Writing Strong Accomplishment Statements
 
-**Statement Example 1**
-
-*marketing communications manager with a bit more than 10 years of experience*
+**Statement Example 1** *marketing communications manager with a bit more than 10 years of experience*
 
 Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.
 
@@ -98,5 +96,11 @@ Built event-management program from ground up. Constructed exhibits to showcase 
 
 - result是什么：generated $4 million return on investment to date
 
-**Statement Example 2**
+<br/>
+
+**Statement Example 2** *demonstrataes team leadership competency*
+
+Coordinated multigenerational team of 12 sales, administrative and technical support employees selling printing equipment and services to healthcare customers in 23 states in the Eastern U.S.
+
+
 
