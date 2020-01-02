@@ -172,3 +172,9 @@ B. `Directed human resources for 1,100 employee division of Fortune 500 company;
 <br/>
 
 ### The 6th Principle
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/006.png' width=500px />
+
+You want to say as much as you can, in as few words as you need.
+
+Eliminate words like **various** and **numerous** and use actual **numbers** instead. Remove **pronouns** and **articles** that do not add to your content. Also, it is better to round off **numbers** and **percentages** than to use words like **approximately** or **around**.
