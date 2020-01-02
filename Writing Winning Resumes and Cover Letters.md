@@ -102,5 +102,7 @@ write **Keyword-Rich Summary**
 
 ```Coordinated multigenerational team of 12 sales, administrative and technical support employees selling printing equipment and services to healthcare customers in 23 states in the Eastern U.S.```
 
-
+- 开头用了动词 **coordinated**。If you coordinate a team, you get all the members to work effectively as a whole.
+- 使用 **sales**、**administration**、**technical support** 强调 get different groups to work cooperatively 的能力。
+- **multigenerational** 是一个 particularly desirable 21st century competency。
 
