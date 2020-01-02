@@ -92,14 +92,6 @@ write **Keyword-Rich Summary**
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/002.png' width=500px />
 
-**Statement Example:**
-
-```Developed Access-based accounting database that reduced billing errors to almost 0% while bringing average collection times from over 90 to less than 30 days. Resulting billing accuracy restored confidence from the client and eliminated much management overhead.```
-
-1. **problem**: a high rate of billing errors and a protracted AR cycle
-2. **action**: design and develop a database
-3. **results**: results in *quantifiable terms* communicate that something of values was accomplished
-
 **Statement Example 1** *marketing communications manager with a bit more than 10 years of experience*
 
 ```Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.```
@@ -131,4 +123,10 @@ describe:
 3. What was the **result**?
 4. How did you organization **benefit** from what you did?
 
-<br/>
+**Statement Example:**
+
+```Developed Access-based accounting database that reduced billing errors to almost 0% while bringing average collection times from over 90 to less than 30 days. Resulting billing accuracy restored confidence from the client and eliminated much management overhead.```
+
+1. **problem**: a high rate of billing errors and a protracted AR cycle
+2. **action**: design and develop a database
+3. **results**: results in *quantifiable terms* communicate that something of values was accomplished
