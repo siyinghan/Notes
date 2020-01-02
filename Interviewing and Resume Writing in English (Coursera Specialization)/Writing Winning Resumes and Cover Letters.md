@@ -88,16 +88,7 @@ write **Keyword-Rich Summary**
 
 ## Writing Strong Accomplishment Statements
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/001.png' width=500px />
-
-describe:
-
-1. What the **situation** was / what the **problem** was that you solved?
-2. What **action** did you take?
-3. What was the **result**?
-4. How did you organization **benefit** from what you did?
-
-<br/>
+### The 1st Principle
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/002.png' width=500px />
 
@@ -127,3 +118,17 @@ describe:
 - 使用 **sales**、**administration**、**technical support** 强调 get different groups to work cooperatively 的能力。
 - **multigenerational** 是一个 particularly desirable 21st century competency。
 
+<br/>
+
+### The 2nd Principle
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/001.png' width=500px />
+
+describe:
+
+1. What the **situation** was / what the **problem** was that you solved?
+2. What **action** did you take?
+3. What was the **result**?
+4. How did you organization **benefit** from what you did?
+
+<br/>
