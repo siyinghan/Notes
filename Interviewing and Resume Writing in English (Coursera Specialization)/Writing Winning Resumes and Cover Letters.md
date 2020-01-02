@@ -151,3 +151,24 @@ describe:
 
 ### The 5th Principle
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/005.png' width=500px />
+
+The person reading your resume needs to understand how **valuable** your accomplishment was to an organization.
+
+**Example:**
+
+A. `Managed human resources department for division.`
+
+B. `Directed human resources for 1,100 employee division of Fortune 500 company; directly supervised seven human resources professionals and three clerks and managed budget of $1.5 million.`
+
+<br/>
+
+### Writing up your Accomplishment
+
+1. **What did you do?** (What problem did you solve? What new processes did you implement?)
+2. **Paint the picture with numbers.** (How many people were impacted? By what percentage did you exceed your goals? How much money did you earn or save?)
+3. **Add the benefits to the organization** (The things you've accomplished will mean much more if you can demonstrate how they helpd advance the goals of the organization.)
+
+<br/>
+
+### The 6th Principle
