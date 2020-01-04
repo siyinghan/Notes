@@ -70,11 +70,15 @@ You face the challenge to *increase revenue* and *decrease expenses*.
 
 ##### Secondary Accomplishment
 
+`Traveling with sales people, discovered that 61% of clients could be serviced by upgrades to our territory website, reducing sales personnel travel expenses by more than $138.000 annually.`
 
+Summarized that actions you took that led to the impressive management result.
 
 ##### Tertiary Accomplishment
 
+`Investigated and added 151 products to our territory website, increasing revenue by 141% annually.`
 
+Your ability to make decisions and follow-up led to the website upgrades referred to here.
 
 #### How this would look on a resume?
 
