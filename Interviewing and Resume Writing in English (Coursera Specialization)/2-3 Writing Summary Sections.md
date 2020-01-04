@@ -50,19 +50,19 @@ found in the summary section. The overall effect is to make the candidate sound 
 
 ### To craft a skills summary
 
-1. Figure out where you're going (need to be **concise**, must know exactly what **competencies** to highlight)
+1. **Figure out where you're going** (need to be **concise**, must know exactly what **competencies** to highlight)
    * Ask yourself what **skills** you most enjoy using?
    * What **accomplishment** best illustrate your abilities?
    * What areas you are most **passionate** about working in?
-2. Analyze your target industry (identify where you want to be, highlighting the importance of our research)
+2. **Analyze your target industry** (identify where you want to be, highlighting the importance of our research)
    * Asked yourself what **aligns** most closely with the priorities of the hiring organization?
    * What **competencies** matter most in the target position?
    * What you would look for if you were the hiring manage?
-3. Find your **fit** and **condense**
-   * Figure our how you fit in, or want to fit in, to the target organization.
+3. **Find your fit and condense**
+   * Figure our how you **fit** in, or want to fit in, to the target organization.
    * Identify your **key selling points**.
    * Think about the **organizational problems** you're well positioned to solve.
-   * Ask yourself where the intersection is of what you want and want your target organization needs.
+   * Ask yourself where the **intersection** is of what you want and want your target organization needs.
 
 <br/>
 
