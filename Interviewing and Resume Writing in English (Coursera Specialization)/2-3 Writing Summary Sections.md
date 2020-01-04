@@ -1,6 +1,6 @@
 # 2-3 Writing Summary Sections
 
-[**Examples of Resume Summary Statements**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Example%20Resume%20Tier%20Method%20Statements.pdf)
+[**Examples of Resume Summary Statements**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Examples%20of%20Resume%20Summary%20Statements.pdf)
 
 <br/>
 
