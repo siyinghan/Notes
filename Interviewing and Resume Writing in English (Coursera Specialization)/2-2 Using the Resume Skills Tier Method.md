@@ -48,8 +48,5 @@ Demonstrating your **communication** and **leadership** skills, you took the act
 
 ##### How this would look on a resume?
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/007.png' width=600px />
 
-
-<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/002.png' width=500px />
-
-**Statement Example 1** *marketing communications manager with a bit more than 10 years of experience*
