@@ -64,4 +64,6 @@ found in the summary section. The overall effect is to make the candidate sound 
    * Think about the **organizational problems** you're well positioned to solve.
    * Ask yourself where the intersection is of what you want and want your target organization needs.
 
-<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/008.png' width=600px />
+<br/>
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/010.png' width=400px />
