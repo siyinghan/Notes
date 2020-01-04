@@ -1,12 +1,22 @@
 # 2-5 Finding the Right Words
 
-[**Action Verbs to Refer to Skills**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Examples%20of%20Resume%20Summary%20Statements.pdf)
+[**Action Verbs to Refer to Skills**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Refer%20to%20Skills.pdf)
 
-[**Action Verbs to Refer to People, Ideas and Things**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Examples%20of%20Resume%20Summary%20Statements.pdf)
+[**Action Verbs to Refer to People, Ideas and Things**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Refer%20to%20People%2C%20Ideas%20and%20Things.pdf)
 
-[**Action Verbs to Describe Accomplishments**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Examples%20of%20Resume%20Summary%20Statements.pdf)
+[**Action Verbs to Describe Accomplishments**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Describe%20Accomplishments.pdf)
 
 <br/>
+
+
+
+
+
+
+
+
+
+
 
 Every resume you write will contain either an **objective** or a **summary** section. Which you choose depends on the purpose of your resume, but in either case the text should mirror the language of the job posting. It should be aligned with the needs of the hiring organization. In this lesson you'll learn
 about writing **summary sections**. In the next, you'll learn about writing **objectives**. In a resume you'll use one but not the other。
