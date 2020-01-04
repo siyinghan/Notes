@@ -1,9 +1,5 @@
 # 2-1 Writing Strong Accomplishment Statements
 
-上一章的 [Example Accomplishment Statements](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Example%20Accomplishment%20Statements.pdf)
-
-<br/>
-
 ### Tiered method to write accomplishment statements
 
 **Three Tiers** ('tier' in English simply means level)
@@ -82,3 +78,4 @@ Your ability to make decisions and follow-up led to the website upgrades referre
 
 #### How this would look on a resume?
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/008.png' width=600px />
