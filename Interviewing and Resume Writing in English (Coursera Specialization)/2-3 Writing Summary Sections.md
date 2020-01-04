@@ -21,7 +21,7 @@ about writing **summary sections**. In the next, you'll learn about writing **ob
 
 <br/>
 
-#### A superior skills summary
+### A superior skills summary
 
 1. Uses relevant **keywords** (keywords that the employer will most likely be looking for)
 2. Appears **above the fold** (at the top or at least in the top one-third of the page, just below your *professional title*)
@@ -41,21 +41,27 @@ As with accomplishment statements, the summary section **does not use personal p
 
 This particular candidate went one step further with his summary section. He **listed areas of expertise**. Here's what follows his summary section:
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/009.png' width=700px />
 
+Notice the use of **keyword nouns**. **Nouns** are often more important than verbs because they capture the **keywords** entered as search criteria by the hiring manager. Some of the nouns here repeat what's
+found in the summary section. The overall effect is to make the candidate sound exactly like the person the employer hopes to find.
 
-Notice the use of keyword nouns. Nouns are often more important than
-verbs because they capture the keywords entered as search criteria
-by the hiring manager. Some of the nouns here repeat what's
-found in the summary section. The overall effect is to make the
-candidate sound exactly like the person the employer hopes to find. It makes it seem as though the candidate
-wants exactly the job being offered. That's what a tailored resume does. To craft a summary section, you go through
-the same thought process that you went through in crafting your elevator pitch. First you figure out when you're going. Since you need to be concise, it's
-important to know where you're going with this job search so you know exactly
-what competencies to highlight. Ask yourself what skills you most enjoy
-using, what accomplishment best illustrate your abilities, and what areas you
-are most passionate about working in. Then you want to analyze
-your target industry. You want to identify where you want to be. Again highlighting the importance
+<br/>
 
+### To craft a skills summary
 
+1. Figure out where you're going (need to be **concise**, must know exactly what **competencies** to highlight)
+   * Ask yourself what **skills** you most enjoy using?
+   * What **accomplishment** best illustrate your abilities?
+   * What areas you are most **passionate** about working in?
+2. Analyze your target industry (identify where you want to be, highlighting the importance of our research)
+   * Asked yourself what **aligns** most closely with the priorities of the hiring organization?
+   * What **competencies** matter most in the target position?
+   * What you would look for if you were the hiring manage?
+3. Find your **fit** and **condense**
+   * Figure our how you fit in, or want to fit in, to the target organization.
+   * Identify your **key selling points**.
+   * Think about the **organizational problems** you're well positioned to solve.
+   * Ask yourself where the intersection is of what you want and want your target organization needs.
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/008.png' width=600px />
