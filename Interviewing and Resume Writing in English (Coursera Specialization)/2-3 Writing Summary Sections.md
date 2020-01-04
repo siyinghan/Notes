@@ -29,6 +29,12 @@ about writing **summary sections**. In the next, you'll learn about writing **ob
 
 <br/>
 
+### Example
 
+Here is an example of a summary section from a resume for **a senior marketing professional**.
+
+> Creative and business-savvy marketing and communications professional with 10 years of progressive
+
+`Creative and business-savvy marketing and communications professional with 10 years of progressive
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/008.png' width=600px />
