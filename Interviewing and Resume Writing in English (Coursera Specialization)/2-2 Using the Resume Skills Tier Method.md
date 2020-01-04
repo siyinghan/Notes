@@ -30,19 +30,19 @@ Three **competencies**:
 
 ##### Primary Accomplishment
 
-`Analyzed 12 months of customer feedback and determined what vocabulary needed to be rearranged or replaced in phone support scripts.`
+> Analyzed 12 months of customer feedback and determined what vocabulary needed to be rearranged or replaced in phone support scripts.
 
 You use the action word **analyze** to convey this competency. The situation or problem that is implied relates to some kind of inefficiency and technical support responses. Your task was to fix the problem.
 
 ##### Secondary Accomplishment
 
-`Wrote new phone support scripts that decreased phone time by more than 51% in the first six months saving an estimated $280,000 in labor costs.`
+> Wrote new phone support scripts that decreased phone time by more than 51% in the first six months saving an estimated $280,000 in labor costs.
 
 As part of fulfilling this task, following your **analysis**, this is the action you took. You wrote *new support scripts* and the result was a significant reduction in the time that support techs had to spend on the phone with a commensurate reduction in labor costs. You quantified the results in concrete terms.
 
 ##### Tertiary Accomplishment
 
-`Trained phone support employees and new recruits with new scripts which reduced training time from 2 weeks to 3 days.`
+> Trained phone support employees and new recruits with new scripts which reduced training time from 2 weeks to 3 days.
 
 Demonstrating your **communication** and **leadership** skills, you took the action of *training support employees*, which led to an impressive result in *reduced training times*.
 
@@ -64,19 +64,19 @@ Three **competencies**:
 
 ##### Primary Accomplishment
 
-`Managed 18 sales people selling veterinarian consulting and products in the smallest U.S. territory producing 17% more sales revenue than any other market.`
+> Managed 18 sales people selling veterinarian consulting and products in the smallest U.S. territory producing 17% more sales revenue than any other market.
 
 You face the challenge to *increase revenue* and *decrease expenses*.
 
 ##### Secondary Accomplishment
 
-`Traveling with sales people, discovered that 61% of clients could be serviced by upgrades to our territory website, reducing sales personnel travel expenses by more than $138.000 annually.`
+> Traveling with sales people, discovered that 61% of clients could be serviced by upgrades to our territory website, reducing sales personnel travel expenses by more than $138.000 annually.
 
 Summarized that actions you took that led to the impressive management result.
 
 ##### Tertiary Accomplishment
 
-`Investigated and added 151 products to our territory website, increasing revenue by 141% annually.`
+> Investigated and added 151 products to our territory website, increasing revenue by 141% annually.
 
 Your ability to make decisions and follow-up led to the website upgrades referred to here.
 
