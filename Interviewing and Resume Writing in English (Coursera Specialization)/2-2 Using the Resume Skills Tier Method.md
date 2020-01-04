@@ -4,7 +4,7 @@
 
 <br/>
 
-#### Tiered method to write accomplishment statements
+### Tiered method to write accomplishment statements
 
 **Three Tiers** ('tier' in English simply means level)
 
@@ -20,7 +20,7 @@
 
 <br/>
 
-#### Example
+### Example
 
 Three **competencies**:
 
