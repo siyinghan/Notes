@@ -20,7 +20,7 @@
 
 <br/>
 
-### Example
+### Example 1
 
 Three **competencies**:
 
@@ -46,7 +46,35 @@ As part of fulfilling this task, following your **analysis**, this is the action
 
 Demonstrating your **communication** and **leadership** skills, you took the action of *training support employees*, which led to an impressive result in *reduced training times*.
 
-##### How this would look on a resume?
+#### How this would look on a resume?
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/007.png' width=600px />
+
+A resume entry like this provide **concrete evidence** of **abilities** and **skills**, together with **quantified results** that communicate **real value** to an organization. A hiring manager who has a need for a technical support manager would likely be intrigued by this. He or she would want to know how you pulled off these accompaniments.
+
+<br/>
+
+### Example 2
+
+Three **competencies**:
+
+* management skills
+* attention to detail
+* profit-oriented thinking
+
+##### Primary Accomplishment
+
+`Managed 18 sales people selling veterinarian consulting and products in the smallest U.S. territory producing 17% more sales revenue than any other market.`
+
+You face the challenge to *increase revenue* and *decrease expenses*.
+
+##### Secondary Accomplishment
+
+
+
+##### Tertiary Accomplishment
+
+
+
+#### How this would look on a resume?
 
