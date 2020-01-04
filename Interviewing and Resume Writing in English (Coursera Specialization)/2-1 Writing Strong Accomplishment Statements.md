@@ -10,7 +10,7 @@
 
 **Statement Example 1** *marketing communications manager with a bit more than 10 years of experience*
 
-```Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.```
+> Built event-management program from ground up. Constructed exhibits to showcase products, managed logistics, and trained a telesales organization. Generated $4M return on investment to date.
 
 - 使用过去时 built, constructed, managed, trained，因为表示已经做完的事情，a result achieved
 
@@ -20,7 +20,7 @@
 
 **Statement Example 2** *demonstrataes team leadership competency*
 
-```Coordinated multigenerational team of 12 sales, administrative and technical support employees selling printing equipment and services to healthcare customers in 23 states in the Eastern U.S.```
+> Coordinated multigenerational team of 12 sales, administrative and technical support employees selling printing equipment and services to healthcare customers in 23 states in the Eastern U.S.
 
 - 开头用了动词 **coordinated**。If you coordinate a team, you get all the members to work effectively as a whole.
 - 使用 **sales**、**administration**、**technical support** 强调 get different groups to work cooperatively 的能力。
@@ -73,9 +73,9 @@ The person reading your resume needs to understand how **valuable** your accompl
 
 **Example:**
 
-A. `Managed human resources department for division.`
+> **A.** Managed human resources department for division.`
 
-B. `Directed human resources for 1,100 employee division of Fortune 500 company; directly supervised seven human resources professionals and three clerks and managed budget of $1.5 million.`
+> **B.** Directed human resources for 1,100 employee division of Fortune 500 company; directly supervised seven human resources professionals and three clerks and managed budget of $1.5 million.`
 
 <br/>
 
