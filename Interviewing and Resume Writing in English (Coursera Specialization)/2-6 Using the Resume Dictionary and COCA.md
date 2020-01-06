@@ -1,12 +1,8 @@
 # 2-6 Using the Resume Dictionary and COCA
 
-[**Action Verbs to Refer to Skills**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Refer%20to%20Skills.pdf)
 
-[**Action Verbs to Refer to People, Ideas and Things**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Refer%20to%20People%2C%20Ideas%20and%20Things.pdf)
 
-[**Action Verbs to Describe Accomplishments**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Action%20Verbs%20to%20Describe%20Accomplishments.pdf)
 
-<br/>
 
 Let's say you ***managed the marketing department of 100 people that experience growth under your leadership***. How would you best describe this accomplishment in a resume? Compare these two versions:
 
