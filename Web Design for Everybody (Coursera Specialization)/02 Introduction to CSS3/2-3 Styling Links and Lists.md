@@ -4,6 +4,8 @@
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/120.jpg' alt='120' width='500px' />
 
+`text-decoration: none;`: 'I wanna get rid of that underline that usually shows up underneath links.'
+
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/121.jpg' alt='121' width='500px' />
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/122.jpg' alt='122' width='500px' />
