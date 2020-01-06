@@ -33,11 +33,26 @@ Neither one of these is bad, but the first one is stronger.
 * To **restructure** is to **rethink**, **innovate**, and **conceptualize** a whole new structure, and that goes far beyond simple organizing.
 * The first example emphasized a restructuring of the **entire department**. And *productivity* wasn't simply **increased**, it was **boosted**, a much more potent word.
 
+<br/>
 
+The description **action** words you use on a resume should be ***grouped in terms of their relative power***. For example, you were responsible for **managing**, **developing**, and **implementing** a program. Which word do you put first?
 
+* **Developing** shows an employer that you can create ideas independently. That's very powerful.
+* **Managing** shows that you can lead others to accomplish goals. Less powerful, but still powerful.
+* **Implementing** shows that you can carry out ideas. That's the least powerful of the three.
 
+So on your resume you say you **developed**, **managed**, and **implemented** the program. That's how you use action words to supercharge your resume.
 
 <br/>
+
+### Writing powerful resumes means both:
+
+* **using powerful language** and
+* **avoiding weak language**
+
+
+
+
 
 ### A superior skills summary
 
