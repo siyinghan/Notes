@@ -60,6 +60,8 @@ So on your resume you say you **developed**, **managed**, and **implemented** th
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/015.png' width=500px />
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/016.png' width=500px />
+
 
 
 
