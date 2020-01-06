@@ -10,9 +10,9 @@
 
 Let's say you ***managed the marketing department of 100 people that experience growth under your leadership***. How would you best describe this accomplishment in a resume? Compare these two versions:
 
-> **A.** Responsible for a large, profitable department at XYZ Industries.
+> **A.** **Responsible** for a large, profitable department at XYZ Industries.
 
-> **B.** Managed a 100-person marketing department for XYZ Industries, which grew company profits by 50%.
+> **B.** **Managed** a **100-person** marketing department for XYZ Industries, which grew company profits **by 50%**.
 
 **Why to pick the second example?**
 
@@ -35,20 +35,7 @@ Neither one of these is bad, but the first one is stronger.
 
 
 
-Every resume you write will contain either an **objective** or a **summary** section. Which you choose depends on the purpose of your resume, but in either case the text should mirror the language of the job posting. It should be aligned with the needs of the hiring organization. In this lesson you'll learn
-about writing **summary sections**. In the next, you'll learn about writing **objectives**. In a resume you'll use one but not the other。
 
-**You write an Objective when:**
-
-1. You are just entering the work force
-2. You lack experience in your field
-3. You are undergoing a career change
-
-**Use a Summary Section when:**
-
-1. You have experience in a field
-2. You want to "brand" your skill set (like *iPhone*, *iPad*, *iResume* from *Apple*)
-3.  You want to tie experiences together
 
 <br/>
 
