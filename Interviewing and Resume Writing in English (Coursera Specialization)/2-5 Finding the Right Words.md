@@ -50,7 +50,7 @@ So on your resume you say you **developed**, **managed**, and **implemented** th
 * **using powerful language** and
 * **avoiding weak language**
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/011.png' width=500px />
 
 
 
