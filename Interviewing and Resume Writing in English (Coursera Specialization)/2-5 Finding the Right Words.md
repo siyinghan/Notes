@@ -8,13 +8,30 @@
 
 <br/>
 
+Let's say you ***managed the marketing department of 100 people that experience growth under your leadership***. How would you best describe this accomplishment in a resume? Compare these two versions:
 
+> **A.** Responsible for a large, profitable department at XYZ Industries.
 
+> **B.** Managed a 100-person marketing department for XYZ Industries, which grew company profits by 50%.
 
+**Why to pick the second example?**
 
+* The second example starts off with a strong action word, **managed**. The term **responsible for** provides absolutely no information about how involved you were with the task, plus it robs you of any credit you might due. The work **managed** tells the employer that you have **leadership skills**.
+* The second example is **specific**. It tells an employer that you didn't just manage a large department, you manage a department of **100 people**. That shows precisely what your circle of accountability was.
+* The second example states exactly how **profitable** your department was. It increased profits by **50%**. Profits grow under your **leadership**, and you get **credit** for that. (On the other hand, in the first example, you get no credit for your department's success. The phrasing gives the feeling that the department basically grew by itself.)
 
+<br/>
 
+Consider another example:
 
+> **A.** **Restructured** the **entire** production department, which **boosted** productivity by 50%.
+
+> **B.** **Organized** the production department, which **increased** productivity by 50%.
+
+Neither one of these is bad, but the first one is stronger.
+
+* To **restructure** is to **rethink**, **innovate**, and **conceptualize** a whole new structure, and that goes far beyond simple organizing.
+* The first example emphasized a restructuring of the **entire department**. And *productivity* wasn't simply **increased**, it was **boosted**, a much more potent word.
 
 
 
