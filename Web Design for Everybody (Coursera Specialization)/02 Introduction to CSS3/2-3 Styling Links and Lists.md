@@ -10,9 +10,9 @@
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Web%20Design%20for%20Everybody%20(Coursera%20Specialization)/02%20Introduction%20to%20CSS3/Image/122.jpg' alt='122' width='500px' />
 
-**a:hover:** `hover` is activated by holding your mouse over a link. Dose this work on **touch screens**? When you are developing your page you need to remember that `hover` isn't necessarily gonna work if people are accessing it on a **phone** or a **tablet** or something like that.
+**a:hover:** 鼠标放在上面的时候变色。 `hover` is activated by holding your mouse over a link. Dose this work on **touch screens**? When you are developing your page you need to remember that `hover` isn't necessarily gonna work if people are accessing it on a **phone** or a **tablet** or something like that.
 
-**a:focus:** `focus` state is what happens when somebody is tabbing through your page. As they hit tab, it's gonna jump from element to element. And when it gets to this particular link, it's going to know I'm in focus, so if you wanna do something different, maybe the same thing you do when people hover, this is how you can trigger that activity.
+**a:focus:** 鼠标点了之后变色，直到鼠标再点其他链接，此链接变回原来的颜色。 `focus` state is what happens when somebody is tabbing through your page. As they hit tab, it's gonna jump from element to element. And when it gets to this particular link, it's going to know I'm in focus, so if you wanna do something different, maybe the same thing you do when people hover, this is how you can trigger that activity.
 
 **a:active:** 'this is the link just as I'm clicking it.' It is weird because for most of us, when we click on a link, we're going to a new page so we're not even going to see what styling happened.
 
