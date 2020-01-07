@@ -2,6 +2,10 @@
 
 [**Sample Functional**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Functional.pdf)
 
+[**Sample Direct Competency**]()
+
+
+
 <br/>
 
 If you're changing careers, or re-entering the job market, if your career has had setbacks or includes jobs in different industries, if your current job is not as impressive as your last one or if your skills and accomplishments are more impressive than your career history, then a **functional resume** will likely be the right choice for you.
