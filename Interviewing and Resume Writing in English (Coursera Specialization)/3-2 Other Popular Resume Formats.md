@@ -20,7 +20,7 @@ The writing style here is to list **accomplishments** under each **competency ar
 
 <br/>
 
-### Example 1
+#### Example 1
 
 Here is a functional resume entry for a candidate who's competencies in ***business development*** are a key selling point for the position he's interested in. Notice the use of **a bulleted list** to make it easier for an employer to read quickly.
 
@@ -30,7 +30,7 @@ In this example, you can see how the candidates list of **achievements**, provid
 
 <br/>
 
-### Example 2
+#### Example 2
 
 If you've been working as a ***Quality Control technician*** for a ***pharmaceutical company***. After a couple of years, you've decided that you want to be in a ***less structured and higher growth industry***. So you pick ***computer field***. You want to get a job in ***Technical Support***. Your resume should thus emphasize the skills that will support your desire to change careers.
 
@@ -40,5 +40,32 @@ Before your current job, you had three years experience as a ***telephone medica
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/019.png' width=600px />
 
-You group your **accomplishments** together in their own section, right after your job objective. You also order your **accomplishments** in terms of their relevance to a **tech support** position. **Computer skills** are more relevant than **communication skills** and ***upgrading 25 computers*** shows more hands on experience than ***performing computerized tests***.
+You group your **accomplishments** together in their own section, right after your job objective. You also order your **accomplishments** in terms of their relevance to a **tech support** position.
 
+**Computer skills** are more relevant than **communication skills** and ***upgrading 25 computers*** shows more hands on experience than ***performing computerized tests***.
+
+The **work history** that follows this **accomplishments** section simply lists your *job titles*, the *companies* you worked for, and the *dates* of employment.
+
+<br/>
+
+### Direct Competency Format
+
+* **Header Section**
+* **Objective or Summary**
+* **Key Competencies**
+* **Work History**
+
+This is a newer resume style and has a different look. The **accomplishments** are listed by **competency**. Using a **direct competency resume** can be a good choice, if you already work for an organization that uses **competencies** and you're applying for an ***internal position*** in the organization.
+
+These resumes showcase **accomplishments** in each **competency area** and the emphasis is focused on those **competency requirements** clearly identified for the position.
+
+The writing style here is to ***list accomplishments under each competency***, begin with the most important **competency** for the position you're interested in.
+
+Then the **summary** and **accomplishment statements** are written with a **competency** based focus as you learned in the second module.
+
+<br/>
+
+Finally, a combined resume might be the right format for you. This format could work for you if your ***career history*** is quite linear and solid. But you also have a number of ***relevant accomplishments*** worth drawing an employer's attention to right away.
+
+The combined resume is like the **chronological resume**, except that you include an **accomplishment**
+**section** before your work history. This gives you a chance to point out your significant accomplishments early on.
