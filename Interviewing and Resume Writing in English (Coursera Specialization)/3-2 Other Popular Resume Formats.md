@@ -6,7 +6,7 @@
 
 [**Sample Chronological**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Chronological.pdf)
 
-[**Sample Combination**]()
+[**Sample Combination**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Combination.pdf)
 
 <br/>
 
