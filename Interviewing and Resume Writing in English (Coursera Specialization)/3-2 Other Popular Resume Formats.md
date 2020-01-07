@@ -40,4 +40,5 @@ Before your current job, you had three years experience as a ***telephone medica
 
 <img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/019.png' width=600px />
 
-You group your **accomplishments** together in their own section, 
+You group your **accomplishments** together in their own section, right after your job objective. You also order your **accomplishments** in terms of their relevance to a **tech support** position. **Computer skills** are more relevant than **communication skills** and ***upgrading 25 computers*** shows more hands on experience than ***performing computerized tests***.
+
