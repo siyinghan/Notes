@@ -14,12 +14,12 @@ The **skill resume format** is used if you have ***extensive experience*** in a 
 
 For this format, the summary section will take up roughly half of the first page. It will include the template elements you see here, namely the **headline**, the **summary section**, and a bulleted list of **key competencies**. You're already familiar with these elements from previous examples, but you can see here how this format allow you to focus a reviewer's attention on your uniquely strong qualifications.
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/021.png' />
 
 Here's an example where the template fields have been filled in. This candidate called out her key
-competencies under the heading, EXECUTIVE LEADERSHIP COMPETENCIES. You could use whatever heading
-is appropriate to your field. Then this candidate included a section,
-TRACK RECORD OF SUCCESS. That section abstracts her
+competencies under the heading, **EXECUTIVE LEADERSHIP COMPETENCIES**. You could use whatever heading is appropriate to your field.
+
+Then this candidate included a section, ∫. That section abstracts her
 accomplishments across a 20 year career. Again, the format presents
 the unique qualifications and high level skills of the candidate
 in a manner that's easy to scan. You may include more optional sections in
