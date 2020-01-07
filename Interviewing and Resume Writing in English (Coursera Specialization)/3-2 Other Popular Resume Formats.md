@@ -2,9 +2,9 @@
 
 [**Sample Functional**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Functional.pdf)
 
-[**Sample Direct Competency**]()
+[**Sample Direct Competency**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Direct%20Competency.pdf)
 
-
+[**Sample Chronological**]()
 
 <br/>
 
