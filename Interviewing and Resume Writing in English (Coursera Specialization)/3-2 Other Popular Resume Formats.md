@@ -22,3 +22,4 @@ The writing style here is to list **accomplishments** under each **competency ar
 
 ### Example
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/018.png' width=700px />
