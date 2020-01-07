@@ -38,3 +38,6 @@ Now, in working through the question presented in the first module, you note tha
 
 Before your current job, you had three years experience as a ***telephone medical sales*** representative. Your tasks included ***describing product specifications*** to customers, many of whom had very little medical knowledge. You helped determine specific medical products for ***500 customers***, helping them select the best products to meet their needs.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/019.png' width=600px />
+
+You group your **accomplishments** together in their own section, 
