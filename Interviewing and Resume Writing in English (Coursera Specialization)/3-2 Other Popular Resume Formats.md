@@ -1,6 +1,6 @@
 # 3-2 Other Popular Resume Formats
 
-[**Sample Functional**]()
+[**Sample Functional**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Sample%20Functional.pdf)
 
 <br/>
 
