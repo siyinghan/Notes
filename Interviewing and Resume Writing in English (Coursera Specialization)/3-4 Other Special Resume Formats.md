@@ -1,8 +1,8 @@
 # 3-4 Other Special Resume Formats
 
+[**US Federal Government Resumes**]()
 
-
-
+[**Bibliography of Additional Resources**]()
 
 
 
