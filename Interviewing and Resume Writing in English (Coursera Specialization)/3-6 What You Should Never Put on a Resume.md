@@ -17,8 +17,13 @@
 <br/>
 For **example**, here are excerpts from an ***info graphic*** recommendation for Asian job applicants. Much of this is **misinformation**.
 
-
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/022.png' />
 
 1. No resume will ever get you a job. The purpose of a resume is to get you an **interview**.
 2. The idea of using progress bars to show your proficiencies in particular skills is complete fluff. Your claims mean nothing without concrete evidence to back them up.
 3. The ***when*** in doubt box has four typos in it, even though one of its call outs is to proof read, in order to avoid typos.
+
+<br/>
+
+Take a look at this **example**. Again, three glaring flaws jump out that would put this resume in the trash.
+
