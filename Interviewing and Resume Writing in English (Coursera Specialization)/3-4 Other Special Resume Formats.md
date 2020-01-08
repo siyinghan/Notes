@@ -1,8 +1,8 @@
 # 3-4 Other Special Resume Formats
 
-[**US Federal Government Resumes**]()
+[**US Federal Government Resumes**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/US%20Federal%20Government%20Resumes.pdf)
 
-[**Bibliography of Additional Resources**]()
+[**Bibliography of Additional Resources**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Bibliography%20of%20Additional%20Resources.pdf)
 
 
 
