@@ -27,3 +27,33 @@ For **example**, here are excerpts from an ***info graphic*** recommendation for
 
 Take a look at this **example**. Again, three glaring flaws jump out that would put this resume in the trash.
 
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/023.png' />
+
+1. Squandering the resume real estate like this raises serious questions about the candidates ability to prioritize.
+2. There is a fatal spelling mistake in work experience on the left. The candidate might claim attention to detail, but his resume proves the claim to be empty.
+3. There is the skills chart again on the right.
+
+<br/>
+
+The principle at work here is simple:
+
+**Put nothing on your resume that gives a reviewer a reason to reject you.**
+
+<br/>
+
+### Other Common Mistakes - Digital Version
+
+* **Instructions were not followed**
+* **No contact information**
+* **Subject line is blank**
+* **Position is not referenced**
+
+<br/>
+
+### Other Common Mistakes - Paper Version
+
+* **Resume is folded**
+* **Resume is stapled**
+* **Resume is put in a binder**
+* **Errors are present**
+* **Nonprofessional paper is used**
