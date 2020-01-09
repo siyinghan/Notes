@@ -17,5 +17,9 @@ Example letter from the lecture: [**Enterprise Architecture Cover Letter**](http
 
 <br/>
 
-Before you begin, make sure you have the correct information to put in the heading of your cover letter.
+Before you begin, make sure you have the correct information to put in the heading of your cover letter:
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/025.png' width=300px />
+
+The current format is shown here.
 
