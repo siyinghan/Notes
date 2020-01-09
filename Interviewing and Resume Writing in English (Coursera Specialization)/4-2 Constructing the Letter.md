@@ -27,4 +27,9 @@ The current format is shown here:
 
 The text is ***left justified***, with a ***date*** on the first line followed by a black line, then the address information with name title at the top.
 
-In Microsoft Word, I generally set the top margin at one and a half inches, the bottom margin at three inches, then set the vertical alignment to center with 1.25 inch margins left and right. That usually produces an attractive visual layout. 
+In Microsoft Word, I generally set the top margin at one and a half inches, the bottom margin at three inches, then set the vertical alignment to center with 1.25 inch margins left and right. That usually produces an attractive visual layout:
+
+<img src='https://github.com/siyinghan/Notes/raw/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Image/027.png' width=300px />
+
+#### The Greeting or Salutation
+
