@@ -1,6 +1,6 @@
 # 2-2 Using the Resume Skills Tier Method
 
-[**Example Resume Tier Method Statement**s](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Example%20Resume%20Tier%20Method%20Statements.pdf)
+[**Example Resume Tier Method Statements**](https://github.com/siyinghan/Notes/blob/master/Interviewing%20and%20Resume%20Writing%20in%20English%20(Coursera%20Specialization)/Material/Example%20Resume%20Tier%20Method%20Statements.pdf)
 
 <br/>
 
